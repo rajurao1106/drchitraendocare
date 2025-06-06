@@ -1,14 +1,21 @@
-import React from 'react'
-import Homepage from './homepage/Homepage'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Homepage from './homepage/Homepage';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import ContactPage from './ContactPage/ContactPage'; // if you have other pages
+import FAQ from './homepage/FAQ';
 
 export default function App() {
   return (
-    <div>
-      <Navbar/>
-      <Homepage/>
-      <Footer/>
-    </div>
-  )
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+      <FAQ/>
+      <Footer />
+    </BrowserRouter>
+  );
 }

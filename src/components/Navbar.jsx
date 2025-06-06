@@ -44,56 +44,20 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-6">
-            <a href="#" className="text-blue-600 font-semibold">
+          <nav className="hidden md:flex items-center gap-6 text-lg">
+            <a href="/" className="hover:text-blue-600 font-semibold">
               Home
             </a>
-            <a href="#" className="font-medium">
+            <a href="#" className="hover:text-blue-600 font-medium">
               About Us
             </a>
 
-            <div className="relative group">
-              <button className="font-medium flex justify-center items-center gap-2">
-                Services{" "}
-                <div className="group-hover:rotate-180 duration-500">
-                  <IoIosArrowDown />
-                </div>
-              </button>
-              {/* Dropdown (optional) */}
-              <div className="absolute w-54 text-base left-0 hidden group-hover:block bg-white shadow-md p-2 rounded-md">
-                <a href="#" className="block px-4 py-1 hover:bg-gray-100">
-                  Advanced Root Canal
-                </a>
-                <a href="#" className="block px-4 py-1 hover:bg-gray-100">
-                  Restoration/Fillings
-                </a>
-                <a href="#" className="block px-4 py-1 hover:bg-gray-100">
-                  Teeth Whitening
-                </a>
-                <a href="#" className="block px-4 py-1 hover:bg-gray-100">
-                  Smile Designing
-                </a>
-                <a href="#" className="block px-4 py-1 hover:bg-gray-100">
-                  Crown & Bridges
-                </a>
-                <a href="#" className="block px-4 py-1 hover:bg-gray-100">
-                  Extractions
-                </a>
-                <a href="#" className="block px-4 py-1 hover:bg-gray-100">
-                  Orthodontic Braces
-                </a>
-                <a href="#" className="block px-4 py-1 hover:bg-gray-100">
-                  Pediatric Dentistry
-                </a>
-                <a href="#" className="block px-4 py-1 hover:bg-gray-100">
-                  Removable & Fixed Denture
-                </a>
-                <a href="#" className="block px-4 py-1 hover:bg-gray-100">
-                  Laser Treatment
-                </a>
-              </div>
-            </div>
-            <a href="#" className="font-medium">
+             <a href="#" className="hover:text-blue-600 font-medium">
+              Services
+            </a>
+             
+            
+            <a href="/contact" className="hover:text-blue-600 font-medium">
               Contact Us
             </a>
           </nav>
@@ -123,7 +87,7 @@ export default function Navbar() {
               <a href="#" className="font-medium">
                 Page
               </a>
-              <a href="#" className="font-medium">
+              <a href="/contact" className="font-medium">
                 Contact Us
               </a>
               <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded">

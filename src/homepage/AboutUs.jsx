@@ -1,25 +1,30 @@
 import React from 'react'
+import aboutusimage1 from '../assets/Homepage/AboutUs/aboutusimage1.jpg'
+import aboutusimage2 from '../assets/Homepage/AboutUs/aboutusimage2.jpg'
+import aboutusimage3 from '../assets/Homepage/AboutUs/aboutusimage3.jpg'
 
 export default function AboutUs() {
   return (
-    <section className="py-16 px-4 lg:px-20 bg-white">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="py-16 px-4 lg:px-20 bg-white flex justify-center items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-[1200px]">
         {/* Left: Image Grid */}
-        <div className="grid grid-cols-2 gap-4">
-          <img
-            src="/images/dental-1.jpg"
+        <div className="flex gap-5 justify-center items-center">
+          <div className="flex flex-col gap-8 justify-center items-end">
+            <img
+            src={aboutusimage3}
             alt="Dental Image 1"
-            className="rounded-xl w-full h-auto object-cover"
+            className="rounded-3xl w-50 h-50 object-cover"
           />
           <img
-            src="/images/dental-2.jpg"
+            src={aboutusimage2}
             alt="Dental Image 2"
-            className="rounded-xl w-full h-auto object-cover"
+            className="rounded-3xl w-66 h-66 object-cover"
           />
+          </div>
           <img
-            src="/images/dental-3.jpg"
+            src={aboutusimage1}
             alt="Dental Image 3"
-            className="rounded-xl w-full h-auto object-cover col-span-2"
+            className="rounded-3xl w-60 h-full object-cover col-span-2"
           />
         </div>
 
