@@ -1,53 +1,85 @@
 import { FaArrowRight } from "react-icons/fa";
+// ✅ Import all images and icons (from /public or /src if configured)
+import dentalfillings from "/src/assets/Homepage/Services/dentalfillings.jpg";
+import tooth_filling from "/src/assets/Homepage/Services/tooth-filling.png";
+
+import rootcanal from "/src/assets/Homepage/Services/rootcanal.jpg";
+import root_canal_icon from "/src/assets/Homepage/Services/root-canal.png";
+
+import extraction from "/src/assets/Homepage/Services/extraction.jpg";
+import tooth_extraction_icon from "/src/assets/Homepage/Services/tooth-extraction.png";
+
+import teethwhitening from "/src/assets/Homepage/Services/teethwhitening.jpg";
+import tooth_whitening_icon from "/src/assets/Homepage/Services/tooth-whitening.png";
+
+import cosmetictreatment from "/src/assets/Homepage/Services/cosmetictreatment.jpg";
+import cosmetic_icon from "/src/assets/Homepage/Services/cosmetic.png";
+
+import preventivecare from "/src/assets/Homepage/Services/preventivecare.jpg";
+import prevention_icon from "/src/assets/Homepage/Services/prevention.png";
+
+import pediatrictreatment from "/src/assets/Homepage/Services/pediatrictreatment.jpg";
+import specialist_icon from "/src/assets/Homepage/Services/specialist.png";
+
+import orthodonticbraces from "/src/assets/Homepage/Services/orthodonticbraces.jpg";
+import cosmetic1_icon from "/src/assets/Homepage/Services/cosmetic (1).png";
 
 const services = [
   {
     title: "Dental Fillings",
-    description: "Used to restore damaged or decayed teeth by using tooth-colored material, ensuring a natural appearance.",
-    image: "/src/assets/Homepage/Services/dentalfillings.jpg", // Replace with actual image path
-    icon: "/src/assets/Homepage/Services/tooth-filling.png", // Replace with actual icon path
+    description:
+      "Used to restore damaged or decayed teeth by using tooth-colored material, ensuring a natural appearance.",
+    image: dentalfillings,
+    icon: tooth_filling,
   },
   {
     title: "Root Canal Treatment",
-    description: "This procedure involves removing infected pulp from the root canal to relieve pain, clean and shape the canal",
-    image: "/src/assets/Homepage/Services/rootcanal.jpg", // Replace with actual image path
-    icon: "/src/assets/Homepage/Services/root-canal.png", // Replace with actual icon path
+    description:
+      "This procedure involves removing infected pulp from the root canal to relieve pain, clean and shape the canal.",
+    image: rootcanal,
+    icon: root_canal_icon,
   },
   {
     title: "Extraction",
-    description: "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
-    image: "/src/assets/Homepage/Services/extraction.jpg", // Replace with actual image path
-    icon: "/src/assets/Homepage/Services/tooth-extraction.png ", // Replace with actual icon path
+    description:
+      "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
+    image: extraction,
+    icon: tooth_extraction_icon,
   },
-   {
+  {
     title: "Teeth Whitening",
-    description: "Used to restore damaged or decayed teeth by using tooth-colored material, ensuring a natural appearance.",
-    image: "/src/assets/Homepage/Services/teethwhitening.jpg", // Replace with actual image path
-    icon: "/src/assets/Homepage/Services/tooth-whitening.png", // Replace with actual icon path
+    description:
+      "Used to restore damaged or decayed teeth by using tooth-colored material, ensuring a natural appearance.",
+    image: teethwhitening,
+    icon: tooth_whitening_icon,
   },
   {
     title: "Cosmetic Treatment",
-    description: "This procedure involves removing infected pulp from the root canal to relieve pain, clean and shape the canal",
-    image: "/src/assets/Homepage/Services/cosmetictreatment.jpg", // Replace with actual image path
-    icon: "/src/assets/Homepage/Services/cosmetic.png", // Replace with actual icon path
+    description:
+      "This procedure involves removing infected pulp from the root canal to relieve pain, clean and shape the canal.",
+    image: cosmetictreatment,
+    icon: cosmetic_icon,
   },
   {
     title: "Preventive Care",
-    description: "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
-    image: "/src/assets/Homepage/Services/preventivecare.jpg", // Replace with actual image path
-    icon: "/src/assets/Homepage/Services/prevention.png ", // Replace with actual icon path
+    description:
+      "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
+    image: preventivecare,
+    icon: prevention_icon,
   },
   {
     title: "Pediatric Treatment",
-    description: "This procedure involves removing infected pulp from the root canal to relieve pain, clean and shape the canal",
-    image: "/src/assets/Homepage/Services/pediatrictreatment.jpg", // Replace with actual image path
-    icon: "/src/assets/Homepage/Services/specialist.png", // Replace with actual icon path
+    description:
+      "This procedure involves removing infected pulp from the root canal to relieve pain, clean and shape the canal.",
+    image: pediatrictreatment,
+    icon: specialist_icon,
   },
   {
     title: "Orthodontic Braces",
-    description: "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
-    image: "/src/assets/Homepage/Services/orthodonticbraces.jpg", // Replace with actual image path
-    icon: "/src/assets/Homepage/Services/cosmetic (1).png ", // Replace with actual icon path
+    description:
+      "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
+    image: orthodonticbraces,
+    icon: cosmetic1_icon,
   },
 ];
 
