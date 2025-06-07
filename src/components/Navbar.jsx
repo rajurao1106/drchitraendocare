@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className="flex justify-center items-center shadow font-[roboto] sticky top-0 left-0 z-10 bg-white">
       <div className="w-full  max-w-[1200px] ">
         {/* Top Bar */}
-        <div className=" text-gray-600 text-sm px-4 pt-2 flex justify-between items-center ">
+        <div className=" text-gray-600 max-lg:hidden text-sm px-4 pt-2 flex justify-between items-center ">
           <div className="flex gap-6 items-center flex-wrap">
             <div className="flex items-center gap-1">
               <FaPhoneAlt className="text-blue-500" />
@@ -42,7 +42,7 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-1">
             <FaRegCalendarAlt className="text-blue-500" />
-            <span>Monday - Saturday: 9 am - 11.30 pm</span>
+            <a href="https://g.co/kgs/ZiFUwFF" className="hover:underline">Monday - Saturday: 9 am - 11.30 pm</a>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6 text-lg font-[Noto_Sans]">
-            <a href="/" className="hover:text-blue-600 font-semibold">
+            <a href="/" className="hover:text-blue-600 font-medium">
               Home
             </a>
             <a href="#" className="hover:text-blue-600 font-medium">
@@ -80,7 +80,7 @@ export default function Navbar() {
           </button>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-2xl" onClick={toggleMenu}>
+          <button className="md:hidden text-4xl" onClick={toggleMenu}>
             {isOpen ? <HiX /> : <HiMenu />}
           </button>
 

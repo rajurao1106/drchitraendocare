@@ -13,23 +13,23 @@ export default function AboutUs() {
             <img
             src={aboutusimage3}
             alt="Dental Image 1"
-            className="rounded-3xl w-50 h-50 object-cover"
+            className="rounded-3xl w-50 h-50 max-lg:h-38 object-cover"
           />
           <img
             src={aboutusimage2}
             alt="Dental Image 2"
-            className="rounded-3xl w-66 h-66 object-cover"
+            className="rounded-3xl w-66 h-66 max-lg:h-60 object-cover"
           />
           </div>
           <img
             src={aboutusimage1}
             alt="Dental Image 3"
-            className="rounded-3xl w-60 h-full object-cover col-span-2"
+            className="rounded-3xl w-60 max-lg:w-48 h-full object-cover col-span-2"
           />
         </div>
 
         {/* Right: Text Content */}
-        <div>
+        <div className='max-lg:text-center'>
           <p className="text-blue-600 font-semibold mb-2 font-[Noto_Sans]">About Us</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-tight font-[Noto_Sans]">
             Professionals and <br />
@@ -41,18 +41,18 @@ export default function AboutUs() {
             ensures your smile stays healthy and confident.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 mb-6">
+          <div className="grid grid-cols-0 sm:grid-cols-2 gap-y-4 gap-x-6 mb-6 ">
             <p className="flex items-center text-gray-700">
-              <span className="text-blue-600 mr-2">✔</span> Personalized Treatment Plans
+              <span className="text-blue-600 mr-2 ">✔</span> Personalized Treatment Plans
             </p>
             <p className="flex items-center text-gray-700">
-              <span className="text-blue-600 mr-2">✔</span> State-of-the-Art Technology
+              <span className="text-blue-600 mr-2 ">✔</span> State-of-the-Art Technology
             </p>
             <p className="flex items-center text-gray-700">
-              <span className="text-blue-600 mr-2">✔</span> Gentle Care for Kids and Adults
+              <span className="text-blue-600 mr-2 ">✔</span> Gentle Care for Kids and Adults
             </p>
             <p className="flex items-center text-gray-700">
-              <span className="text-blue-600 mr-2">✔</span> Flexible Appointment Scheduling
+              <span className="text-blue-600 mr-2 ">✔</span> Flexible Appointment Scheduling
             </p>
           </div>
 
