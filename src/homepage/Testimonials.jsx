@@ -28,7 +28,7 @@ const Testimonials = () => {
   return (
     <section className="bg-white py-16 px-4 md:px-10 lg:px-20">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-[Noto_Sans]">
           What Our <span className="text-blue-600">Patients Say</span>
         </h2>
         <p className="text-gray-600 max-w-xl mx-auto mb-12">

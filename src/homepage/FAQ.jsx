@@ -35,10 +35,10 @@ export default function FAQ() {
   return (
     <section className="bg-white px-4 md:px-12 lg:px-24 py-16">
       <div className="text-center mb-12">
-        <span className="inline-block text-xs text-blue-600 bg-blue-100 px-3 py-1 rounded-full font-medium uppercase tracking-wide mb-2">
+        <span className="inline-block font-[Noto_Sans] text-xs text-blue-600 bg-blue-100 px-3 py-1 rounded-full font-medium uppercase tracking-wide mb-2">
           FAQ
         </span>
-        <h2 className="text-3xl md:text-4xl font-extrabold">
+        <h2 className="text-3xl md:text-4xl font-extrabold font-[Noto_Sans]">
           <span className="text-blue-600">Frequently</span> Asked Questions
         </h2>
         <p className="text-gray-500 mt-4 max-w-xl mx-auto">
@@ -46,13 +46,13 @@ export default function FAQ() {
         </p>
       </div>
 
-      <div className="space-y-4 max-w-3xl mx-auto">
+      <div className="space-y-4 max-w-5xl mx-auto">
         {faqs.map((faq, index) => (
           <div key={index} className="border border-gray-200 rounded-lg shadow-sm">
             <button
               onClick={() => toggleFAQ(index)}
-              className={`w-full px-6 py-4 text-left flex justify-between items-center font-medium 
-               transition-colors duration-300 ${openIndex !== index?"text-gray-800":"text-blue-600"}`}
+              className={`w-full px-6 py-4 text-left flex text-lg font-bold justify-between items-center 
+               transition-colors duration-300 font-[Noto_Sans] ${openIndex !== index?"text-gray-800":"text-blue-600"}`}
             >
               <span>{faq.question}</span>
              
@@ -66,7 +66,7 @@ export default function FAQ() {
                 openIndex === index ? "max-h-40 py-4 " : "max-h-0"
               }`}
             >
-              <div className="transition-opacity duration-300">
+              <div className="transition-opacity duration-300 text-base">
                 {openIndex === index && <p>{faq.answer}</p>}
               </div>
             </div>

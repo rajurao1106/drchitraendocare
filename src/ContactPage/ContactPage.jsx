@@ -3,12 +3,12 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function ContactPage() {
   return (
-    <section className="bg-blue-50 py-16 px-4 md:px-12 lg:px-24">
+    <section className="bg-blue-50 py-16 px-4 md:px-12 lg:px-24 font-[roboto]">
       <div className="text-center mb-12">
-        <span className="inline-block text-xs text-blue-600 bg-blue-100 px-4 py-1 rounded-full font-semibold uppercase tracking-wide mb-3 shadow">
+        <span className="inline-block text-xs  font-[Noto_Sans] text-blue-600 bg-blue-100 px-4 py-1 rounded-full font-semibold uppercase tracking-wide mb-3 shadow">
           Contact Us
         </span>
-        <h2 className="text-4xl font-bold text-gray-800">
+        <h2 className="text-4xl font-bold text-gray-800  font-[Noto_Sans]">
           Get More <span className="text-blue-600">Information</span>
         </h2>
         <p className="text-gray-500 mt-4 max-w-2xl mx-auto">
@@ -21,7 +21,7 @@ export default function ContactPage() {
         <form className="space-y-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block mb-1 font-medium">Your Name *</label>
+              <label className="block mb-1 font-medium  font-[Noto_Sans]">Your Name *</label>
               <input
                 type="text"
                 placeholder="First name here"
@@ -30,7 +30,7 @@ export default function ContactPage() {
               />
             </div>
             <div>
-              <label className="block mb-1 font-medium">Telephone *</label>
+              <label className="block mb-1 font-medium  font-[Noto_Sans]">Telephone *</label>
               <input
                 type="tel"
                 placeholder="Phone number"
@@ -41,7 +41,7 @@ export default function ContactPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block mb-1 font-medium">Email Address *</label>
+              <label className="block mb-1 font-medium  font-[Noto_Sans]">Email Address *</label>
               <input
                 type="email"
                 placeholder="Add email"
@@ -50,7 +50,7 @@ export default function ContactPage() {
               />
             </div>
             <div>
-              <label className="block mb-1 font-medium">Subject</label>
+              <label className="block mb-1 font-medium  font-[Noto_Sans]">Subject</label>
               <input
                 type="text"
                 placeholder="How can we help you?"
@@ -59,7 +59,7 @@ export default function ContactPage() {
             </div>
           </div>
           <div>
-            <label className="block mb-1 font-medium">Comments / Questions *</label>
+            <label className="block mb-1 font-medium  font-[Noto_Sans]">Comments / Questions *</label>
             <textarea
               rows={4}
               placeholder="Your message"
@@ -78,7 +78,7 @@ export default function ContactPage() {
         {/* Contact Info & Map */}
         <div className="bg-blue-950 text-white rounded-xl p-6 space-y-6">
           <div>
-            <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-xl font-semibold mb-4  font-[Noto_Sans]">Contact Us</h3>
             <div className="flex items-start space-x-3 mb-3">
               <MapPin className="w-5 h-5 mt-1" />
               <span>Shankar Nagar, Raipur, Chhattisgarh, India</span>

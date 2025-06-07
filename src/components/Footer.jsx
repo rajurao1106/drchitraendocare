@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <section className="flex justify-center items-center bg-[#020c27]">
+    <section className="flex justify-center items-center bg-[#020c27] font-[roboto]">
         <footer className=" text-white py-12 w-full max-w-[1200px]">
       <div className="grid md:grid-cols-4 gap-10">
         {/* Logo + Description */}
@@ -34,7 +34,7 @@ export default function Footer() {
 
         {/* Helpful Link */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Helpfull Link</h4>
+          <h4 className="text-lg font-semibold mb-4 font-[Noto_Sans]">Helpfull Link</h4>
           <div className="w-10 h-1 bg-blue-500 mb-4"></div>
           <ul className="space-y-2 text-gray-300 text-sm">
             <li>
@@ -62,7 +62,7 @@ export default function Footer() {
 
         {/* Support */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Support</h4>
+          <h4 className="text-lg font-semibold mb-4 font-[Noto_Sans]">Support</h4>
           <div className="w-10 h-1 bg-blue-500 mb-4"></div>
           <ul className="space-y-2 text-gray-300 text-sm">
             <li>
@@ -90,7 +90,7 @@ export default function Footer() {
 
         {/* Contact Us */}
         <div>
-          <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+          <h4 className="text-lg font-semibold mb-4 font-[Noto_Sans]">Contact Us</h4>
           <div className="w-10 h-1 bg-blue-500 mb-4"></div>
           {/* <div className="flex items-center mb-4">
             <input

@@ -20,29 +20,41 @@ const services = [
     icon: "/src/assets/Homepage/Services/tooth-extraction.png ", // Replace with actual icon path
   },
    {
-    title: "Dental Fillings",
+    title: "Teeth Whitening",
     description: "Used to restore damaged or decayed teeth by using tooth-colored material, ensuring a natural appearance.",
-    image: "/src/assets/Homepage/Services/dentalfillings.jpg", // Replace with actual image path
-    icon: "/src/assets/Homepage/Services/tooth-filling.png", // Replace with actual icon path
+    image: "/src/assets/Homepage/Services/teethwhitening.jpg", // Replace with actual image path
+    icon: "/src/assets/Homepage/Services/tooth-whitening.png", // Replace with actual icon path
   },
   {
-    title: "Root Canal Treatment",
+    title: "Cosmetic Treatment",
     description: "This procedure involves removing infected pulp from the root canal to relieve pain, clean and shape the canal",
-    image: "/src/assets/Homepage/Services/rootcanal.jpg", // Replace with actual image path
-    icon: "/src/assets/Homepage/Services/root-canal.png", // Replace with actual icon path
+    image: "/src/assets/Homepage/Services/cosmetictreatment.jpg", // Replace with actual image path
+    icon: "/src/assets/Homepage/Services/cosmetic.png", // Replace with actual icon path
   },
   {
-    title: "Extraction",
+    title: "Preventive Care",
     description: "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
-    image: "/src/assets/Homepage/Services/extraction.jpg", // Replace with actual image path
-    icon: "/src/assets/Homepage/Services/tooth-extraction.png ", // Replace with actual icon path
+    image: "/src/assets/Homepage/Services/preventivecare.jpg", // Replace with actual image path
+    icon: "/src/assets/Homepage/Services/prevention.png ", // Replace with actual icon path
+  },
+  {
+    title: "Pediatric Treatment",
+    description: "This procedure involves removing infected pulp from the root canal to relieve pain, clean and shape the canal",
+    image: "/src/assets/Homepage/Services/pediatrictreatment.jpg", // Replace with actual image path
+    icon: "/src/assets/Homepage/Services/specialist.png", // Replace with actual icon path
+  },
+  {
+    title: "Orthodontic Braces",
+    description: "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
+    image: "/src/assets/Homepage/Services/orthodonticbraces.jpg", // Replace with actual image path
+    icon: "/src/assets/Homepage/Services/cosmetic (1).png ", // Replace with actual icon path
   },
 ];
 
 export default function Services() {
   return (
     <section className="py-16 px-4 lg:px-8 bg-white text-center">
-      <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-[Noto_Sans]">
         <span className="text-blue-600">Best Quality</span>{" "}
         <span className="text-gray-900">Services</span>
       </h2>
@@ -51,7 +63,7 @@ export default function Services() {
         ligula aenean massa.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {services.map((service, index) => (
           <div
             key={index}
@@ -66,7 +78,7 @@ export default function Services() {
             shadow-lg translate-y-4 group-hover:translate-y-0 transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
                 <img src={service.icon} alt="" className="w-10 h-10 text-blue-500" />
-                <h3 className="text-lg font-semibold text-gray-800">
+                <h3 className="text-base font-bold text-gray-800 font-[Noto_Sans]">
                   {service.title}
                 </h3>
               </div>

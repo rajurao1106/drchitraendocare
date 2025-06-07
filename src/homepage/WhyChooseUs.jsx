@@ -34,10 +34,10 @@ export default function WhyChooseUs() {
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-start gap-12">
         {/* Left Section - Text */}
         <div className="flex-1">
-          <p className="text-blue-600 font-semibold mb-3 uppercase tracking-wide text-sm">
+          <p className="text-blue-600 font-semibold mb-3 uppercase tracking-wide text-sm font-[Noto_Sans]">
             Why Choose Our Dental Care
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4 font-[Noto_Sans]">
             Exceptional Service With {" "} 
             <span className="text-blue-500">Personal Touch</span>
           </h2>

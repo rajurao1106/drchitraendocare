@@ -8,10 +8,10 @@ const HappyClientSection = () => {
       <div className="max-w-7xl relative  mx-auto bg-blue-200 rounded-xl flex flex-col-reverse md:flex-row items-end justify-between gap-10">
         {/* Left Content */}
         <div className="max-w-[650px] w-full text-center md:text-left p-8 py-10">
-          <button className="mb-4 text-blue-600 bg-blue-100 text-sm font-semibold px-4 py-1 rounded-full">
+          <button className="mb-4 text-blue-600 bg-blue-100 text-sm font-semibold px-4 py-1 rounded-full  font-[Noto_Sans]">
             Contact Us
           </button>
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight text-gray-900 font-[Noto_Sans]">
             Become The Next <br />
             Our <span className="text-blue-600">Happy Client</span>
           </h2>

@@ -9,7 +9,7 @@ import Testimonials from "./Testimonials";
 
 export default function Homepage() {
   return (
-    <div>
+    <div className="font-[roboto]">
       <Hero/>
       <AboutUs />
       <Services />

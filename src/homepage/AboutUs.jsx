@@ -30,8 +30,8 @@ export default function AboutUs() {
 
         {/* Right: Text Content */}
         <div>
-          <p className="text-blue-600 font-semibold mb-2">About Us</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-tight">
+          <p className="text-blue-600 font-semibold mb-2 font-[Noto_Sans]">About Us</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-tight font-[Noto_Sans]">
             Professionals and <br />
             Personalized Dental Excellence
           </h2>

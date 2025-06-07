@@ -13,18 +13,31 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="flex justify-center items-center shadow ">
+    <nav className="flex justify-center items-center shadow font-[roboto] sticky top-0 left-0 z-10 bg-white">
       <div className="w-full  max-w-[1200px] ">
         {/* Top Bar */}
-        <div className="bg-white text-gray-600 text-sm px-4 py-2 flex justify-between items-center ">
+        <div className=" text-gray-600 text-sm px-4 pt-2 flex justify-between items-center ">
           <div className="flex gap-6 items-center flex-wrap">
             <div className="flex items-center gap-1">
               <FaPhoneAlt className="text-blue-500" />
-              <span>+91 7389181461</span>
+              <a
+                href="tel:+917389181461"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                +91 7389181461
+              </a>
             </div>
             <div className="flex items-center gap-1">
               <FaMapMarkerAlt className="text-blue-500" />
-              <span>Shankar Nagar, Raipur, Chhattisgarh</span>
+              <a
+                href="https://maps.app.goo.gl/y1s2Bs9Cj3XK24G46"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Shankar Nagar, Raipur, Chhattisgarh
+              </a>
             </div>
           </div>
           <div className="flex items-center gap-1">
@@ -34,7 +47,7 @@ export default function Navbar() {
         </div>
 
         {/* Main Navbar */}
-        <div className="bg-white px-4 py-3 flex justify-between items-center relative">
+        <div className="bg-white px-4 py-3 flex justify-between items-center relative ">
           {/* Logo */}
           <div className="flex items-center gap-2">
             {/* <img src="/logo.png" alt="logo" className="w-8 h-8" /> */}
@@ -44,7 +57,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-6 text-lg">
+          <nav className="hidden md:flex items-center gap-6 text-lg font-[Noto_Sans]">
             <a href="/" className="hover:text-blue-600 font-semibold">
               Home
             </a>
@@ -52,11 +65,10 @@ export default function Navbar() {
               About Us
             </a>
 
-             <a href="#" className="hover:text-blue-600 font-medium">
+            <a href="#" className="hover:text-blue-600 font-medium">
               Services
             </a>
-             
-            
+
             <a href="/contact" className="hover:text-blue-600 font-medium">
               Contact Us
             </a>
