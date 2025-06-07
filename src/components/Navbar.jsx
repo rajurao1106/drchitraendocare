@@ -6,6 +6,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 import { IoIosArrowDown } from "react-icons/io";
+import logo from '../assets/dental clinic logo 2.png'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,8 +52,8 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             {/* <img src="/logo.png" alt="logo" className="w-8 h-8" /> */}
-            <h1 className="text-2xl font-bold">
-              Chitra <span className="text-blue-600">Dentic</span>
+            <h1 className="text-2xl font-bold flex justify-center items-center gap-2">
+             <img src={logo} alt="" className="w-10 h-10 bg-gray-300 rounded-full" /> Chitra <span className="text-blue-600">Dentic</span>
             </h1>
           </div>
 
@@ -61,7 +62,7 @@ export default function Navbar() {
             <a href="/" className="hover:text-blue-600 font-medium">
               Home
             </a>
-            <a href="#" className="hover:text-blue-600 font-medium">
+            <a href="/about" className="hover:text-blue-600 font-medium">
               About Us
             </a>
 
