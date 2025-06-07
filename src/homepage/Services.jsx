@@ -71,13 +71,13 @@ export default function Services() {
           >
             <img
               src={service.image}
-              alt={`${service.title} icon`}
+              alt={service.title}
               className="w-full object-cover"
             />
             <div className="absolute w-[75%] max-lg:w-full bottom-0 left-0 right-0 bg-white p-5 text-left rounded-tr-xl max-lg:rounded-none 
             shadow-lg translate-y-4 group-hover:translate-y-0 transition-all duration-300">
               <div className="flex items-center gap-3 mb-2">
-                <img src={service.icon} alt="" className="w-10 h-10 text-blue-500" />
+                <img src={service.icon} alt={`${service.title} icon`} className="w-10 h-10 text-blue-500" />
                 <h3 className="text-base font-bold text-gray-800 font-[Noto_Sans]">
                   {service.title}
                 </h3>
