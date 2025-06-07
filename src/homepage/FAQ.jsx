@@ -56,7 +56,7 @@ export default function FAQ() {
             >
               <span>{faq.question}</span>
              
-                <ChevronUp className={`w-5 h-5 ${openIndex === index?"rotate-180 duration-500":"rotate-360 duration-500"}
+                <ChevronDown className={`w-5 h-5 ${openIndex === index?" duration-500 rotate-180":" duration-500"}
                  text-blue-600`} />
               
             </button>

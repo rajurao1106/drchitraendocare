@@ -6,7 +6,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 import { IoIosArrowDown } from "react-icons/io";
-import logo from '../assets/dental clinic logo 2.png'
+import logo from "../assets/AboutUs/dental clinic logo 2.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +43,9 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-1">
             <FaRegCalendarAlt className="text-blue-500" />
-            <a href="https://g.co/kgs/ZiFUwFF" className="hover:underline">Monday - Saturday: 9 am - 11.30 pm</a>
+            <a href="https://g.co/kgs/ZiFUwFF" className="hover:underline">
+              Monday - Saturday: 9 am - 11.30 pm
+            </a>
           </div>
         </div>
 
@@ -53,7 +55,12 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             {/* <img src="/logo.png" alt="logo" className="w-8 h-8" /> */}
             <h1 className="text-2xl font-bold flex justify-center items-center gap-2">
-             <img src={logo} alt="" className="w-10 h-10 bg-gray-300 rounded-full" /> Chitra <span className="text-blue-600">Dentic</span>
+              <img
+                src={logo}
+                alt="Logo"
+                className="w-14 h-14 rounded-full bg-black"
+              />
+              Chitra <span className="text-blue-600">Dentic</span>
             </h1>
           </div>
 
@@ -66,7 +73,7 @@ export default function Navbar() {
               About Us
             </a>
 
-            <a href="#" className="hover:text-blue-600 font-medium">
+            <a href="/services" className="hover:text-blue-600 font-medium">
               Services
             </a>
 
