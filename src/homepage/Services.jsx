@@ -71,7 +71,7 @@ export default function Services() {
           >
             <img
               src={service.image}
-              alt={service.title}
+              alt={`${service.title} icon`}
               className="w-full object-cover"
             />
             <div className="absolute w-[75%] max-lg:w-full bottom-0 left-0 right-0 bg-white p-5 text-left rounded-tr-xl max-lg:rounded-none 
