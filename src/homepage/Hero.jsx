@@ -5,7 +5,7 @@ import { IoCall, IoTime } from "react-icons/io5";
 
 export default function Hero() {
   return (
-    <section className="flex justify-center items-center relative overflow-hidden">
+    <section className="flex justify-center items-center relative bg-blue-500 overflow-hidden">
 {/* <img src={bgclinic} alt="" className="absolute object-cover -z-10" /> */}
       <div className=" w-full max-w-[1150px] flex items-center justify-between">
         {/* Left: Text Content */}
