@@ -34,12 +34,12 @@ export default function AboutUs() {
             About Us
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-tight font-[Noto_Sans]">
-            Your Smile is More Than Our Goal It’s Our Shared Success Story
+            Your Smile is More <br /> Than Our Goal <br /> It’s Our Shared Success Story
           </h2>
           <p className="text-gray-600 mb-6 max-w-xl">
             At Dr. Chitra Endocare, we blend advanced dental care with a gentle
-            touch. Led by Dr. Chitra Gohil—specialist in Root Canals and
-            Esthetic Dentistry— we offer expert treatments using the latest
+            touch. Led by Dr. Chitra Gohil specialist in Root Canals and
+            Esthetic Dentistry we offer expert treatments using the latest
             technology, strict hygiene, and patient-first care.
           </p>
 

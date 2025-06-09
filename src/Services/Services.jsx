@@ -77,7 +77,7 @@ export default function Services() {
         <section className="py-16 px-4 max-w-[1200px] w-full mx-auto">
           <div className="grid md:grid-cols-1 gap-10">
             {services.map((service, index) => {
-              let layoutDirection = index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row";
+              let layoutDirection = index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row";
 
               return (
                 <div
