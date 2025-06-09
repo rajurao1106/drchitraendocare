@@ -8,7 +8,7 @@ export default function Hero() {
       <div className=" w-full max-w-[1150px] flex max-lg:flex-col-reverse items-center justify-between">
         <div className="max-lg:text-center">
           <h1 className="text-5xl max-lg:text-3xl font-extrabold font-[Noto_Sans] text-gray-900 leading-tight mb-4">
-            We don’t just Treat Teeth <br /> We Listen, Explain, and <br />
+            We Don’t Just Treat Teeth <br /> We Listen, Explain, and <br />
             <span className="text-blue-500">Heal with Care.</span>
           </h1>
           <p className="text-gray-600 text-base mb-8  max-w-xl">
