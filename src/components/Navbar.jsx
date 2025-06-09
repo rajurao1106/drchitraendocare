@@ -6,7 +6,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { HiMenu, HiX } from "react-icons/hi";
 import { IoIosArrowDown } from "react-icons/io";
-import logo from "../assets/AboutUs/dental clinic logo 2.png";
+import logo from "../assets/AboutUs/logo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +43,10 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-1">
             <FaRegCalendarAlt className="text-blue-500" />
-            <a href="https://g.co/kgs/ZiFUwFF" className="hover:underline text-white">
+            <a
+              href="https://g.co/kgs/ZiFUwFF"
+              className="hover:underline text-white"
+            >
               Monday - Saturday: 9 am - 11.30 pm
             </a>
           </div>
@@ -55,11 +58,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             {/* <img src="/logo.png" alt="logo" className="w-8 h-8" /> */}
             <h1 className="text-2xl font-bold flex justify-center items-center gap-2">
-              <img
-                src={logo}
-                alt="Logo"
-                className="w-14 h-14"
-              />
+              <img src={logo} alt="Logo" className="w-14 h-14" />
               Dr. Chitra<span className="text-yellow-400">Endocare</span>
             </h1>
           </div>
@@ -83,9 +82,11 @@ export default function Navbar() {
           </nav>
 
           {/* Appointment Button */}
-          <button className="hidden md:block bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-5 py-2 rounded">
-            Make an Appointment
-          </button>
+          <a href="/contact">
+            <button className="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-5 py-2 rounded">
+              Make an Appointment
+            </button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button className="md:hidden text-4xl" onClick={toggleMenu}>
@@ -110,9 +111,11 @@ export default function Navbar() {
               <a href="/contact" className="font-medium">
                 Contact Us
               </a>
-              <button className="bg-yellow-300 hover:bg-yellow-400 text-white font-semibold px-5 py-2 rounded">
-                Make an Appointment
-              </button>
+              <a href="/contact">
+                <button className="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-5 py-2 rounded">
+                  Make an Appointment
+                </button>
+              </a>
             </div>
           )}
         </div>

@@ -7,7 +7,7 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import logo from "../assets/AboutUs/dental clinic logo 2.png";
+import logo from "../assets/AboutUs/logo.png";
 
 export default function Footer() {
   return (
@@ -120,9 +120,9 @@ export default function Footer() {
             </h4>
               <div className="flex gap-4">
                 <FaFacebookF className="hover:text-blue-500 cursor-pointer" />
-              <FaTwitter className="hover:text-blue-500 cursor-pointer" />
-              <FaInstagram className="hover:text-blue-500 cursor-pointer" />
-              <FaYoutube className="hover:text-blue-500 cursor-pointer" />
+             
+              <FaInstagram className="hover:text-red-500 cursor-pointer" />
+             
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function Footer() {
           <p>
             Copyright © {new Date().getFullYear()}. All rights reserved, Design
             and developed by{" "}
-            <a href="" className="text-white">
+            <a href="https://spadvertising.in" className="text-white">
               SP Advertising Agency
             </a>
           </p>

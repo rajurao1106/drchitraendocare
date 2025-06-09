@@ -8,64 +8,60 @@ import {
   Activity,
   ScanLine,
 } from "lucide-react";
-import img1 from "../assets/Homepage/contact/contact.png";
-import img2 from "../assets/Homepage/contact/contact.png";
-import img3 from "../assets/Homepage/contact/contact.png";
-import img4 from "../assets/Homepage/contact/contact.png";
-import img5 from "../assets/Homepage/contact/contact.png";
-import img6 from "../assets/Homepage/contact/contact.png";
+import img1 from '../assets/Homepage/Gallery/gallery1.jpg'
+import img2 from '../assets/Homepage/Gallery/gallery2.jpg'
+import img3 from '../assets/Homepage/Gallery/gallery3.jpg'
+import img4 from '../assets/Homepage/Gallery/gallery4.jpg'
+import img5 from '../assets/Homepage/Gallery/gallery5.jpg'
+import img6 from '../assets/Homepage/Gallery/gallery6.jpg'
+
 
 export default function WhyChooseUs() {
   const features = [
     {
       icon: <ShieldCheck className="w-5 h-5 text-white" />,
-      title: "Advanced Materials and Instruments",
-      desc: "Our experts use the latest materials and instruments for superior dental care.",
+      title: "Sterilization and Hygiene",
+      desc: "We maintain the highest standards of sterilization to ensure your safety.",
     },
     {
       icon: <ShieldCheck className="w-5 h-5 text-white" />,
-      title: "Sterilization and Hygiene",
-      desc: "We prioritize the highest standards of sterilization and hygiene.",
+      title: "Patient-Centered Care",
+      desc: "We prioritize the patient's needs, comfort, and satisfaction.",
+    },
+
+    {
+      icon: <ScanLine className="w-5 h-5 text-white" />,
+      title: "Expertise",
+      desc: "Here, treatments are performed by experienced & super specialized dentists ensuring precise work.",
     },
     {
       icon: <CheckCircle className="w-5 h-5 text-white" />,
-      title: "Patient-Centric Approach",
-      desc: "We build strong bonds by understanding patient concerns deeply.",
+      title: "Sunday Availability",
+      desc: "We are open from 10–2 on Sundays to accommodate your schedule & provide convenient access.",
+    },
+    {
+      icon: <Clock className="w-5 h-5 text-white" />,
+      title: "Affordable Rates",
+      desc: "We strive to provide the best quality dental care at affordable prices, making it accessible to everyone.",
+    },
+    {
+      icon: <CheckCircle className="w-5 h-5 text-white" />,
+      title: "Advanced Material",
+      desc: (
+        <>
+          <p>
+            Endocare Dental Clinic utilizes advanced dental materials: <br /> Bioactive
+            Material (MTA / Bidentine) Ceramic & porcelain for esthetic crowns
+            and bridges Tooth replacement materials like EverX Flow, Composites
+            Ozone therapy (for sensitivity){" "}
+          </p>
+        </>
+      ),
     },
     {
       icon: <MapPin className="w-5 h-5 text-white" />,
-      title: "Convenient Location",
-      desc: "Centrally located in the heart of the city.",
-    },
-    {
-      icon: <ScanLine className="w-5 h-5 text-white" />,
-      title: "Portable X-ray Unit",
-      desc: "Equipped with X-ray unit for minimal radiation exposure.",
-    },
-    {
-      icon: <CheckCircle className="w-5 h-5 text-white" />,
-      title: "Full-Time In-House Doctors",
-      desc: "Our team includes full-time in-house doctors for immediate care.",
-    },
-    {
-      icon: <Clock className="w-5 h-5 text-white" />,
-      title: "Post-Operative Care Lounge",
-      desc: "We offer a separate lounge area for post-operative care.",
-    },
-    {
-      icon: <Star className="w-5 h-5 text-white" />,
-      title: "Quality Work",
-      desc: "Committed to top-quality dental services.",
-    },
-    {
-      icon: <Clock className="w-5 h-5 text-white" />,
-      title: "Sunday Availability",
-      desc: "We are open on Sundays for your convenience.",
-    },
-    {
-      icon: <Star className="w-5 h-5 text-white" />,
-      title: "Excellent Lab Work",
-      desc: "Partnering with top-tier labs for best results.",
+      title: "Advanced Technology",
+      desc: "Advanced diagnostic tools e.g., Intra Oral Camera Advanced root canal devices e.g., Fi-P & Fi-G obturating device Portable X-ray for patient convenience Dental Scanner. By incorporating these advanced materials & technology, Endocare provides high-quality, effective dental care.",
     },
   ];
   const images = [img1, img2, img3, img4, img5, img6];
@@ -106,7 +102,7 @@ export default function WhyChooseUs() {
                   key={index}
                   src={img}
                   alt={`Why Choose Us ${index + 1}`}
-                  className={`object-cover w-[16rem] h-[16rem] border shadow-md ${roundedClass}`}
+                  className={`object-cover w-[16rem] h-[16rem] shadow-md ${roundedClass}`}
                 />
               );
             })}
@@ -121,16 +117,16 @@ export default function WhyChooseUs() {
               {features.map((item, i) => (
                 <div
                   key={i}
-                  className="flex items-start gap-4 bg-[#e6f8f9] p-4 rounded-lg shadow-sm"
+                  className="flex items-start gap-4 bg-blue-100 p-4 rounded-lg shadow-sm"
                 >
-                  <div className="bg-[#007b7f] p-2 rounded-full">
+                  <div className="bg-blue-500 p-2 rounded-full">
                     {item.icon}
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">
+                    <h3 className="text-lg font-semibold ">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-gray-600">{item.desc}</p>
+                    <p className="text-base ">{item.desc}</p>
                   </div>
                 </div>
               ))}

@@ -76,7 +76,8 @@ export default function WhyChooseUs() {
           />
         </div>
       </div>
-        <button className="hidden md:block mt-8 bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-5 py-2 rounded">
+        <button className="hidden md:block mt-8 bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] 
+        font-semibold px-8 py-3 rounded-lg">
            Know More
           </button>
     </section>

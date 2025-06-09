@@ -64,8 +64,9 @@ export default function AboutUs() {
             </p>
           </div>
 
-          <button className="  px-6 py-3 rounded-lg font-bold text-black bg-yellow-300 hover:bg-yellow-400 transition-all">
-            Book Appointment
+             <button className="hidden md:block bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] 
+        font-semibold px-8 py-3 rounded-lg">
+           Read More
           </button>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import chitragohil from "../assets/Homepage/Hero/chitragohil.png";
-import bgclinic from "../assets/Homepage/Hero/bgclinic.jpg";
 import { IoCall, IoTime } from "react-icons/io5";
 
 export default function Hero() {

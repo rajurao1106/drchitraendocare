@@ -1,5 +1,5 @@
 import React from 'react';
-import doctor from "../assets/AboutUs/aboutdoctor.png";
+import chitragohil from "../assets/AboutUs/chitragohil.png";
 
 export default function OurAim() {
   return (
@@ -8,15 +8,15 @@ export default function OurAim() {
         {/* Doctor Image */}
         <div className="flex-shrink-0">
           <img
-            src={doctor}
+            src={chitragohil}
             alt="Dr. Chitra Gohil"
-            className="w-[30rem] h-[20rem] rounded-3xl shadow-xl object-cover"
+            className="w-[30rem] -scale-x-100 rounded-3xl shadow-lg "
           />
         </div>
 
         {/* Text Content */}
         <div className="text-center lg:text-left max-w-xl">
-          <h2 className="text-4xl font-extrabold text-[#007b7f] mb-4">Our Aim</h2>
+          <h2 className="text-4xl font-extrabold text-blue-600 mb-4">Our Aim</h2>
           <p className="text-gray-700 text-lg leading-relaxed">
             At Dr. Chitra Endocare, we are committed to listening carefully to your concerns and needs. 
             We strive to provide clear explanations, transparent treatment plans, and high-quality care with compassion. 

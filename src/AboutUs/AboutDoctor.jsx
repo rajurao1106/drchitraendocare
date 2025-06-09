@@ -1,10 +1,11 @@
 import React from "react";
 import doctor from "../assets/AboutUs/aboutdoctor.png";
 
+
 export default function AboutDoctor() {
   return (
-    <section className="flex justify-center items-center flex-col">
-      <div className="max-w-[1200px] w-full flex justify-between  items-center gap-14">
+    <section className="flex justify-center items-center flex-col py-5">
+      <div className="max-w-[1100px] w-full flex justify-between  items-center gap-14">
         <img
           src={doctor}
           alt="Dr. Chitra Gohil"
@@ -12,9 +13,10 @@ export default function AboutDoctor() {
         />
 
         <div className=" w-full max-w-[700px]">
-          <h2 className="text-3xl font-bold text-blue-500 mb-8">
-            Know Your Doctor
+          <h2 className="text-3xl font-bold text-blue-600 mb-4">
+            Dr. Chitra Gohil 
           </h2>
+          <p className="mb-4 text-base font-bold text-gray-700">M.D.S in 2015 from Bapuji Dental College, Karnataka</p>
           <div className="mb-8">
             <p className="text-gray-700 leading-relaxed text-[17px]">
               With a reputation for exceptional skill,{" "}
@@ -30,7 +32,7 @@ export default function AboutDoctor() {
             </p>
             <p className="text-gray-700 leading-relaxed text-[17px]">
               Currently serving as an Associate Professor at{" "}
-              <strong>[Shri Balaji] Dental Hospital</strong>, she specializes in
+              <strong>Shri Balaji Dental Hospital</strong>, she specializes in
               procedures such as veneers, composite buildup, direct & indirect
               restorations, and root canal treatments.
             </p>
