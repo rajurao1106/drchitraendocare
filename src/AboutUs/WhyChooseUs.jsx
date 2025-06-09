@@ -68,9 +68,9 @@ export default function WhyChooseUs() {
   return (
     <div>
       <section className=" bg-white flex justify-center items-center">
-        <div className="max-w-[1200px] w-full flex gap-10 ">
+        <div className="max-w-[1200px] w-full flex gap-10 max-lg:w-[90%]">
           {/* Image Grid */}
-          <div className="flex flex-wrap w-[35rem] gap-10">
+          <div className="flex flex-wrap w-[35rem] gap-10 max-lg:hidden">
             {images.map((img, index) => {
               let roundedClass = "";
 

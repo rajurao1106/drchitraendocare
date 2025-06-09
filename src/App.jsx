@@ -7,6 +7,8 @@ import ContactPage from './ContactPage/ContactPage'; // if you have other pages
 import FAQ from './homepage/FAQ';
 import AboutUs from './AboutUs/AboutUs';
 import Services from './Services/Services';
+import ScrollTop from './components/ScrollTop';
+import Whatsapp from './components/Whatsapp';
 
 
 
@@ -14,6 +16,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollTop/>
+      <Whatsapp/>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/contact" element={<ContactPage />} />

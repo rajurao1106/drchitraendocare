@@ -30,8 +30,8 @@ export default function WhyChooseUs() {
   ];
 
   return (
-   <div className="bg-blue-50 w-full py-14 flex items-center justify-center">
-     <section className=" max-w-[1250px] w-full">
+   <div className="bg-blue-50 w-full  py-14 flex items-center justify-center">
+     <section className=" max-w-[1250px] w-full max-lg:w-[90%] max-lg:flex max-lg:items-center max-lg:justify-center max-lg:flex-col">
       <p className="text-blue-600 font-bold mb-3 tracking-wide text-lg font-[Noto_Sans]">
             Why Choose Us
           </p>
@@ -39,11 +39,11 @@ export default function WhyChooseUs() {
         {/* Left Section - Text */}
         <div className="flex-1 ">
           
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4 font-[Noto_Sans]">
-            Your Smile Deserves The Best Here’s Why Patients Trust {" "} <br />
+          <h2 className="max-lg:text-2xl max-lg:text-center md:text-5xl font-bold text-gray-800 leading-tight mb-4 font-[Noto_Sans]">
+            Your Smile Deserves The Best Here’s Why Patients Trust {" "} <br className="max-lg:hidden"/>
             <span className="text-blue-500">Dr. Chitra’s Endocare</span>
           </h2>
-          <p className="text-gray-600 mb-10 max-w-xl leading-relaxed">
+          <p className="text-gray-600 mb-10 max-lg:text-center max-w-xl leading-relaxed">
             Your comfort and care come first Dr. Chitra Endocare make every
             visit stress-free while delivering high-quality dental solutions for
             every smile.

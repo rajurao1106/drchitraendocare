@@ -1,13 +1,13 @@
 import React from "react";
 import bgclinic from "../assets/Services/bgclinic.jpg";
-import serviceimg1 from "../assets/Services/bgclinic.jpg";
-import serviceimg2 from "../assets/Services/bgclinic.jpg";
-import serviceimg3 from "../assets/Services/bgclinic.jpg";
-import serviceimg4 from "../assets/Services/bgclinic.jpg";
-import serviceimg5 from "../assets/Services/bgclinic.jpg";
-import serviceimg6 from "../assets/Services/bgclinic.jpg";
-import serviceimg7 from "../assets/Services/bgclinic.jpg";
-import serviceimg8 from "../assets/Services/bgclinic.jpg";
+import serviceimg1 from "../assets/Services/serviceimg1.jpg";
+import serviceimg2 from "../assets/Services/serviceimg2.jpg";
+import serviceimg3 from "../assets/Services/serviceimg3.jpg";
+import serviceimg4 from "../assets/Services/serviceimg4.jpg";
+import serviceimg5 from "../assets/Services/serviceimg5.jpg";
+import serviceimg6 from "../assets/Services/serviceimg6.jpg";
+import serviceimg7 from "../assets/Services/serviceimg7.jpg";
+import serviceimg8 from "../assets/Services/serviceimg8.jpg";
 
 const services = [
   {
@@ -63,14 +63,14 @@ const services = [
 export default function Services() {
   return (
     <section>
-      {/* Header Section */}
-      <div className="flex justify-center relative items-center bg-[#000000c0] overflow-hidden">
+      {/* Hero Section */}
+      <div className="relative bg-[#000000c0] overflow-hidden flex justify-center items-center">
         <img
           src={bgclinic}
-          alt=""
-          className="absolute w-full -z-10 object-cover h-full"
+          alt="Clinic Background"
+          className="absolute w-full h-full object-cover -z-10"
         />
-        <div className="max-w-[1300px] text-white w-full py-20 px-6 md:px-20 flex flex-col items-center text-center">
+        <div className="text-white py-20 px-6 md:px-20 text-center w-full max-w-[1300px]">
           <h1 className="text-3xl md:text-4xl font-bold mb-2">
             Our Dental Services
           </h1>
@@ -80,35 +80,33 @@ export default function Services() {
         </div>
       </div>
 
-      {/* Services Grid */}
+      {/* Services Section */}
       <div className="flex justify-center items-center">
         <section className="py-16 px-4 max-w-[1200px] w-full mx-auto">
-          <div className="grid md:grid-cols-1 gap-10">
+          <div className="space-y-12">
             {services.map((service, index) => {
-              let layoutDirection =
-                index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row";
+              const isReverse = index % 2 === 1;
 
               return (
                 <div
                   key={index}
-                  className={`flex flex-col ${layoutDirection} w-full items-center gap-6 p-6 rounded-2xl shadow-[0_0_10_lightgray] bg-white`}
+                  className={`flex flex-col ${
+                    isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
+                  } items-center gap-6 p-6 rounded-2xl bg-white shadow-[0_0_10px_lightgray]`}
                 >
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-[40rem] h-[20rem] object-cover rounded-xl shadow"
+                    className="w-full sm:w-[28rem] md:w-[36rem] h-[16rem] md:h-[20rem] object-cover rounded-xl shadow"
                   />
-                  <div className="w-full">
+                  <div className="w-full max-w-xl">
                     <h3 className="text-2xl font-semibold mb-2">
                       {service.title}
                     </h3>
-                    <p className="text-gray-700 text-xl mb-4">
+                    <p className="text-gray-700 text-base md:text-lg mb-4">
                       {service.description}
                     </p>
-                    <button
-                      className="hidden md:block bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] 
-        font-semibold px-5 py-2 rounded-lg"
-                    >
+                    <button className="bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-5 py-2 rounded-lg">
                       Book Appointment
                     </button>
                   </div>

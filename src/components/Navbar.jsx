@@ -57,9 +57,11 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             {/* <img src="/logo.png" alt="logo" className="w-8 h-8" /> */}
-            <h1 className="text-2xl font-bold flex justify-center items-center gap-2">
+            <h1 className="text-2xl font-bold flex max-lg:flex-col justify-center items-center gap-2">
               <img src={logo} alt="Logo" className="w-14 h-14" />
-              Dr. Chitra<span className="text-yellow-400">Endocare</span>
+              <div className="max-lg:hidden">
+                Dr. Chitra <span className="text-yellow-400">Endocare</span>
+              </div>
             </h1>
           </div>
 
@@ -83,8 +85,8 @@ export default function Navbar() {
 
           {/* Appointment Button */}
           <a href="/contact">
-            <button className="bg-yellow-300 hover:bg-yellow-400 text-black font-semibold px-5 py-2 rounded">
-              Make an Appointment
+            <button className="bg-yellow-300 max-lg:left-8 relative hover:bg-yellow-400 text-black font-semibold px-5 py-2 rounded">
+              Book Appointment
             </button>
           </a>
 
@@ -95,19 +97,17 @@ export default function Navbar() {
 
           {/* Mobile Dropdown Menu */}
           {isOpen && (
-            <div className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col px-4 py-4 gap-4 md:hidden z-10">
-              <a href="#" className="text-blue-600 font-semibold">
+            <div className="absolute top-full text-black left-0 w-full bg-white shadow-md flex flex-col px-4 py-4 gap-4 md:hidden z-10">
+              <a href="/" className="text-blue-600 font-semibold">
                 Home
               </a>
-              <a href="#" className="font-medium">
+              <a href="/about" className="font-medium">
                 About Us
               </a>
-              <a href="#" className="font-medium">
+              <a href="/sevices" className="font-medium">
                 Services
               </a>
-              <a href="#" className="font-medium">
-                Page
-              </a>
+
               <a href="/contact" className="font-medium">
                 Contact Us
               </a>

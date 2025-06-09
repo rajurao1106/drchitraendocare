@@ -1,6 +1,5 @@
 "use client";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { useState } from "react";
 import bgclinic from "../assets/ContactUs/contactus.jpg";
 
 export default function ContactPage() {
@@ -16,37 +15,35 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="">
-      <div className="flex justify-center relative items-center bg-[#000000c0] overflow-hidden">
-        <img src={bgclinic} alt="" className="absolute w-full -z-10" />
-
-        <div
-          className=" max-w-[1300px]  text-white w-full py-18 px-6 md:px-20 flex flex-col justify-center items-center md:flex-row 
-          gap-6 md:gap-12 overflow-hidden "
-        >
-         <div className="flex justify-center items-center flex-col">
-           {/* Center: Tagline */}
+    <div>
+      {/* Header Section */}
+      <div className="relative bg-[#000000c0] flex items-center justify-center overflow-hidden">
+        <img
+          src={bgclinic}
+          alt="Clinic Background"
+          className="absolute w-full h-full object-cover -z-10"
+        />
+        <div className="max-w-[1300px] w-full px-6 py-20 md:px-20 text-center text-white flex flex-col items-center justify-center">
           <span className="inline-block text-xs font-[Noto_Sans] text-blue-600 bg-blue-100 px-4 py-1 rounded-full font-semibold uppercase tracking-wide mb-3 shadow">
             Book Appointment
           </span>
-          <h2 className="text-4xl font-bold text-white font-[Noto_Sans]">
+          <h2 className="text-3xl md:text-4xl font-bold font-[Noto_Sans]">
             Schedule Your Visit
           </h2>
-          <p className="text-gray-200 mt-2 max-w-2xl mx-auto">
+          <p className="text-gray-200 mt-2 max-w-2xl">
             Fill out the form below to book an appointment with us.
           </p>
-         </div>
         </div>
       </div>
-      <section className="bg-blue-50 py-16 px-4 md:px-12 lg:px-24 font-[roboto]">
-    
 
-        <div className="bg-white rounded-xl shadow-md grid md:grid-cols-2 gap-8 p-6 md:p-12">
+      {/* Form & Contact Info */}
+      <section className="bg-blue-50 py-16 px-4 sm:px-8 md:px-12 lg:px-24 font-[roboto]">
+        <div className="grid gap-8 md:grid-cols-2 bg-white p-6 md:p-12 rounded-xl shadow-md">
           {/* Form Section */}
           <form className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block mb-1 font-medium font-[Noto_Sans]">
+                <label className="block mb-1 font-[Noto_Sans] font-medium">
                   Name *
                 </label>
                 <input
@@ -57,7 +54,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="block mb-1 font-medium font-[Noto_Sans]">
+                <label className="block mb-1 font-[Noto_Sans] font-medium">
                   Phone *
                 </label>
                 <input
@@ -71,7 +68,7 @@ export default function ContactPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block mb-1 font-medium font-[Noto_Sans]">
+                <label className="block mb-1 font-[Noto_Sans] font-medium">
                   Date of Birth *
                 </label>
                 <input
@@ -81,7 +78,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="block mb-1 font-medium font-[Noto_Sans]">
+                <label className="block mb-1 font-[Noto_Sans] font-medium">
                   Gender *
                 </label>
                 <select
@@ -98,7 +95,7 @@ export default function ContactPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block mb-1 font-medium font-[Noto_Sans]">
+                <label className="block mb-1 font-[Noto_Sans] font-medium">
                   City *
                 </label>
                 <input
@@ -109,7 +106,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="block mb-1 font-medium font-[Noto_Sans]">
+                <label className="block mb-1 font-[Noto_Sans] font-medium">
                   Select a Service *
                 </label>
                 <select
@@ -128,7 +125,7 @@ export default function ContactPage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block mb-1 font-medium font-[Noto_Sans]">
+                <label className="block mb-1 font-[Noto_Sans] font-medium">
                   Appointment Date *
                 </label>
                 <input
@@ -138,7 +135,7 @@ export default function ContactPage() {
                 />
               </div>
               <div>
-                <label className="block mb-1 font-medium font-[Noto_Sans]">
+                <label className="block mb-1 font-[Noto_Sans] font-medium">
                   Time *
                 </label>
                 <input
@@ -158,29 +155,29 @@ export default function ContactPage() {
           </form>
 
           {/* Contact Info & Map */}
-          <div className="bg-blue-950 text-white rounded-xl p-6 space-y-6">
-            <div>
-              <h3 className="text-xl font-semibold mb-4 font-[Noto_Sans]">
+          <div className="bg-blue-950 text-white rounded-xl p-6 flex flex-col justify-between">
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold font-[Noto_Sans] mb-2">
                 Contact Us
               </h3>
-              <div className="flex items-start space-x-3 mb-3">
+              <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1" />
                 <span>
-                  {" "}
                   MIG-2, beside Central Bank Of India, Sector-3, Shankar Nagar,
                   Raipur, Chhattisgarh
                 </span>
               </div>
-              <div className="flex items-start space-x-3 mb-3">
+              <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 mt-1" />
                 <span>smilecareclinic@mail.com</span>
               </div>
-              <div className="flex items-start space-x-3">
+              <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 mt-1" />
                 <span>+91 7389181461</span>
               </div>
             </div>
-            <div className="rounded overflow-hidden shadow-lg">
+
+            <div className="mt-6 rounded overflow-hidden w-full aspect-video">
               <iframe
                 title="Shankar Nagar Map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14666.178032664643!2d81.6319377586185!3d21.25059633407574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28ddf6fd830eef%3A0x9b6a1e0c45a39c4c!2sShankar%20Nagar%2C%20Raipur%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1717658937781!5m2!1sen!2sin"

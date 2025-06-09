@@ -12,10 +12,10 @@ import logo from "../assets/AboutUs/logo.png";
 export default function Footer() {
   return (
     <section className="flex justify-center items-center bg-[#0D1B2A] font-[roboto]">
-      <footer className=" text-white py-12 w-full max-w-[1200px]">
+      <footer className=" text-white py-12 w-full max-w-[1200px] max-lg:w-[90%]">
         <div className="grid md:grid-cols-4 gap-10">
           {/* Logo + Description */}
-          <div className="flex justify-center items-start flex-col">
+          <div className="flex flex-col">
             <div className="flex flex-col items-start gap-2 mb-4">
               <img src={logo} alt="Logo" className="w-14 h-14" />
               {/* <img src="/logo.png" alt="logo" className="w-8 h-8" /> */}
@@ -27,37 +27,6 @@ export default function Footer() {
               Chitra Smile Care offers gentle, friendly dental care to keep your
               smile healthy and bright.
             </p>
-            
-          </div>
-
-          {/* Helpful Link */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4 font-[Noto_Sans]">
-              Helpfull Link
-            </h4>
-            <div className="w-10 h-1 bg-blue-500 mb-4"></div>
-            <ul className="space-y-2 text-gray-300 text-sm">
-              <li>
-                <a href="#" className="hover:text-white">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  Support
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white">
-                  Terms & Conditions
-                </a>
-              </li>
-            </ul>
           </div>
 
           {/* Support */}
@@ -68,23 +37,73 @@ export default function Footer() {
             <div className="w-10 h-1 bg-blue-500 mb-4"></div>
             <ul className="space-y-2 text-gray-300 text-sm">
               <li>
-                <a href="#" className="hover:text-white">
-                  Privacy Policy
+                <a href="/" className="hover:text-white">
+                  Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
-                  Support
+                <a href="/about" className="hover:text-white">
+                  About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
-                  FAQ
+                <a href="/services" className="hover:text-white">
+                  Services
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
-                  Terms & Conditions
+                <a href="/contact" className="hover:text-white">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Helpful Link */}
+          <div className="flex flex-col ">
+            <h4 className="text-lg font-semibold mb-4 font-[Noto_Sans]">
+              Our Services
+            </h4>
+            <div className="w-10 h-1 bg-blue-500 mb-4"></div>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>
+                <a href="/services" className="hover:text-white">
+                  Gentle Dental Fillings
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="hover:text-white">
+                  Root Canal Therapy
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="hover:text-white">
+                  Tooth Extractions
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="hover:text-white">
+                  Professional Teeth Whitening
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="hover:text-white">
+                  Cosmetic Dentistry
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="hover:text-white">
+                  Preventive Care
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="hover:text-white">
+                  Pediatric Treatment
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="hover:text-white">
+                  Orthodontic Braces
                 </a>
               </li>
             </ul>
@@ -116,13 +135,12 @@ export default function Footer() {
             </div>
             <div className="flex flex-col text-xl text-white mt-4">
               <h4 className="text-lg  font-semibold mb-4 font-[Noto_Sans]">
-              Follow Us
-            </h4>
+                Follow Us
+              </h4>
               <div className="flex gap-4">
                 <FaFacebookF className="hover:text-blue-500 cursor-pointer" />
-             
-              <FaInstagram className="hover:text-red-500 cursor-pointer" />
-             
+
+                <FaInstagram className="hover:text-red-500 cursor-pointer" />
               </div>
             </div>
           </div>
