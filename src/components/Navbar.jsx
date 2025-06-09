@@ -106,7 +106,7 @@ export default function Navbar() {
               <a href="/about" className="font-medium">
                 About Us
               </a>
-              <a href="/sevices" className="font-medium">
+              <a href="/services" className="font-medium">
                 Services
               </a>
 
