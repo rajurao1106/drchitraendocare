@@ -40,11 +40,11 @@ export default function WhyChooseUs() {
         <div className="flex-1 ">
           
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4 font-[Noto_Sans]">
-            Your Smile Deserves the Best Here’s Why Patients Trust {" "} <br />
+            Your Smile Deserves The Best Here’s Why Patients Trust {" "} <br />
             <span className="text-blue-500">Dr. Chitra’s Endocare</span>
           </h2>
           <p className="text-gray-600 mb-10 max-w-xl leading-relaxed">
-            Your comfort and care come first— Dr. Chitra Endocare make every
+            Your comfort and care come first Dr. Chitra Endocare make every
             visit stress-free while delivering high-quality dental solutions for
             every smile.
           </p>

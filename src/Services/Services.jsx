@@ -65,10 +65,18 @@ export default function Services() {
     <section>
       {/* Header Section */}
       <div className="flex justify-center relative items-center bg-[#000000c0] overflow-hidden">
-        <img src={bgclinic} alt="" className="absolute w-full -z-10 object-cover h-full" />
+        <img
+          src={bgclinic}
+          alt=""
+          className="absolute w-full -z-10 object-cover h-full"
+        />
         <div className="max-w-[1300px] text-white w-full py-20 px-6 md:px-20 flex flex-col items-center text-center">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">Our Dental Services</h1>
-          <p className="text-lg text-white/90">Compassionate care, advanced treatments, confident smiles.</p>
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">
+            Our Dental Services
+          </h1>
+          <p className="text-lg text-white/90">
+            Compassionate care, advanced treatments, confident smiles.
+          </p>
         </div>
       </div>
 
@@ -77,12 +85,13 @@ export default function Services() {
         <section className="py-16 px-4 max-w-[1200px] w-full mx-auto">
           <div className="grid md:grid-cols-1 gap-10">
             {services.map((service, index) => {
-              let layoutDirection = index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row";
+              let layoutDirection =
+                index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row";
 
               return (
                 <div
                   key={index}
-                  className={`flex flex-col ${layoutDirection} w-full items-center gap-6 p-6 rounded-2xl shadow-lg bg-white`}
+                  className={`flex flex-col ${layoutDirection} w-full items-center gap-6 p-6 rounded-2xl shadow-[0_0_10_lightgray] bg-white`}
                 >
                   <img
                     src={service.image}
@@ -90,8 +99,18 @@ export default function Services() {
                     className="w-[40rem] h-[20rem] object-cover rounded-xl shadow"
                   />
                   <div className="w-full">
-                    <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
-                    <p className="text-gray-700 text-base">{service.description}</p>
+                    <h3 className="text-2xl font-semibold mb-2">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-700 text-xl mb-4">
+                      {service.description}
+                    </p>
+                    <button
+                      className="hidden md:block bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] 
+        font-semibold px-5 py-2 rounded-lg"
+                    >
+                      Book Appointment
+                    </button>
                   </div>
                 </div>
               );
