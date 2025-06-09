@@ -106,9 +106,11 @@ export default function Services() {
                     <p className="text-gray-700 text-base md:text-lg mb-4">
                       {service.description}
                     </p>
-                    <button className="bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-5 py-2 rounded-lg">
+                    <a href="/contact">
+                      <button className="bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-5 py-2 rounded-lg">
                       Book Appointment
                     </button>
+                    </a>
                   </div>
                 </div>
               );
