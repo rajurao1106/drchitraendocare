@@ -9,42 +9,44 @@ export default function WhyChooseUs() {
   const features = [
     {
       icon: ico1,
-      title: "Experienced Dental",
-      desc: "Skilled care backed by years of trusted dental experience.",
+      title: "Ultra-Clean, Safe Environment",
+      desc: "We follow strict sterilization and hygiene protocols to ensure every visit is worry-free and comfortable.",
     },
     {
       icon: ico2,
-      title: "Advanced Technology",
-      desc: "Modern tools ensure accurate and efficient treatments.",
+      title: " Advanced Tech & Materials",
+      desc: "From digital X-rays to tooth-colored materials, we use the latest tools for precise, pain-free, and long-lasting care.",
     },
     {
       icon: ico3,
-      title: "Personalized Treatment",
-      desc: "Custom care plans made to fit your lifestyle.",
+      title: "Experienced Dental Expertise",
+      desc: "Led by Dr. Chitra, our team brings years of hands-on skill and personalized attention to every treatment.",
     },
     {
       icon: ico4,
-      title: "Family-Friendly",
-      desc: "Welcoming space for kids, teens, adults, and seniors.",
+      title: " Sunday Appointments Available",
+      desc: "Busy weekdays? We’ve got you covered. Book your visit on Sundays for flexible, stress-free dental care.",
     },
   ];
 
   return (
-    <section className="py-20 px-6 lg:px-20 bg-gradient-to-b from-blue-50 to-white">
-      <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-start gap-12">
-        {/* Left Section - Text */}
-        <div className="flex-1">
-          <p className="text-blue-600 font-semibold mb-3 uppercase tracking-wide text-sm font-[Noto_Sans]">
-            Why Choose Our Dental Care
+   <div className="bg-blue-50 w-full py-14 flex items-center justify-center">
+     <section className=" max-w-[1250px] w-full">
+      <p className="text-blue-600 font-bold mb-3 tracking-wide text-lg font-[Noto_Sans]">
+            Why Choose Us
           </p>
+      <div className="  mx-auto flex flex-col justify-center lg:flex-row items-start gap-12">
+        {/* Left Section - Text */}
+        <div className="flex-1 ">
+          
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-4 font-[Noto_Sans]">
-            Exceptional Service With {" "} 
-            <span className="text-blue-500">Personal Touch</span>
+            Your Smile Deserves the Best Here’s Why Patients Trust {" "} <br />
+            <span className="text-blue-500">Dr. Chitra’s Endocare</span>
           </h2>
           <p className="text-gray-600 mb-10 max-w-xl leading-relaxed">
-            Choosing the right dental provider matters. We combine expert care,
-            advanced technology, and a warm atmosphere to ensure every visit is
-            comfortable, efficient, and tailored to your unique needs.
+            Your comfort and care come first— Dr. Chitra Endocare make every
+            visit stress-free while delivering high-quality dental solutions for
+            every smile.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -74,6 +76,10 @@ export default function WhyChooseUs() {
           />
         </div>
       </div>
+        <button className="hidden md:block mt-8 bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-5 py-2 rounded">
+           Know More
+          </button>
     </section>
+   </div>
   );
 }

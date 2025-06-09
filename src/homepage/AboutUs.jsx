@@ -34,35 +34,37 @@ export default function AboutUs() {
             About Us
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-tight font-[Noto_Sans]">
-            Professionals and <br />
-            Personalized Dental Excellence
+            Your Smile is More Than Our Goal It’s Our Shared Success Story
           </h2>
           <p className="text-gray-600 mb-6 max-w-xl">
-            We offer high-quality dental care tailored for the whole family.
-            From routine checkups to advanced treatments, our compassionate team
-            ensures your smile stays healthy and confident.
+            At Dr. Chitra Endocare, we blend advanced dental care with a gentle
+            touch. Led by Dr. Chitra Gohil—specialist in Root Canals and
+            Esthetic Dentistry— we offer expert treatments using the latest
+            technology, strict hygiene, and patient-first care.
           </p>
 
           <div className="grid grid-cols-0 sm:grid-cols-2 gap-y-4 gap-x-6 mb-6 ">
-            <p className="flex items-center text-gray-700">
+            <p className="flex items-start text-gray-700">
               <span className="text-blue-600 mr-2 ">✔</span> 6,000+ Root Canals
               & 10,000+ Restorations
             </p>
-            <p className="flex items-center text-gray-700">
-              <span className="text-blue-600 mr-2 ">✔</span> Latest tech &
-              high-quality materials
-            </p>
-            <p className="flex items-center text-gray-700">
+
+            <p className="flex items-start text-gray-700">
               <span className="text-blue-600 mr-2 ">✔</span> Top-tier hygiene &
               sterilization standards
             </p>
-            <p className="flex items-center text-gray-700">
+
+            <p className="flex items-start text-gray-700">
               <span className="text-blue-600 mr-2 ">✔</span>Sunday appointments
               for your convenience
             </p>
+            <p className="flex items-start text-gray-700">
+              <span className="text-blue-600 mr-2 ">✔</span> Latest tech &
+              high-quality materials
+            </p>
           </div>
 
-          <button className="  px-6 py-3 rounded-lg text-black bg-yellow-300 hover:bg-yellow-400 transition-all">
+          <button className="  px-6 py-3 rounded-lg font-bold text-black bg-yellow-300 hover:bg-yellow-400 transition-all">
             Book Appointment
           </button>
         </div>

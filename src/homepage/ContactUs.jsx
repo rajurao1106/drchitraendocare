@@ -16,7 +16,9 @@ const HappyClientSection = () => {
             Our <span className="text-blue-600">Happy Client</span>
           </h2>
           <p className="mt-4 text-gray-600 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            Have questions or ready to book?  <br />
+We re just a call away—let’s talk and solve your health related  problem.
+
           </p>
           <button className="mt-6 text-black bg-yellow-300 hover:bg-yellow-400 px-6 py-3 rounded-md font-medium">
             Book an Appointment

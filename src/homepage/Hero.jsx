@@ -9,14 +9,14 @@ export default function Hero() {
       <div className=" w-full max-w-[1150px] flex max-lg:flex-col-reverse items-center justify-between">
         <div className="max-lg:text-center">
           <h1 className="text-5xl max-lg:text-3xl font-extrabold font-[Noto_Sans] text-gray-900 leading-tight mb-4">
-            Your Smile Deserves the Best <br /> Here’s Why Patients Trust <br />
-            <span className="text-blue-500">Dr. Chitra’s Enocare</span>
+            We don’t just Treat Teeth <br /> We Listen, Explain, and <br />
+            <span className="text-blue-500">Heal with Care.</span>
           </h1>
           <p className="text-gray-600 text-base mb-8  max-w-xl">
-            At Dr. Chitra Endocare, we blend advanced dental care with a gentle
-            touch. Led by Dr. Chitra Gohil specialist in Root Canals and
-            Esthetic Dentistry we offer expert treatments using the latest
-            technology, strict hygiene, and patient-first care.
+            At Dr. Chitra Endocare, we combine advanced dental expertise with
+            personalized care that makes you feel truly happier. From root
+            canals to smile makeovers, we’re here to care, comfort, and create
+            confident smiles.
           </p>
           <div className="flex max-lg:flex-col items-center gap-6 mt-10 max-w-4xl ">
             <div className="bg-white shadow-lg px-6 py-4 border border-gray-200 rounded-xl text-center max-lg:w-[90%]">

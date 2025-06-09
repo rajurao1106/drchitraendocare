@@ -4,24 +4,34 @@ import { ChevronDown, ChevronUp } from "lucide-react"; // Install lucide-react
 
 const faqs = [
   {
-    question: "How often should I have a dental check-up?",
-    answer:
-      "It is generally recommended to have a dental check-up every six months to ensure optimal oral health.",
+    question: `Is dental treatment painful—or is that just a myth?`,
+    answer: `Most modern dental treatments are virtually painless thanks to advanced techniques and gentle care.`,
   },
   {
-    question: "What should I do if I have a dental emergency?",
-    answer:
-      "Contact your dentist immediately. In the meantime, rinse your mouth with warm water and apply a cold compress to reduce swelling.",
+    question: `How often should I really visit the dentist?
+`,
+    answer: `The sweet spot is every 6 months for most people. Regular checkups help catch issues early—before they become costly or painful. 
+`,
   },
   {
-    question: "What is your approach to pain management during dental procedures?",
-    answer:
-      "We use modern anesthesia techniques and gentle care to ensure your comfort throughout the treatment.",
+    question: `What’s the first mistake people make with their dental care?
+`,
+    answer: `Waiting too long to get help. Small problems like sensitivity or bleeding gums can turn into major issues if ignored. 
+`,
   },
   {
-    question: "What options are available for replacing missing teeth?",
-    answer:
-      "We offer dental implants, bridges, and dentures to suit your needs and restore your smile.",
+    question: `Is it really necessary to get dental X-rays?
+`,
+    answer: `Yes, X-rays are essential for spotting issues that aren’t visible during a regular exam—like hidden decay, infections, or impacted teeth.
+`,
+  },
+  {
+    question: `What causes tooth sensitivity—and can it be treated?
+
+`,
+    answer: `Tooth sensitivity often comes from worn enamel, exposed roots, or cavities. The good news? It’s treatable! Desensitizing toothpaste, 
+
+`,
   },
 ];
 
@@ -48,17 +58,27 @@ export default function FAQ() {
 
       <div className="space-y-4 max-w-5xl mx-auto">
         {faqs.map((faq, index) => (
-          <div key={index} className="border border-gray-200 rounded-lg shadow-sm">
+          <div
+            key={index}
+            className="border border-gray-200 rounded-lg shadow-sm"
+          >
             <button
               onClick={() => toggleFAQ(index)}
               className={`w-full px-6 py-4 text-left flex text-lg font-bold justify-between items-center 
-               transition-colors duration-300 font-[Noto_Sans] ${openIndex !== index?"text-gray-800":"text-blue-600"}`}
+               transition-colors duration-300 font-[Noto_Sans] ${
+                 openIndex !== index ? "text-gray-800" : "text-blue-600"
+               }`}
             >
               <span>{faq.question}</span>
-             
-                <ChevronDown className={`w-5 h-5 ${openIndex === index?" duration-500 rotate-180":" duration-500"}
-                 text-blue-600`} />
-              
+
+              <ChevronDown
+                className={`w-5 h-5 ${
+                  openIndex === index
+                    ? " duration-500 rotate-180"
+                    : " duration-500"
+                }
+                 text-blue-600`}
+              />
             </button>
 
             <div
