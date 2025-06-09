@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <section className="flex justify-center items-center bg-[#020c27] font-[roboto]">
+    <section className="flex justify-center items-center bg-[#0D1B2A] font-[roboto]">
         <footer className=" text-white py-12 w-full max-w-[1200px]">
       <div className="grid md:grid-cols-4 gap-10">
         {/* Logo + Description */}

@@ -1,7 +1,7 @@
-import React from 'react'
-import aboutusimage1 from '../assets/Homepage/AboutUs/aboutusimage1.jpg'
-import aboutusimage2 from '../assets/Homepage/AboutUs/aboutusimage2.jpg'
-import aboutusimage3 from '../assets/Homepage/AboutUs/aboutusimage3.jpg'
+import React from "react";
+import aboutusimage1 from "../assets/Homepage/AboutUs/aboutusimage1.jpg";
+import aboutusimage2 from "../assets/Homepage/AboutUs/aboutusimage2.jpg";
+import aboutusimage3 from "../assets/Homepage/AboutUs/aboutusimage3.jpg";
 
 export default function AboutUs() {
   return (
@@ -11,15 +11,15 @@ export default function AboutUs() {
         <div className="flex gap-5 justify-center items-center">
           <div className="flex flex-col gap-8 justify-center items-end">
             <img
-            src={aboutusimage3}
-            alt="Dental Image 1"
-            className="rounded-3xl w-50 h-50 max-lg:h-38 object-cover"
-          />
-          <img
-            src={aboutusimage2}
-            alt="Dental Image 2"
-            className="rounded-3xl w-66 h-66 max-lg:h-60 object-cover"
-          />
+              src={aboutusimage3}
+              alt="Dental Image 1"
+              className="rounded-3xl w-50 h-50 max-lg:h-38 object-cover"
+            />
+            <img
+              src={aboutusimage2}
+              alt="Dental Image 2"
+              className="rounded-3xl w-66 h-66 max-lg:h-60 object-cover"
+            />
           </div>
           <img
             src={aboutusimage1}
@@ -29,34 +29,40 @@ export default function AboutUs() {
         </div>
 
         {/* Right: Text Content */}
-        <div className='max-lg:text-center'>
-          <p className="text-blue-600 font-semibold mb-2 font-[Noto_Sans]">About Us</p>
+        <div className="max-lg:text-center">
+          <p className="text-blue-600 font-semibold mb-2 font-[Noto_Sans]">
+            About Us
+          </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-tight font-[Noto_Sans]">
             Professionals and <br />
             Personalized Dental Excellence
           </h2>
           <p className="text-gray-600 mb-6 max-w-xl">
-            We offer high-quality dental care tailored for the whole family. From
-            routine checkups to advanced treatments, our compassionate team
+            We offer high-quality dental care tailored for the whole family.
+            From routine checkups to advanced treatments, our compassionate team
             ensures your smile stays healthy and confident.
           </p>
 
           <div className="grid grid-cols-0 sm:grid-cols-2 gap-y-4 gap-x-6 mb-6 ">
             <p className="flex items-center text-gray-700">
-              <span className="text-blue-600 mr-2 ">✔</span> Personalized Treatment Plans
+              <span className="text-blue-600 mr-2 ">✔</span> 6,000+ Root Canals
+              & 10,000+ Restorations
             </p>
             <p className="flex items-center text-gray-700">
-              <span className="text-blue-600 mr-2 ">✔</span> State-of-the-Art Technology
+              <span className="text-blue-600 mr-2 ">✔</span> Latest tech &
+              high-quality materials
             </p>
             <p className="flex items-center text-gray-700">
-              <span className="text-blue-600 mr-2 ">✔</span> Gentle Care for Kids and Adults
+              <span className="text-blue-600 mr-2 ">✔</span> Top-tier hygiene &
+              sterilization standards
             </p>
             <p className="flex items-center text-gray-700">
-              <span className="text-blue-600 mr-2 ">✔</span> Flexible Appointment Scheduling
+              <span className="text-blue-600 mr-2 ">✔</span>Sunday appointments
+              for your convenience
             </p>
           </div>
 
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all">
+          <button className="  px-6 py-3 rounded-lg text-black bg-yellow-300 hover:bg-yellow-400 transition-all">
             Book Appointment
           </button>
         </div>
@@ -64,4 +70,3 @@ export default function AboutUs() {
     </section>
   );
 }
-

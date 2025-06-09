@@ -6,6 +6,7 @@ import Hero from "./Hero";
 import FAQ from "./FAQ";
 import ContactUs from "./ContactUs";
 import Testimonials from "./Testimonials";
+import Gallery from "./Gallery";
 
 export default function Homepage() {
   return (
@@ -15,6 +16,7 @@ export default function Homepage() {
       <Services />
       <WhyChooseUs/>
       <Testimonials/>
+      <Gallery/>
       <ContactUs/>
     
     </div>

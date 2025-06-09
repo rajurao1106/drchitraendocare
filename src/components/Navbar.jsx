@@ -14,7 +14,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="flex justify-center items-center shadow font-[roboto] sticky top-0 left-0 z-10 bg-white">
+    <nav className="flex justify-center items-center shadow font-[roboto] text-white sticky top-0 left-0 z-10 bg-[#0D1B2A]">
       <div className="w-full  max-w-[1200px] ">
         {/* Top Bar */}
         <div className=" text-gray-600 max-lg:hidden text-sm px-4 pt-2 flex justify-between items-center ">
@@ -24,7 +24,7 @@ export default function Navbar() {
               <a
                 href="tel:+917389181461"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="hover:underline text-white"
               >
                 +91 7389181461
               </a>
@@ -35,7 +35,7 @@ export default function Navbar() {
                 href="https://maps.app.goo.gl/y1s2Bs9Cj3XK24G46"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="hover:underline text-white"
               >
                 Shankar Nagar, Raipur, Chhattisgarh
               </a>
@@ -43,14 +43,14 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-1">
             <FaRegCalendarAlt className="text-blue-500" />
-            <a href="https://g.co/kgs/ZiFUwFF" className="hover:underline">
+            <a href="https://g.co/kgs/ZiFUwFF" className="hover:underline text-white">
               Monday - Saturday: 9 am - 11.30 pm
             </a>
           </div>
         </div>
 
         {/* Main Navbar */}
-        <div className="bg-white px-4 py-3 flex justify-between items-center relative ">
+        <div className=" px-4 py-3 flex justify-between items-center relative ">
           {/* Logo */}
           <div className="flex items-center gap-2">
             {/* <img src="/logo.png" alt="logo" className="w-8 h-8" /> */}
@@ -58,32 +58,32 @@ export default function Navbar() {
               <img
                 src={logo}
                 alt="Logo"
-                className="w-14 h-14 rounded-full bg-black"
+                className="w-14 h-14"
               />
-              Chitra <span className="text-blue-600">Dentic</span>
+              Dr. Chitra<span className="text-yellow-400">Endocare</span>
             </h1>
           </div>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6 text-lg font-[Noto_Sans]">
-            <a href="/" className="hover:text-blue-600 font-medium">
+            <a href="/" className="hover:text-blue-500 font-medium">
               Home
             </a>
-            <a href="/about" className="hover:text-blue-600 font-medium">
+            <a href="/about" className="hover:text-blue-500 font-medium">
               About Us
             </a>
 
-            <a href="/services" className="hover:text-blue-600 font-medium">
+            <a href="/services" className="hover:text-blue-500 font-medium">
               Services
             </a>
 
-            <a href="/contact" className="hover:text-blue-600 font-medium">
+            <a href="/contact" className="hover:text-blue-500 font-medium">
               Contact Us
             </a>
           </nav>
 
           {/* Appointment Button */}
-          <button className="hidden md:block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded">
+          <button className="hidden md:block bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-5 py-2 rounded">
             Make an Appointment
           </button>
 
@@ -110,7 +110,7 @@ export default function Navbar() {
               <a href="/contact" className="font-medium">
                 Contact Us
               </a>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded">
+              <button className="bg-yellow-300 hover:bg-yellow-400 text-white font-semibold px-5 py-2 rounded">
                 Make an Appointment
               </button>
             </div>

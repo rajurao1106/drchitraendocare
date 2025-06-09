@@ -5,17 +5,18 @@ import { IoCall, IoTime } from "react-icons/io5";
 
 export default function Hero() {
   return (
-    <section className="flex justify-center items-center relative overflow-hidden ">
+    <section className="flex justify-center items-center relative overflow-hidden bg-[#F7F7F7] ">
       <div className=" w-full max-w-[1150px] flex max-lg:flex-col-reverse items-center justify-between">
         <div className="max-lg:text-center">
           <h1 className="text-5xl max-lg:text-3xl font-extrabold font-[Noto_Sans] text-gray-900 leading-tight mb-4">
-            We help you confidently <br /> restore your natural and <br />
-            <span className="text-blue-500">Beautiful Happy Smile</span>
+            Your Smile Deserves the Best <br /> Here’s Why Patients Trust <br />
+            <span className="text-blue-500">Dr. Chitra’s Enocare</span>
           </h1>
           <p className="text-gray-600 text-base mb-8  max-w-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient.
+            At Dr. Chitra Endocare, we blend advanced dental care with a gentle
+            touch. Led by Dr. Chitra Gohil specialist in Root Canals and
+            Esthetic Dentistry we offer expert treatments using the latest
+            technology, strict hygiene, and patient-first care.
           </p>
           <div className="flex max-lg:flex-col items-center gap-6 mt-10 max-w-4xl ">
             <div className="bg-white shadow-lg px-6 py-4 border border-gray-200 rounded-xl text-center max-lg:w-[90%]">
@@ -46,8 +47,10 @@ export default function Hero() {
           />
 
           {/* Review Badge */}
-          <div className="absolute text-white bottom-50 max-lg:bottom-40 -right-16 max-lg:-right-5 bg-blue-500 shadow-lg rounded-lg 
-          px-4 max-lg:px-1 py-4 max-lg:py-2 flex items-center gap-4">
+          <div
+            className="absolute text-white bottom-50 max-lg:bottom-40 -right-16 max-lg:-right-5 bg-blue-500 shadow-lg rounded-lg 
+          px-4 max-lg:px-1 py-4 max-lg:py-2 flex items-center gap-4"
+          >
             <div className="text-5xl max-lg:text-2xl ">
               <IoTime />
             </div>
@@ -58,8 +61,10 @@ export default function Hero() {
               <p className="max-lg:text-sm">Mon to Sat 10:00 - 14:00</p>
             </div>
           </div>
-          <div className="absolute bottom-18 max-lg:bottom-5 -left-10 max-lg:-left-5 bg-white border border-blue-200 shadow-lg
-           rounded-lg px-4 max-lg:px-1 py-4 max-lg:py-2 flex items-center gap-4">
+          <div
+            className="absolute bottom-18 max-lg:bottom-5 -left-10 max-lg:-left-5 bg-white border border-blue-200 shadow-lg
+           rounded-lg px-4 max-lg:px-1 py-4 max-lg:py-2 flex items-center gap-4"
+          >
             <div className="text-5xl max-lg:text-2xl text-blue-500">
               <IoCall />
             </div>
