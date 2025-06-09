@@ -58,7 +58,9 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             {/* <img src="/logo.png" alt="logo" className="w-8 h-8" /> */}
             <h1 className="text-2xl font-bold flex max-lg:flex-col justify-center items-center gap-2">
-              <img src={logo} alt="Logo" className="w-14 h-14" />
+              <a href="/">
+                <img src={logo} alt="Logo" className="w-14 h-14" />
+              </a>
               <div className="max-lg:hidden">
                 Dr. Chitra <span className="text-yellow-400">Endocare</span>
               </div>

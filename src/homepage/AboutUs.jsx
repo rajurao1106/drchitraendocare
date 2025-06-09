@@ -24,7 +24,7 @@ export default function AboutUs() {
           <img
             src={aboutusimage1}
             alt="Dental Image 3"
-            className="rounded-3xl w-60 max-lg:w-48 h-full object-cover col-span-2"
+            className="rounded-3xl w-60 max-lg:w-44 h-full object-cover col-span-2"
           />
         </div>
 
