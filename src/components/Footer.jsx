@@ -152,7 +152,7 @@ export default function Footer() {
             Copyright © {new Date().getFullYear()}. All rights reserved, Design
             and developed by{" "}
             <a href="https://spadvertising.in" className="text-white">
-              SP Advertising Agency
+              SP Advertising
             </a>
           </p>
         </div>

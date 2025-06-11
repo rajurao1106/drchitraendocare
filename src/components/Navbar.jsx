@@ -47,7 +47,7 @@ export default function Navbar() {
               href="https://g.co/kgs/ZiFUwFF"
               className="hover:underline text-white"
             >
-              Monday - Saturday: 9 am - 11.30 pm
+              Monday - Saturday: 10.00 am - 2.00 pm
             </a>
           </div>
         </div>

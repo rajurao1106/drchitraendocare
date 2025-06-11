@@ -57,7 +57,7 @@ export default function Hero() {
               <h1 className="font-semibold text-xl max-lg:text-base font-[Noto_Sans]">
                 Opening Hours
               </h1>
-              <p className="max-lg:text-sm">Mon to Sat 10:00 - 14:00</p>
+              <p className="max-lg:text-sm">Mon to Sat 10 AM - 2 PM</p>
             </div>
           </div>
           <div
