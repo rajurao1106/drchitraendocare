@@ -22,32 +22,27 @@ export default function AboutDoctor() {
           </p>
           <div className="space-y-1 mb-8">
             <p className="text-gray-700 leading-relaxed text-[17px]">
-              With a reputation for exceptional skill,{" "}
-              <strong>Dr. Chitra Gohil</strong> is a leading endodontist in
-              Raipur. Her expertise in Root Canal treatment and restorations has
-              earned her the trust of countless patients.
+              At Dr. Chitra Endocare, we believe that a healthy smile is not
+              just a reflection of good oral health, but also a key to
+              confidence & happiness.
             </p>
             <p className="text-gray-700 leading-relaxed text-[17px]">
-              She completed her <strong>B.D.S</strong> from Shri Ramchandra
-              Medical College, Chennai and her <strong>M.D.S</strong> in 2015
-              from Bapuji Dental College, Karnataka. She also pursued a
-              Fellowship in Esthetic Dentistry from Chennai.
+              My team and I strive to create a warm and welcoming environment,
+              where patients feel at ease and supported throughout their
+              treatment journey.
             </p>
             <p className="text-gray-700 leading-relaxed text-[17px]">
-              Currently serving as an Associate Professor at{" "}
-              <strong>Shri Balaji Dental Hospital</strong>, she specializes in
-              procedures such as veneers, composite buildup, direct & indirect
-              restorations, and root canal treatments.
+              I am passionate about staying at the forefront of dental
+              advancements, ensuring that my patients receive the most modern &
+              effective treatment available.
             </p>
-            <p className="text-gray-700 leading-relaxed text-[17px]">
-              She has successfully performed{" "}
-              <strong>6000+ root canal treatments</strong> and over{" "}
-              <strong>10,000 restorations</strong>.
-            </p>
+           
           </div>
 
-          <button className="bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-6 py-3 rounded-lg 
-          shadow hover:bg-yellow-500  transition-all duration-300">
+          <button
+            className="bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-6 py-3 rounded-lg 
+          shadow hover:bg-yellow-500  transition-all duration-300"
+          >
             Book Appointment
           </button>
         </div>

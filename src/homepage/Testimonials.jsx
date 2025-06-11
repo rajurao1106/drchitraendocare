@@ -4,6 +4,7 @@ import patient1 from "../assets/Homepage/Testimonials/patient1.png";
 import patient2 from "../assets/Homepage/Testimonials/patient2.png";
 import patient3 from "../assets/Homepage/Testimonials/patient3.png";
 import patient4 from "../assets/Homepage/Testimonials/patient4.png";
+import patient5 from "../assets/Homepage/Testimonials/patient5.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -17,23 +18,23 @@ const testimonials = [
     image: patient1,
   },
   {
-    name: "Pramod Kr Dalmia",
+    name: "Vinayak Dave",
     title: "Patient",
     quote:
-      "Very polite & accurate work. Not like typical dentist clinics where one work become multiple sittings. Quite reasonable treatment cost. Good advice for dental care.",
-    image: patient2,
+      "Excellent dental clinic with highly skilled dentist and modern equipment. The clinic maintains top-notch hygiene standards. The staff is friendly, professional, and always attentive to patient comfort. Highly recommended for anyone looking for reliable and good dental care in Raipur!",
+    image: patient3,
   },
   {
     name: "Kesri Rituraj",
     title: "Patient",
     quote: "Great ambience and humble doctor — a rare combination.",
-    image: patient3,
+    image: patient5,
   },
   {
-    name: "Vinayak Dave",
+    name: " Pramod Kr Dalmia",
     title: "Patient",
     quote:
-      "Excellent dental clinic with highly skilled dentist and modern equipment. The clinic maintains top-notch hygiene standards. The staff is friendly, professional, and always attentive to patient comfort. Highly recommended for anyone looking for reliable and good dental care in Raipur!",
+      "Very polite & accurate work. Not like typical dentist clinics where one work become multiple sittings. Quite reasonable treatment cost. Good advice for dental care.",
     image: patient4,
   },
 ];

@@ -8,13 +8,12 @@ import {
   Activity,
   ScanLine,
 } from "lucide-react";
-import img1 from '../assets/Homepage/Gallery/gallery1.jpg'
-import img2 from '../assets/Homepage/Gallery/gallery2.jpg'
-import img3 from '../assets/Homepage/Gallery/gallery3.jpg'
-import img4 from '../assets/Homepage/Gallery/gallery4.jpg'
-import img5 from '../assets/Homepage/Gallery/gallery5.jpg'
-import img6 from '../assets/Homepage/Gallery/gallery6.jpg'
-
+import img1 from "../assets/Homepage/Gallery/gallery1.jpg";
+import img2 from "../assets/Homepage/Gallery/gallery2.jpg";
+import img3 from "../assets/Homepage/Gallery/gallery3.jpg";
+import img4 from "../assets/Homepage/Gallery/gallery4.jpg";
+import img5 from "../assets/Homepage/Gallery/gallery5.jpg";
+import img6 from "../assets/Homepage/Gallery/gallery6.jpg";
 
 export default function WhyChooseUs() {
   const features = [
@@ -50,10 +49,10 @@ export default function WhyChooseUs() {
       desc: (
         <>
           <p>
-            Endocare Dental Clinic utilizes advanced dental materials: <br /> Bioactive
-            Material (MTA / Bidentine) Ceramic & porcelain for esthetic crowns
-            and bridges Tooth replacement materials like EverX Flow, Composites
-            Ozone therapy (for sensitivity){" "}
+            Endocare Dental Clinic utilizes advanced dental materials: <br />{" "}
+            Bioactive Material (MTA / Bidentine) Ceramic & porcelain for
+            esthetic crowns and bridges Tooth replacement materials like EverX
+            Flow, Composites Ozone therapy (for sensitivity){" "}
           </p>
         </>
       ),
@@ -67,7 +66,10 @@ export default function WhyChooseUs() {
   const images = [img1, img2, img3, img4, img5, img6];
   return (
     <div>
-      <section className=" bg-white flex justify-center items-center">
+      <section className=" bg-white flex justify-center items-center flex-col">
+        <h2 className="text-3xl w-full text-left max-w-[1200px] md:text-4xl font-extrabold text-blue-600 mb-8">
+          Why Choose Us
+        </h2>
         <div className="max-w-[1200px] w-full flex gap-10 max-lg:w-[90%]">
           {/* Image Grid */}
           <div className="flex flex-wrap w-[35rem] gap-10 max-lg:hidden">
@@ -123,9 +125,7 @@ export default function WhyChooseUs() {
                     {item.icon}
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold ">
-                      {item.title}
-                    </h3>
+                    <h3 className="text-lg font-semibold ">{item.title}</h3>
                     <p className="text-base ">{item.desc}</p>
                   </div>
                 </div>

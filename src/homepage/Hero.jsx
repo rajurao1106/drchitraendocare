@@ -46,22 +46,9 @@ export default function Hero() {
           />
 
           {/* Review Badge */}
+          
           <div
-            className="absolute text-white bottom-50 max-lg:bottom-40 -right-16 max-lg:-right-5 bg-blue-500 shadow-lg rounded-lg 
-          px-4 max-lg:px-1 py-4 max-lg:py-2 flex items-center gap-4"
-          >
-            <div className="text-5xl max-lg:text-2xl ">
-              <IoTime />
-            </div>
-            <div>
-              <h1 className="font-semibold text-xl max-lg:text-base font-[Noto_Sans]">
-                Opening Hours
-              </h1>
-              <p className="max-lg:text-sm">Mon to Sat 10 AM - 2 PM</p>
-            </div>
-          </div>
-          <div
-            className="absolute bottom-18 max-lg:bottom-5 -left-10 max-lg:-left-5 bg-white border border-blue-200 shadow-lg
+            className="absolute bottom-60 max-lg:bottom-40 -left-24 max-lg:-right-5 bg-white border border-blue-200 shadow-lg
            rounded-lg px-4 max-lg:px-1 py-4 max-lg:py-2 flex items-center gap-4"
           >
             <div className="text-5xl max-lg:text-2xl text-blue-500">
@@ -72,6 +59,21 @@ export default function Hero() {
                 Need Dental Services?
               </h1>
               <p className="max-lg:text-sm">Call: +91 7389181461</p>
+            </div>
+          </div>
+          <div
+            className="absolute text-white bottom-18 max-lg:bottom-5 -right-10 max-lg:-left-5 bg-blue-500 shadow-lg rounded-lg 
+          px-4 max-lg:px-1 py-4 max-lg:py-2 flex items-center gap-4"
+          >
+            <div className="text-5xl max-lg:text-2xl ">
+              <IoTime />
+            </div>
+            <div>
+              <h1 className="font-semibold text-xl max-lg:text-base font-[Noto_Sans]">
+                Opening Hours
+              </h1>
+              <p className="max-lg:text-sm">Mon to Sat 10 AM - 2 PM / 4 PM - 8 PM</p>
+              <p className="max-lg:text-sm">Sunday 10 AM - 2 PM</p>
             </div>
           </div>
         </div>

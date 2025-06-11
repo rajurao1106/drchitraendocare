@@ -24,8 +24,8 @@ export default function WhyChooseUs() {
     },
     {
       icon: ico4,
-      title: " Sunday Appointments Available",
-      desc: "Busy weekdays? We’ve got you covered. Book your visit on Sundays for flexible, stress-free dental care.",
+      title: "Affordable Rates",
+      desc: "We strive to provide the best quality dental care at affordable prices, making it accessible to everyone.",
     },
   ];
 
@@ -64,7 +64,12 @@ export default function WhyChooseUs() {
                 </div>
               </div>
             ))}
+            
           </div>
+           <button className="hidden md:block mt-8 bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] 
+        font-semibold px-8 py-3 rounded-lg">
+           Know More
+          </button>
         </div>
 
         {/* Right Section - Images */}
@@ -76,10 +81,7 @@ export default function WhyChooseUs() {
           />
         </div>
       </div>
-        <button className="hidden md:block mt-8 bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] 
-        font-semibold px-8 py-3 rounded-lg">
-           Know More
-          </button>
+       
     </section>
    </div>
   );
