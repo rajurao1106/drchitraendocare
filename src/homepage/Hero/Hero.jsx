@@ -11,13 +11,13 @@ import Hero3 from "./Hero3";
 export default function HeroSlider() {
   const settings = {
     dots: true,
-    // infinite: true,
-    // speed: 500,
-    // autoplay: true,
-    // autoplaySpeed: 5000,
-    // slidesToShow: 1,
-    // slidesToScroll: 1,
-    // pauseOnHover: false,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    pauseOnHover: false,
     arrows: false,
   };
 

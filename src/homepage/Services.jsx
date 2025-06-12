@@ -22,56 +22,56 @@ const services = [
   {
     title: "Gentle Dental Fillings",
     description:
-      "Used to restore damaged or decayed teeth by using tooth-colored material, ensuring a natural appearance.",
+      "Dental fillings restore teeth damaged by decay using tooth-colored composite materials. They help prevent further decay, preserve your tooth’s natural structure, and maintain a natural appearance.",
     image: dentalfillings,
     icon: tooth_filling,
   },
   {
     title: "Root Canal Therapy",
     description:
-      "This procedure involves removing infected pulp from the root canal to relieve pain, clean and shape the canal.",
+      "Root canal treatment removes infected pulp from inside the tooth. It relieves pain, cleans and shapes the root canals, then seals them to prevent reinfection.",
     image: rootcanal,
     icon: root_canal_icon,
   },
   {
     title: "Tooth Extractions",
     description:
-      "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
+      "Tooth extraction is done when a tooth is severely damaged or decayed and cannot be saved. It helps relieve pain, prevent infection, and make space for other treatments.",
     image: extraction,
     icon: tooth_extraction_icon,
   },
   {
     title: "Professional Teeth Whitening",
     description:
-      "Used to restore damaged or decayed teeth by using tooth-colored material, ensuring a natural appearance.",
+      "Teeth whitening removes stains and discoloration using professional bleaching agents to brighten teeth. Ideal for stains from food, drinks, smoking, or aging.",
     image: teethwhitening,
     icon: tooth_whitening_icon,
   },
   {
     title: "Cosmetic Dentistry",
     description:
-      "This procedure involves removing infected pulp from the root canal to relieve pain, clean and shape the canal.",
+      "Cosmetic treatments like veneers, crowns, and implants improve smile aesthetics and function. These solutions are long-lasting and natural-looking.",
     image: cosmetictreatment,
     icon: cosmetic_icon,
   },
   {
     title: "Preventive Care",
     description:
-      "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
+      "Includes cleanings, fluoride application, and sealants to prevent decay. Regular checkups help maintain healthy teeth and gums.",
     image: preventivecare,
     icon: prevention_icon,
   },
   {
     title: "Pediatric Treatment",
     description:
-      "This procedure involves removing infected pulp from the root canal to relieve pain, clean and shape the canal.",
+      "Specialized care for children from teething to permanent teeth. Gentle and child-friendly approach to ensure a positive dental experience.",
     image: pediatrictreatment,
     icon: specialist_icon,
   },
   {
     title: "Orthodontic Braces",
     description:
-      "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
+      "Braces align teeth and jaws. We offer both metal and ceramic braces to gradually move teeth into proper alignment for improved function and appearance.",
     image: orthodonticbraces,
     icon: cosmetic1_icon,
   },
@@ -100,9 +100,14 @@ export default function Services() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {services.map((service, index) => (
           <div key={index} className="group perspective">
-            <div className="relative w-full h-80 transition-transform duration-500 transform-style-preserve-3d group-hover:rotate-y-180">
+            <div className="relative w-full h-[25rem] transition-transform duration-500 transform-style-preserve-3d
+             group-hover:rotate-y-180">
               {/* Front */}
-              <div className="absolute inset-0 backface-hidden rounded-xl overflow-hidden shadow-md flex flex-col justify-end bg-cover bg-center" style={{ backgroundImage: `url(${service.image})` }}>
+              <div
+                className="absolute inset-0 backface-hidden rounded-xl overflow-hidden shadow-md flex 
+                flex-col justify-end bg-cover bg-center"
+                style={{ backgroundImage: `url(${service.image})` }}
+              >
                 <div className="bg-white bg-opacity-80 p-4">
                   <div className="flex items-center gap-3 mb-2">
                     <img src={service.icon} alt="icon" className="w-12 h-12" />
@@ -110,13 +115,14 @@ export default function Services() {
                       {service.title}
                     </h3>
                   </div>
-                
                 </div>
               </div>
 
               {/* Back */}
-              <div className="absolute inset-0 backface-hidden rotate-y-180 bg-white p-5
-               rounded-xl shadow-lg flex flex-col justify-center items-start text-left">
+              <div
+                className="absolute inset-0 backface-hidden rotate-y-180 bg-white p-5
+               rounded-xl shadow-lg flex flex-col justify-center items-start text-left"
+              >
                 <div className="flex items-center gap-3 mb-3">
                   <img
                     src={service.icon}
@@ -127,7 +133,9 @@ export default function Services() {
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-base text-gray-600 mb-3">{service.description}</p>
+                <p className="text-base text-gray-600 mb-3">
+                  {service.description}
+                </p>
                 <a
                   href="#"
                   className="text-blue-600 font-medium inline-flex items-center gap-1 hover:underline"
