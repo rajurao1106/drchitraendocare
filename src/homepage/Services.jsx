@@ -15,6 +15,8 @@ import pediatrictreatment from "/src/assets/Homepage/Services/pediatrictreatment
 import specialist_icon from "/src/assets/Homepage/Services/specialist.png";
 import orthodonticbraces from "/src/assets/Homepage/Services/orthodonticbraces.jpg";
 import cosmetic1_icon from "/src/assets/Homepage/Services/cosmetic (1).png";
+import dentalimplant from "/src/assets/Homepage/Services/dentalimplant.jpg";
+import dental_implant from "/src/assets/Homepage/Services/dental-implant.png";
 
 const services = [
   {
@@ -77,14 +79,14 @@ const services = [
     title: "Dental Implant",
     description:
       "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
-    image: orthodonticbraces,
-    icon: cosmetic1_icon,
+    image: dentalimplant,
+    icon: dental_implant,
   },
 ];
 
 export default function Services() {
   return (
-    <section className="py-16 px-4 lg:px-8 bg-blue-100 text-center">
+    <section className="py-16 px-4 lg:px-8 bg-blue-50 text-center">
       <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-[Noto_Sans]">
         <span className="text-blue-600">Our Specialized</span>{" "}
         <span className="text-gray-900">Services</span>

@@ -69,18 +69,18 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6 text-lg font-[Noto_Sans]">
-            <a href="/" className="hover:text-blue-500 font-medium">
+            <a href="/" className="hover:text-yellow-300 font-medium">
               Home
             </a>
-            <a href="/about" className="hover:text-blue-500 font-medium">
+            <a href="/about" className="hover:text-yellow-300 font-medium">
               About Us
             </a>
 
-            <a href="/services" className="hover:text-blue-500 font-medium">
+            <a href="/services" className="hover:text-yellow-300 font-medium">
               Services
             </a>
 
-            <a href="/contact" className="hover:text-blue-500 font-medium">
+            <a href="/contact" className="hover:text-yellow-300 font-medium">
               Contact Us
             </a>
           </nav>
