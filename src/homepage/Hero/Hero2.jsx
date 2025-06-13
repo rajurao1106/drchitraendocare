@@ -2,7 +2,7 @@ import familyImg from "../../assets/Homepage/Hero/family.png"; // Replace with y
 
 export default function Hero2() {
   return (
-    <section className="w-full pt-8 flex items-center max-lg:py-24 justify-center bg-[#F7F7F7] relative overflow-hidden">
+    <section className="w-full pt-8 flex items-center max-lg:py-20 justify-center bg-[#F7F7F7] relative overflow-hidden">
       <div className="relative z-10  flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-6">
         {/* Image Section */}
         <div className="  mb-8 md:mb-0">
@@ -26,7 +26,7 @@ export default function Hero2() {
               family’s dental needs.
             </span>
           </h1>
-          <p className="text-sm md:text-base max-w-md mb-6">
+          <p className="text-base md:text-base max-w-md mb-6">
             Your family's smile is our priority. From routine checkups to
             advanced dental treatments, we provide personalized care in a
             friendly, hygienic environment.
