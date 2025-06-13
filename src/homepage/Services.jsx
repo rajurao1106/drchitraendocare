@@ -15,8 +15,8 @@ import pediatrictreatment from "/src/assets/Homepage/Services/pediatrictreatment
 import specialist_icon from "/src/assets/Homepage/Services/specialist.png";
 import orthodonticbraces from "/src/assets/Homepage/Services/orthodonticbraces.jpg";
 import cosmetic1_icon from "/src/assets/Homepage/Services/cosmetic (1).png";
-import dentalimplant from "/src/assets/Homepage/Services/dentalimplant.jpg";
-import dental_implant from "/src/assets/Homepage/Services/dental-implant1.png";
+import dentalimplant from "/src/assets/Homepage/Services/dental-implant1.png";
+import dental_implant from "/src/assets/Homepage/Services/dental-implant.png";
 
 const services = [
   {

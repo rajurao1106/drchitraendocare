@@ -23,8 +23,8 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="bg-[#F9FAFB] pt-12 px-4 md:px-10">
-      <div className="max-w-[1200px] mx-auto flex flex-col-reverse lg:flex-row items-start justify-between gap-10">
+    <section className="bg-[#F9FAFB] pt-4 px-4 md:px-10">
+      <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-start justify-between gap-10">
         {/* Left Content */}
         <div className="lg:w-1/2 text-center lg:text-left space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
@@ -36,7 +36,7 @@ export default function HeroSection() {
           </p>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-2 gap-4 mt-8">
+          <div className="grid grid-cols-2 gap-4 mt-8 max-lg:mb-10">
             {services.map((service, index) => (
               <div
                 key={index}

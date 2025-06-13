@@ -1,5 +1,5 @@
 import React from "react";
-import ico1 from "../assets/Homepage/WhyChooseUs/ico2.png";
+import ico1 from "../assets/Homepage/WhyChooseUs/shield.png";
 import ico2 from "../assets/Homepage/WhyChooseUs/ico1.png";
 import ico3 from "../assets/Homepage/WhyChooseUs/ico3.png";
 import ico4 from "../assets/Homepage/WhyChooseUs/affordable (1).png";
