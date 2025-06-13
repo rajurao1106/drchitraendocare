@@ -2,7 +2,7 @@ import familyImg from "../../assets/Homepage/Hero/family.png"; // Replace with y
 
 export default function Hero2() {
   return (
-    <section className="w-full pt-8 flex items-center max-lg:py-16 justify-center bg-[#F7F7F7] relative overflow-hidden">
+    <section className="w-full pt-8 flex items-center max-lg:py-14 justify-center bg-[#F7F7F7] relative overflow-hidden">
       <div className="relative z-10  flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-6">
         {/* Image Section */}
         <div className="  mb-8 md:mb-0">
