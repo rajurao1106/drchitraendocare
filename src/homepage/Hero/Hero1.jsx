@@ -15,9 +15,9 @@ export default function Hero1() {
                   At Dr. Chitra Endocare, we combine advanced dental expertise with
                   personalized care that makes you feel truly happier. From root
                   canals to smile makeovers, we’re here to care, comfort, and create
-                  confident smiles.
+                  confident smiles
                 </p>
-                <div className="flex max-lg:flex-col items-center gap-6 mt-10 max-w-4xl">
+                <div className="flex max-lg:hidden max-lg:flex-col items-center gap-6 mt-10 max-w-4xl">
                   <div className="bg-white shadow-lg px-6 py-4 border border-gray-200 rounded-xl text-center max-lg:w-[90%]">
                     <h3 className="text-4xl font-semibold text-blue-600">10+</h3>
                     <p className="mt-2 text-gray-700 font-medium">Years of Experience</p>

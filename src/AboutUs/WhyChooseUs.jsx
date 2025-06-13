@@ -72,7 +72,7 @@ export default function WhyChooseUs() {
             Why Choose Us
           </h2>
           <p className="text-base w-full text-left max-w-[600px] mb-8">
-            Endocare Dental Clinic delivers exceptional care with a
+            Dr. Chitra Endocare Dental Clinic delivers exceptional care with a
             patient-first approach. Our skilled team ensures each visit is
             precise, comfortable, and focused on lasting oral health—making
             every smile healthier, brighter, and more confident.

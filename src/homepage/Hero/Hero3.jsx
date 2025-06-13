@@ -1,5 +1,5 @@
 import React from "react";
-import ladyPointing from "../../assets/Homepage/Hero/pointinglady.jpg";
+import ladyPointing from "../../assets/Homepage/Hero/pointinglady.png";
 
 import tooth_filling from "/src/assets/Homepage/Services/tooth-filling.png";
 import root_canal_icon from "/src/assets/Homepage/Services/root-canal.png";
@@ -15,7 +15,7 @@ export default function HeroSection() {
     { name: "Gentle Dental Fillings", icon: tooth_filling },
     { name: "Root Canal Therapy", icon: root_canal_icon },
     { name: "Tooth Extractions", icon: tooth_extraction_icon },
-    { name: "Professional Teeth Whitening", icon: tooth_whitening_icon },
+    { name: "Teeth Whitening", icon: tooth_whitening_icon },
     { name: "Cosmetic Dentistry", icon: cosmetic_icon },
     { name: "Pediatric Treatment", icon: prevention_icon },
     { name: "Orthodontic Braces", icon: specialist_icon },
@@ -31,7 +31,7 @@ export default function HeroSection() {
             Bring the Bright Smile <br />
             Using Our <span className="text-blue-600">Dental Services</span>
           </h1>
-          <p className="text-gray-600 text-base md:text-lg">
+          <p className="text-gray-600 text-base ">
             We offer a wide range of dental care services designed to make your smile brighter.
           </p>
 
@@ -40,21 +40,21 @@ export default function HeroSection() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="flex items-center gap-4 bg-white shadow-md hover:shadow-xl transition p-4 rounded-xl"
+                className="flex items-center gap-4 bg-white shadow-md hover:shadow-xl transition p-2 max-lg:p-2 rounded-xl"
               >
                 <img
                   src={service.icon}
                   alt={service.name}
-                  className="w-10 h-10 object-contain"
+                  className="w-10 max-lg:w-8 h-10 max-lg:h-8 object-contain"
                 />
-                <p className="text-sm font-medium text-gray-700">{service.name}</p>
+                <p className="text-sm text-left font-medium text-gray-700">{service.name}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center lg:w-1/2">
+        <div className="flex justify-center lg:w-1/2 max-lg:hidden">
           <img
             src={ladyPointing}
             alt="Lady pointing towards dental services"

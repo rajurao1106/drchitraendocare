@@ -2,7 +2,7 @@ import familyImg from "../../assets/Homepage/Hero/family.png"; // Replace with y
 
 export default function Hero2() {
   return (
-    <section className="w-full pt-8 flex items-center justify-center bg-[#F7F7F7] relative overflow-hidden">
+    <section className="w-full pt-8 flex items-center max-lg:py-24 justify-center bg-[#F7F7F7] relative overflow-hidden">
       <div className="relative z-10  flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-6">
         {/* Image Section */}
         <div className="  mb-8 md:mb-0">
@@ -11,18 +11,18 @@ export default function Hero2() {
             alt="Happy Family"
             width={600}
             height={400}
-            className=" w-[85rem]"
+            className=" w-[88rem]"
           />
         </div>
 
         {/* Text Section */}
-        <div className="w-full max-lg:flex max-lg:justify-center  max-lg:text-center max-lg:mb-10 max-lg:items-center max-lg:flex-col">
+        <div className="w-full max-lg:flex max-lg:justify-center   max-lg:text-center max-lg:mb-10 max-lg:items-center max-lg:flex-col">
           <h4 className="text-xl md:text-2xl font-light">
-            Welcome to Dental Clinic
+            Welcome to Dr. Chitra Endocare
           </h4>
           <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4">
             Caring for all your <br />
-            <span className="bg-white text-blue-800 px-2 ">
+            <span className="bg-white text-blue-500 px-2 ">
               family’s dental needs.
             </span>
           </h1>
