@@ -9,13 +9,13 @@ export default function Hero1() {
               <div className="max-lg:text-center">
                 <h1 className="text-5xl max-lg:text-3xl font-extrabold font-[Noto_Sans] text-gray-900 leading-tight mb-4">
                   We Don’t Just Treat Teeth <br /> We Listen, Explain, and <br />
-                  <span className="text-blue-500">Heal with Care.</span>
+                  <span className="text-blue-500">Heal with Care</span>
                 </h1>
                 <p className="text-gray-600 text-base mb-8 max-w-xl">
                   At Dr. Chitra Endocare, we combine advanced dental expertise with
                   personalized care that makes you feel truly happier. From root
                   canals to smile makeovers, we’re here to care, comfort, and create
-                  confident smiles
+                  confident smiles.
                 </p>
                 <div className="flex max-lg:hidden max-lg:flex-col items-center gap-6 mt-10 max-w-4xl">
                   <div className="bg-white shadow-lg px-6 py-4 border border-gray-200 rounded-xl text-center max-lg:w-[90%]">

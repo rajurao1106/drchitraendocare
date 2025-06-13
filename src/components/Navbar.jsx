@@ -41,14 +41,27 @@ export default function Navbar() {
               </a>
             </div>
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex flex-col items-end">
+            <div className="flex items-center gap-1">
             <FaRegCalendarAlt className="text-blue-500" />
             <a
               href="https://g.co/kgs/ZiFUwFF"
-              className="hover:underline text-white"
+              className="hover:underline text-white flex gap-1 justify-center items-end"
             >
-              Monday - Sunday: 10.00 am - 2.00 pm
+              <p>Monday - Saturday : 10.00 am - 2.00 pm</p> /
+             <p> 4.00 pm - 8.00 pm</p>
             </a>
+          </div>
+          <div className="flex items-center gap-1">
+           
+            <a
+              href="https://g.co/kgs/ZiFUwFF"
+              className="hover:underline text-white flex gap-1 justify-center items-end"
+            >
+              <p>Sunday : 10.00 am - 2.00 pm</p>
+            
+            </a>
+          </div>
           </div>
         </div>
 
