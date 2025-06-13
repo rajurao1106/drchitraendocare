@@ -20,9 +20,10 @@ const HappyClientSection = () => {
 We re just a call away—let’s talk and solve your health related  problem.
 
           </p>
+          <a href="/contact">
           <button className="mt-6 text-black bg-yellow-300 hover:bg-yellow-400 px-6 py-3 rounded-md font-medium">
             Book an Appointment
-          </button>
+          </button></a>
         </div>
 
         {/* Right Image */}

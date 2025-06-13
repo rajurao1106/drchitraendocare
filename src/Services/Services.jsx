@@ -8,6 +8,7 @@ import serviceimg5 from "../assets/Services/serviceimg5.jpg";
 import serviceimg6 from "../assets/Services/serviceimg6.jpg";
 import serviceimg7 from "../assets/Services/serviceimg7.jpg";
 import serviceimg8 from "../assets/Services/serviceimg8.jpg";
+import serviceimg9 from "../assets/Services/serviceimg9.jpg";
 
 const services = [
   {
@@ -57,6 +58,12 @@ const services = [
     description:
       "Braces align teeth and jaws. We offer both metal and ceramic braces to gradually move teeth into proper alignment for improved function and appearance.",
     image: serviceimg8,
+  },
+  {
+    title: "Dental Implant",
+    description:
+      "A dental implant service is like a tiny metal root that a dentist puts into your jawbone where the tooth used to be. Then they attach a fake tooth on top that looks and works like the real thing. It’s like building a new tooth from the ground up!",
+    image: serviceimg9,
   },
 ];
 

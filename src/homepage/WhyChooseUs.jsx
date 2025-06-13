@@ -1,8 +1,8 @@
 import React from "react";
-import ico1 from "../assets/Homepage/WhyChooseUs/ico1.png";
-import ico2 from "../assets/Homepage/WhyChooseUs/ico2.png";
+import ico1 from "../assets/Homepage/WhyChooseUs/ico2.png";
+import ico2 from "../assets/Homepage/WhyChooseUs/ico1.png";
 import ico3 from "../assets/Homepage/WhyChooseUs/ico3.png";
-import ico4 from "../assets/Homepage/WhyChooseUs/ico4.png";
+import ico4 from "../assets/Homepage/WhyChooseUs/affordable (1).png";
 import doctor1 from "../assets/Homepage/WhyChooseUs/whychooseus.jpg";
 
 export default function WhyChooseUs() {
@@ -66,10 +66,11 @@ export default function WhyChooseUs() {
             ))}
             
           </div>
+         <a href="/about">
            <button className="hidden md:block mt-8 bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] 
         font-semibold px-8 py-3 rounded-lg">
            Know More
-          </button>
+          </button></a>
         </div>
 
         {/* Right Section - Images */}

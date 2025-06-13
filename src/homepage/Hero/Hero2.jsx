@@ -3,10 +3,10 @@ import familyImg from "../../assets/Homepage/Hero/family.png"; // Replace with y
 
 export default function Hero2() {
   return (
-    <section className="w-full h-screen flex items-center justify-center bg-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-90 z-0"></div>
+    <section className="w-full h-screen flex items-center justify-center bg-[#F7F7F7] relative overflow-hidden">
+      <div className="absolute  opacity-90 z-0"></div>
 
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-6 md:px-12">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-6">
         {/* Image Section */}
         <div className="w-full md:w-1/2 mb-8 md:mb-0">
           <img
@@ -19,7 +19,7 @@ export default function Hero2() {
         </div>
 
         {/* Text Section */}
-        <div className="w-full md:w-1/2 text-white space-y-6">
+        <div className="w-full md:w-1/2  ">
           <h4 className="text-xl md:text-2xl font-light">Welcome to Dental Clinic</h4>
           <h1 className="text-3xl md:text-5xl font-bold leading-snug">
             Caring for all your <br />

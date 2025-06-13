@@ -6,7 +6,7 @@ import { BsWhatsapp } from "react-icons/bs";
 export default function Whatsapp() {
   return (
     <button
-      className="fixed bottom-6 max-lg:bottom-10 text-4xl left-6 z-50 bg-green-500 text-white px-2 py-2 
+      className="fixed bottom-6 max-lg:bottom-10 text-4xl p-3 left-6 z-50 bg-green-500 text-white 
         rounded-full shadow-lg  transition"
       aria-label="Scroll to top"
     >

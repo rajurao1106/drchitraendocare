@@ -18,18 +18,18 @@ import img6 from "../assets/Homepage/Gallery/gallery6.jpg";
 export default function WhyChooseUs() {
   const features = [
     {
-      icon: <ShieldCheck className="w-5 h-5 text-white" />,
+      icon: <CheckCircle className="w-5 h-5 text-white" />,
       title: "Sterilization and Hygiene",
       desc: "We maintain the highest standards of sterilization to ensure your safety.",
     },
     {
-      icon: <ShieldCheck className="w-5 h-5 text-white" />,
+      icon: <CheckCircle className="w-5 h-5 text-white" />,
       title: "Patient-Centered Care",
       desc: "We prioritize the patient's needs, comfort, and satisfaction.",
     },
 
     {
-      icon: <ScanLine className="w-5 h-5 text-white" />,
+      icon: <CheckCircle className="w-5 h-5 text-white" />,
       title: "Expertise",
       desc: "Here, treatments are performed by experienced & super specialized dentists ensuring precise work.",
     },
@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
       desc: "We are open from 10–2 on Sundays to accommodate your schedule & provide convenient access.",
     },
     {
-      icon: <Clock className="w-5 h-5 text-white" />,
+      icon: <CheckCircle className="w-5 h-5 text-white" />,
       title: "Affordable Rates",
       desc: "We strive to provide the best quality dental care at affordable prices, making it accessible to everyone.",
     },
@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
       ),
     },
     {
-      icon: <MapPin className="w-5 h-5 text-white" />,
+      icon: <CheckCircle className="w-5 h-5 text-white" />,
       title: "Advanced Technology",
       desc: "Advanced diagnostic tools e.g., Intra Oral Camera Advanced root canal devices e.g., Fi-P & Fi-G obturating device Portable X-ray for patient convenience Dental Scanner. By incorporating these advanced materials & technology, Endocare provides high-quality, effective dental care.",
     },
@@ -67,9 +67,17 @@ export default function WhyChooseUs() {
   return (
     <div>
       <section className=" bg-white flex justify-center items-center flex-col">
-        <h2 className="text-3xl w-full text-left max-w-[1200px] md:text-4xl font-extrabold text-blue-600 mb-8">
-          Why Choose Us
-        </h2>
+        <div className="w-full max-w-[1200px]">
+          <h2 className="text-3xl w-full text-left max-w-[1200px] md:text-4xl font-extrabold text-blue-600 mb-6">
+            Why Choose Us
+          </h2>
+          <p className="text-base w-full text-left max-w-[600px] mb-8">
+            Endocare Dental Clinic delivers exceptional care with a
+            patient-first approach. Our skilled team ensures each visit is
+            precise, comfortable, and focused on lasting oral health—making
+            every smile healthier, brighter, and more confident.
+          </p>
+        </div>
         <div className="max-w-[1200px] w-full flex gap-10 max-lg:w-[90%]">
           {/* Image Grid */}
           <div className="flex flex-wrap w-[35rem] gap-10 max-lg:hidden">

@@ -16,7 +16,7 @@ import specialist_icon from "/src/assets/Homepage/Services/specialist.png";
 import orthodonticbraces from "/src/assets/Homepage/Services/orthodonticbraces.jpg";
 import cosmetic1_icon from "/src/assets/Homepage/Services/cosmetic (1).png";
 import dentalimplant from "/src/assets/Homepage/Services/dentalimplant.jpg";
-import dental_implant from "/src/assets/Homepage/Services/dental-implant.png";
+import dental_implant from "/src/assets/Homepage/Services/dental-implant1.png";
 
 const services = [
   {
@@ -78,7 +78,7 @@ const services = [
   {
     title: "Dental Implant",
     description:
-      "Extractions are performed where the tooth is severely damaged or decayed and cannot be saved by root canal.",
+      "A dental implant service is like a tiny metal root that a dentist puts into your jawbone where the tooth used to be. Then they attach a fake tooth on top that looks and works like the real thing. It’s like building a new tooth from the ground up!",
     image: dentalimplant,
     icon: dental_implant,
   },
