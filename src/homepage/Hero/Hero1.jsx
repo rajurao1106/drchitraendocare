@@ -41,7 +41,7 @@ export default function Hero1() {
                   className="object-cover -scale-x-100 h-[35rem] max-lg:h-[25rem] pt-2"
                 />
     
-                <div className="absolute bottom-60 max-lg:bottom-40 -left-24 max-lg:-right-5 bg-white border border-blue-200 shadow-lg rounded-lg px-4 max-lg:px-1 py-4 max-lg:py-2 flex items-center gap-4">
+                <div className="absolute bottom-60 max-lg:bottom-40 -left-24 max-lg:-left-15 bg-white border border-blue-200 shadow-lg rounded-lg px-4 max-lg:px-1 py-4 max-lg:py-2 flex items-center gap-4">
                   <div className="text-5xl max-lg:text-2xl text-blue-500">
                     <IoCall />
                   </div>
@@ -51,7 +51,7 @@ export default function Hero1() {
                   </div>
                 </div>
     
-                <div className="absolute text-white bottom-18 max-lg:bottom-5 -right-10 max-lg:-left-5 bg-blue-500 shadow-lg rounded-lg px-4 max-lg:px-1 py-4 max-lg:py-2 flex items-center gap-4">
+                <div className="absolute text-white bottom-18 max-lg:bottom-0 -right-10 max-lg:-left-0 bg-blue-500  rounded-lg px-4 max-lg:px-1 py-4 max-lg:py-2 flex items-center gap-4">
                   <div className="text-5xl max-lg:text-2xl">
                     <IoTime />
                   </div>
