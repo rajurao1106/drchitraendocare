@@ -10,7 +10,7 @@ export default function Whatsapp() {
         rounded-full shadow-lg  transition"
       aria-label="Scroll to top"
     >
-      <a href="https://wa.me/917389181461">
+      <a href="https://wa.me/917224982800">
         <BsWhatsapp />
       </a>
     </button>
