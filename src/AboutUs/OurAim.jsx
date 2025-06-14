@@ -4,7 +4,7 @@ import chitragohil from "../assets/AboutUs/chitragohil.png";
 export default function OurAim() {
   return (
     <section className="bg-[#F7F7F7] py-12 px-4 flex justify-center items-center">
-      <div className="max-w-[1200px] w-full flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-12">
+      <div className="max-w-[1200px] w-full flex flex-col-reverse max-lg:flex-col lg:flex-row-reverse justify-center items-center gap-12">
         {/* Doctor Image */}
         <div className="flex-shrink-0">
           <img
