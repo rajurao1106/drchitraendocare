@@ -173,7 +173,7 @@ export default function ContactPage() {
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 mt-1" />
-                <span>+91 7389181461</span>
+                <span>+91 7389181481</span>
               </div>
             </div>
 

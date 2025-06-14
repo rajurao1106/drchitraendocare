@@ -33,10 +33,26 @@ export default function Footer() {
             </h4>
             <div className="w-10 h-1 bg-blue-500 mb-4"></div>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li><a href="/" className="hover:text-white">Home</a></li>
-              <li><a href="/about" className="hover:text-white">About Us</a></li>
-              <li><a href="/services" className="hover:text-white">Services</a></li>
-              <li><a href="/contact" className="hover:text-white">Contact Us</a></li>
+              <li>
+                <a href="/" className="hover:text-white">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about" className="hover:text-white">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="hover:text-white">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="hover:text-white">
+                  Contact Us
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -47,13 +63,27 @@ export default function Footer() {
             </h4>
             <div className="w-10 h-1 bg-blue-500 mb-4"></div>
             <ul className="space-y-1 text-gray-300 text-sm">
-              <li className="flex gap-4">Monday: <div className="">10 am–2 pm, 4–8 pm</div></li>
-              <li className="flex gap-4">Tuesday: <div className="">10 am–2 pm, 4–8 pm</div></li>
-              <li className="flex gap-4">Wednesday: <div className="">10 am–2 pm, 4–8 pm</div></li>
-              <li className="flex gap-4">Thursday: <div className="">10 am–8 pm</div></li>
-              <li className="flex gap-4">Friday: <div className="">10 am–2 pm, 4–8 pm</div></li>
-              <li className="flex gap-4">Saturday: <div className="">10 am–2 pm, 4–8 pm</div></li>
-              <li className="flex gap-4">Sunday: <div className="">10 am–2 pm</div></li>
+              <li className="flex gap-4">
+                Monday: <div className="">10 am–2 pm, 4–8 pm</div>
+              </li>
+              <li className="flex gap-4">
+                Tuesday: <div className="">10 am–2 pm, 4–8 pm</div>
+              </li>
+              <li className="flex gap-4">
+                Wednesday: <div className="">10 am–2 pm, 4–8 pm</div>
+              </li>
+              <li className="flex gap-4">
+                Thursday: <div className="">10 am–8 pm</div>
+              </li>
+              <li className="flex gap-4">
+                Friday: <div className="">10 am–2 pm, 4–8 pm</div>
+              </li>
+              <li className="flex gap-4">
+                Saturday: <div className="">10 am–2 pm, 4–8 pm</div>
+              </li>
+              <li className="flex gap-4">
+                Sunday: <div className="">10 am–2 pm</div>
+              </li>
             </ul>
           </div>
 
@@ -69,7 +99,7 @@ export default function Footer() {
             </div>
             <div className="flex items-start gap-2 text-sm text-gray-300">
               <FaPhoneAlt className="mt-1" />
-              <span>+91 7389181461</span>
+              <span>+91 7389181481</span>
             </div>
             <div className="flex flex-col text-xl text-white mt-4">
               <h4 className="text-lg font-semibold mb-4 font-[Noto_Sans]">

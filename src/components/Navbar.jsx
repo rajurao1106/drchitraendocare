@@ -22,11 +22,11 @@ export default function Navbar() {
             <div className="flex items-center gap-1">
               <FaPhoneAlt className="text-blue-500" />
               <a
-                href="tel:+917389181461"
+                href="tel:+917389181481"
                 rel="noopener noreferrer"
                 className="hover:underline text-white"
               >
-                +91 7389181461
+                +91 7389181481
               </a>
             </div>
             <div className="flex items-center gap-1">
@@ -43,25 +43,23 @@ export default function Navbar() {
           </div>
           <div className="flex flex-col items-end">
             <div className="flex items-center gap-1">
-            <FaRegCalendarAlt className="text-blue-500" />
-            <a
-              href="https://g.co/kgs/ZiFUwFF"
-              className="hover:underline text-white flex gap-1 justify-center items-end"
-            >
-              <p>Monday - Saturday : 10.00 am - 2.00 pm</p> /
-             <p> 4.00 pm - 8.00 pm</p>
-            </a>
-          </div>
-          <div className="flex items-center gap-1">
-           
-            <a
-              href="https://g.co/kgs/ZiFUwFF"
-              className="hover:underline text-white flex gap-1 justify-center items-end"
-            >
-              <p>Sunday : 10.00 am - 2.00 pm</p>
-            
-            </a>
-          </div>
+              <FaRegCalendarAlt className="text-blue-500" />
+              <a
+                href="https://g.co/kgs/ZiFUwFF"
+                className="hover:underline text-white flex gap-1 justify-center items-end"
+              >
+                <p>Monday - Saturday : 10.00 am - 2.00 pm</p> /
+                <p> 4.00 pm - 8.00 pm</p>
+              </a>
+            </div>
+            <div className="flex items-center gap-1">
+              <a
+                href="https://g.co/kgs/ZiFUwFF"
+                className="hover:underline text-white flex gap-1 justify-center items-end"
+              >
+                <p>Sunday : 10.00 am - 2.00 pm</p>
+              </a>
+            </div>
           </div>
         </div>
 
