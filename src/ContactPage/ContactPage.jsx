@@ -179,15 +179,15 @@ export default function ContactPage() {
 
             <div className="mt-6 rounded overflow-hidden w-full aspect-video">
               <iframe
-                title="Shankar Nagar Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14666.178032664643!2d81.6319377586185!3d21.25059633407574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28ddf6fd830eef%3A0x9b6a1e0c45a39c4c!2sShankar%20Nagar%2C%20Raipur%2C%20Chhattisgarh!5e0!3m2!1sen!2sin!4v1717658937781!5m2!1sen!2sin"
+                title="Dr. Chitra's Endocare Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.558132404149!2d81.6641901!3d21.2534426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dd69bfaa335d%3A0x3f1ae16ce2a60c6c!2sDr.%20Chitra's%20Endocare%20%26%20Multispeciality%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1718361869487!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+              />
             </div>
           </div>
         </div>
