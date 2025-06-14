@@ -9,17 +9,18 @@ import cosmetic_icon from "/src/assets/Homepage/Services/cosmetic.png";
 import prevention_icon from "/src/assets/Homepage/Services/prevention.png";
 import specialist_icon from "/src/assets/Homepage/Services/specialist.png";
 import dental_implant from "/src/assets/Homepage/Services/dental-implant.png";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   const services = [
-    { name: "Gentle Dental Fillings", icon: tooth_filling },
-    { name: "Root Canal Therapy", icon: root_canal_icon },
-    { name: "Tooth Extractions", icon: tooth_extraction_icon },
-    { name: "Teeth Whitening", icon: tooth_whitening_icon },
-    { name: "Cosmetic Dentistry", icon: cosmetic_icon },
-    { name: "Pediatric Treatment", icon: prevention_icon },
-    { name: "Orthodontic Braces", icon: specialist_icon },
-    { name: "Dental Implant", icon: dental_implant },
+    { name: "Gentle Dental Fillings", icon: tooth_filling, link: "" },
+    { name: "Root Canal Therapy", icon: root_canal_icon, link: "" },
+    { name: "Tooth Extractions", icon: tooth_extraction_icon, link: "" },
+    { name: "Teeth Whitening", icon: tooth_whitening_icon, link: "" },
+    { name: "Cosmetic Dentistry", icon: cosmetic_icon, link: "" },
+    { name: "Pediatric Treatment", icon: prevention_icon, link: "" },
+    { name: "Orthodontic Braces", icon: specialist_icon, link: "" },
+    { name: "Dental Implant", icon: dental_implant, link: "" },
   ];
 
   return (
@@ -38,7 +39,7 @@ export default function HeroSection() {
           {/* Services Grid */}
           <div className="grid grid-cols-2 gap-4 mt-8 max-lg:mb-10">
             {services.map((service, index) => (
-              <div
+              <a href="/services"
                 key={index}
                 className="flex items-center gap-4 bg-white shadow-md hover:shadow-xl transition p-2 max-lg:p-2 rounded-xl"
               >
@@ -48,7 +49,7 @@ export default function HeroSection() {
                   className="w-10 max-lg:w-8 h-10 max-lg:h-8 object-contain"
                 />
                 <p className="text-sm text-left font-medium text-gray-700">{service.name}</p>
-              </div>
+              </a>
             ))}
           </div>
         </div>

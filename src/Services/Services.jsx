@@ -9,6 +9,7 @@ import serviceimg6 from "../assets/Services/serviceimg6.jpg";
 import serviceimg7 from "../assets/Services/serviceimg7.jpg";
 import serviceimg8 from "../assets/Services/serviceimg8.jpg";
 import serviceimg9 from "../assets/Services/serviceimg9.jpg";
+import HappyClientSection from "../homepage/ContactUs";
 
 const services = [
   {
@@ -71,14 +72,14 @@ export default function Services() {
   return (
     <section>
       {/* Hero Section */}
-      <div className="relative bg-[#000000c0] overflow-hidden flex justify-center items-center">
+      <div className="relative font-[roboto] bg-[#000000c0] overflow-hidden flex justify-center items-center">
         <img
           src={bgclinic}
           alt="Clinic Background"
           className="absolute w-full h-full object-cover -z-10"
         />
         <div className="text-white py-20 px-6 md:px-20 text-center w-full max-w-[1300px]">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">
+          <h1 className="text-3xl md:text-4xl font-[Noto_Sans] font-bold mb-2">
             Our Dental Services
           </h1>
           <p className="text-lg text-white/90">
@@ -124,7 +125,9 @@ export default function Services() {
             })}
           </div>
         </section>
+       
       </div>
+       <HappyClientSection/>  
     </section>
   );
 }

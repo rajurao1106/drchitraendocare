@@ -68,7 +68,7 @@ export default function WhyChooseUs() {
     <div>
       <section className=" bg-white flex justify-center items-center flex-col">
         <div className="w-full max-w-[1200px]">
-          <h2 className="text-3xl w-full text-left max-w-[1200px] md:text-4xl font-extrabold text-blue-600 mb-6">
+          <h2 className="text-3xl w-full font-[Noto_Sans] text-left max-w-[1200px] md:text-4xl font-extrabold text-blue-600 mb-6">
             Why Choose Us
           </h2>
           <p className="text-base w-full text-left max-w-[600px] mb-8">

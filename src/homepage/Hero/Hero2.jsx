@@ -2,7 +2,7 @@ import familyImg from "../../assets/Homepage/Hero/family.png"; // Replace with y
 
 export default function Hero2() {
   return (
-    <section className="w-full pt-8 flex items-center max-lg:py-14 justify-center bg-[#F7F7F7] relative overflow-hidden">
+    <section className="w-full pt-8 pb-16 flex items-center max-lg:py-14 justify-center bg-[#F7F7F7] relative overflow-hidden">
       <div className="relative z-10  flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-6">
         {/* Image Section */}
         <div className="  mb-8 md:mb-0">
@@ -21,9 +21,9 @@ export default function Hero2() {
             Welcome to Dr. Chitra Endocare
           </h4>
           <h1 className="text-3xl md:text-5xl font-bold leading-snug mb-4">
-            Caring for all your <br />
+            Caring For All Your <br />
             <span className="bg-white text-blue-500 px-2 ">
-              family’s dental needs.
+              Family’s Dental Needs.
             </span>
           </h1>
           <p className="text-base md:text-base max-w-md mb-6">
@@ -34,15 +34,19 @@ export default function Hero2() {
 
           {/* Buttons */}
           <div className="space-x-4">
-            <button className="bg-yellow-300 px-10 py-2 duration-300 rounded-md font-semibold hover:bg-yellow-500">
+            <a href="/contact">
+              <button className="bg-yellow-300 px-10 py-2 duration-300 rounded-md font-semibold hover:bg-yellow-500">
               Book Now
             </button>
-            <button
+            </a>
+            <a href="/about">
+              <button
               className="border bg-white duration-300 border-gray-700 py-2 rounded-md 
             font-semibold hover:bg-black hover:text-white px-10"
             >
               Learn More
             </button>
+            </a>
           </div>
         </div>
       </div>

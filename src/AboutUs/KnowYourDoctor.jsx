@@ -9,15 +9,15 @@ export default function KnowYourDoctor() {
         <img
           src={doctor}
           alt="Dr. Chitra Gohil"
-          className="w-64 sm:w-80 border-4 border-white rounded-3xl shadow-lg"
+          className="w-64 sm:w-80 border-4 border-gray-50 rounded-3xl shadow-lg"
         />
 
         {/* Doctor Content */}
         <div className="w-full max-lg:text-center">
-          <h2 className="text-3xl font-bold text-blue-600 mb-4">
+          <h2 className="text-3xl font-[Noto_Sans] font-bold text-blue-600 mb-4">
             Know Your Doctor
           </h2>
-          <p className="mb-4 text-base font-bold text-gray-700">
+          <p className="mb-4 font-[Noto_Sans] text-base font-bold text-gray-700">
             M.D.S in 2015 from Bapuji Dental College, Karnataka
           </p>
           <div className="space-y-1 mb-8">

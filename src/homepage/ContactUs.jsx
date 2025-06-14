@@ -4,7 +4,7 @@ import doctorImage from "../assets/Homepage/contact/contact.png"; // ✅ Replace
 
 const HappyClientSection = () => {
   return (
-    <section className=" w-full py-16 px-4 md:px-10 lg:px-20">
+    <section className=" w-full mt-14 py-16 px-4 md:px-10 lg:px-20">
       <div className="max-w-7xl relative  mx-auto bg-blue-200 rounded-xl flex flex-col md:flex-row items-end justify-between gap-10">
         {/* Left Content */}
         <div className="max-w-[650px] w-full text-center md:text-left p-8 max-lg:p-4 py-10">

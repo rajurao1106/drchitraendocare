@@ -47,7 +47,7 @@ export default function Hero1() {
                   </div>
                   <div>
                     <h1 className="font-semibold text-xl max-lg:text-base font-[Noto_Sans]">Need Dental Services?</h1>
-                    <p className="max-lg:text-sm">Call: +91 7389181461</p>
+                    <a href="tel:+917389181461" className="max-lg:text-sm hover:underline">Call: +91 7389181461</a>
                   </div>
                 </div>
     
@@ -55,11 +55,11 @@ export default function Hero1() {
                   <div className="text-5xl max-lg:text-2xl">
                     <IoTime />
                   </div>
-                  <div>
+                  <a href="tel:+917389181461" className="">
                     <h1 className="font-semibold text-xl max-lg:text-base font-[Noto_Sans]">Opening Hours</h1>
-                    <p className="max-lg:text-sm">Mon to Sat : 10 AM - 2 PM / 4 PM - 8 PM</p>
-                    <p className="max-lg:text-sm">Sunday : 10 AM - 2 PM</p>
-                  </div>
+                    <p className="max-lg:text-sm hover:underline">Mon to Sat : 10 AM - 2 PM / 4 PM - 8 PM</p>
+                    <p className="max-lg:text-sm hover:underline">Sunday : 10 AM - 2 PM</p>
+                  </a>
                 </div>
               </div>
             </div>

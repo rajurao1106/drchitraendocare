@@ -3,7 +3,7 @@ import chitragohil from "../assets/AboutUs/chitragohil.png";
 
 export default function OurAim() {
   return (
-    <section className="bg-white py-12 px-4 flex justify-center items-center">
+    <section className="bg-[#F7F7F7] py-12 px-4 flex justify-center items-center">
       <div className="max-w-[1200px] w-full flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-12">
         {/* Doctor Image */}
         <div className="flex-shrink-0">
@@ -16,8 +16,8 @@ export default function OurAim() {
 
         {/* Text Content */}
         <div className="text-center lg:text-left max-w-xl">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-blue-600 mb-4">
-            Our Aim
+          <h2 className="text-3xl md:text-4xl font-[Noto_Sans] font-extrabold text-blue-600 mb-4">
+            Our Mission
           </h2>
           <p className="text-gray-700 text-base md:text-lg leading-relaxed">
             At Dr. Chitra Endocare, we are committed to listening carefully to your concerns and needs.

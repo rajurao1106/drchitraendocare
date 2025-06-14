@@ -17,7 +17,7 @@ export default function ContactPage() {
   return (
     <div>
       {/* Header Section */}
-      <div className="relative bg-[#000000c0] flex items-center justify-center overflow-hidden">
+      <div className="relative bg-[#000000c0] font-[roboto] flex items-center justify-center overflow-hidden">
         <img
           src={bgclinic}
           alt="Clinic Background"
