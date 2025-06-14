@@ -6,8 +6,8 @@ export default function Hero1() {
   return (
     <section className="flex justify-center items-center relative overflow-hidden bg-[#F7F7F7]">
             <div className="w-full max-w-[1150px] flex max-lg:flex-col-reverse items-center justify-between">
-              <div className="max-lg:text-center">
-                <h1 className="text-5xl max-lg:text-3xl font-extrabold font-[Noto_Sans] text-gray-900 leading-tight mb-4">
+              <div className="max-lg:text-center max-lg:w-[90%]">
+                <h1 className="text-5xl max-lg:text-[29px] font-extrabold font-[Noto_Sans] text-gray-900 leading-tight mb-4">
                   We Don’t Just Treat Teeth <br /> We Listen, Explain, and <br />
                   <span className="text-blue-500">Heal with Care</span>
                 </h1>
