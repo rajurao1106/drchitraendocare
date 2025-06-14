@@ -13,7 +13,7 @@ export default function KnowYourDoctor() {
         />
 
         {/* Doctor Content */}
-        <div className="w-full max-lg:text-center">
+        <div className="w-full max-lg:w-[95%] max-lg:text-center">
           <h2 className="text-3xl font-[Noto_Sans] font-bold text-blue-600 mb-4">
             Know Your Doctor
           </h2>

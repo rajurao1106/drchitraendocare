@@ -67,11 +67,11 @@ export default function WhyChooseUs() {
   return (
     <div>
       <section className=" bg-white mt-4   flex justify-center items-center flex-col">
-        <div className="w-full max-w-[1200px]">
-          <h2 className="text-3xl w-full font-[Noto_Sans] text-left max-w-[1200px] md:text-4xl font-extrabold text-blue-600 mb-6">
+        <div className="w-full max-w-[1200px] max-lg:flex max-lg:items-center max-lg:justify-center max-lg:flex-col">
+          <h2 className="text-3xl w-full max-lg:text-center font-[Noto_Sans] text-left max-w-[1200px] md:text-4xl font-extrabold text-blue-600 mb-6">
             Why Choose Us
           </h2>
-          <p className="text-base w-full text-left max-w-[600px] max-lg:text-center mb-8">
+          <p className="text-base max-lg:w-[95%] w-full text-left max-w-[600px] max-lg:text-center mb-8">
             Dr. Chitra Endocare Dental Clinic delivers exceptional care with a
             patient-first approach. Our skilled team ensures each visit is
             precise, comfortable, and focused on lasting oral health—making
