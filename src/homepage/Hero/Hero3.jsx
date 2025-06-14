@@ -27,7 +27,7 @@ export default function HeroSection() {
     <section className="bg-[#F9FAFB] pt-4 px-4 md:px-10">
       <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-start justify-between gap-10">
         {/* Left Content */}
-        <div className="lg:w-1/2 text-center lg:text-left space-y-6">
+        <div className="lg:w-1/2 text-center max-lg:pb-10 lg:text-left space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
             Bring the Bright Smile <br />
             Using Our <span className="text-blue-600">Dental Services</span>
@@ -52,6 +52,11 @@ export default function HeroSection() {
               </a>
             ))}
           </div>
+          <a href="/services">
+              <button className="bg-yellow-300 px-10 py-2 duration-300 rounded-md font-semibold hover:bg-yellow-500">
+              Our Services
+            </button>
+            </a>
         </div>
 
         {/* Right Image */}

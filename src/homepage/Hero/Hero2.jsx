@@ -2,7 +2,7 @@ import familyImg from "../../assets/Homepage/Hero/family.png"; // Replace with y
 
 export default function Hero2() {
   return (
-    <section className="w-full pt-8 pb-16 flex items-center max-lg:py-14 justify-center bg-[#F7F7F7] relative overflow-hidden">
+    <section className="w-full pt-8 pb-16 max-lg:pb-4 flex items-center max-lg:py-14 justify-center bg-[#F7F7F7] relative overflow-hidden">
       <div className="relative z-10  flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-6">
         {/* Image Section */}
         <div className="  mb-8 md:mb-0">
@@ -33,7 +33,7 @@ export default function Hero2() {
           </p>
 
           {/* Buttons */}
-          <div className="space-x-4">
+          <div className="space-x-4 max-lg:space-x-2">
             <a href="/contact">
               <button className="bg-yellow-300 px-10 py-2 duration-300 rounded-md font-semibold hover:bg-yellow-500">
               Book Now
