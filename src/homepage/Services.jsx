@@ -17,6 +17,8 @@ import orthodonticbraces from "/src/assets/Homepage/Services/orthodonticbraces.j
 import cosmetic1_icon from "/src/assets/Homepage/Services/cosmetic (1).png";
 import dentalimplant from "/src/assets/Homepage/Services/dental-implant1.png";
 import dental_implant from "/src/assets/Homepage/Services/dental-implant.png";
+import clearaligners from "/src/assets/Homepage/Services/clear aligners.jpg";
+import clear_aligners from "/src/assets/Homepage/Services/dental-trainer_8732965.png";
 
 const services = [
   {
@@ -82,6 +84,13 @@ const services = [
     image: dentalimplant,
     icon: dental_implant,
   },
+  {
+    title: "Clear Aligners",
+    description:
+      "Clear aligners is transparent removable orthdodontic device used to close the gap or straighten teeth..they are popular for esthetic looks and comfort.",
+    image: clearaligners,
+    icon: clear_aligners,
+  },
 ];
 
 export default function Services() {
@@ -100,8 +109,10 @@ export default function Services() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {services.map((service, index) => (
           <div key={index} className="group perspective">
-            <div className="relative w-full h-[25rem] transition-transform duration-500 transform-style-preserve-3d
-             group-hover:rotate-y-180">
+            <div
+              className="relative w-full h-[25rem] transition-transform duration-500 transform-style-preserve-3d
+             group-hover:rotate-y-180"
+            >
               {/* Front */}
               <div
                 className="absolute inset-0 backface-hidden rounded-xl overflow-hidden shadow-md flex 
