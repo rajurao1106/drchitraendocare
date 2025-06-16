@@ -40,7 +40,7 @@ const testimonials = [
 
 const Testimonials = () => {
   const settings = {
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     speed: 500,
@@ -65,7 +65,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="bg-white py-16 px-4 md:px-10 lg:px-20">
+    <section className="bg-white py-16 px-4 md:px-10 lg:px-20 flex justify-center items-center flex-col">
       <div className="max-w-[1200px] mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 font-[Noto_Sans]">
           What Our <span className="text-blue-600">Patients Say</span>
