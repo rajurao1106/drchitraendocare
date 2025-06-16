@@ -103,7 +103,7 @@ const Testimonials = () => {
           className="hidden md:block bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] 
               font-semibold px-8 py-3 rounded-lg"
         >
-          Read More
+          Read More Reviews
         </button>
       </a>
     </section>
