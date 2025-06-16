@@ -8,7 +8,6 @@ import patient5 from "../assets/Homepage/Testimonials/patient5.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const testimonials = [
   {
     name: "Anup Dave",
@@ -99,6 +98,14 @@ const Testimonials = () => {
           ))}
         </Slider>
       </div>
+      <a href="https://www.google.com/search?q=chitra+dental+clinic&oq=chit&gs_lcrp=EgZjaHJvbWUqDggBEEUYJxg7GIAEGIoFMgYIABBFGDwyDggBEEUYJxg7GIAEGIoFMgYIAhBFGDkyCggDEC4YsQMYgAQyCggEEC4YsQMYgAQyEAgFEC4YrwEYxwEYsQMYgAQyBggGEEUYPTIGCAcQRRg90gEINzQ2OGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x3a28dd69bfaa335d:0x3f1ae16ce2a60c6c,1,,,,">
+        <button
+          className="hidden md:block bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] 
+              font-semibold px-8 py-3 rounded-lg"
+        >
+          Read More
+        </button>
+      </a>
     </section>
   );
 };
