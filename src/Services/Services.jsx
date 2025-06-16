@@ -10,6 +10,7 @@ import serviceimg7 from "../assets/Services/serviceimg7.jpg";
 import serviceimg8 from "../assets/Services/serviceimg8.jpg";
 import serviceimg9 from "../assets/Services/serviceimg9.jpg";
 import HappyClientSection from "../homepage/ContactUs";
+import clearaligners from "/src/assets/Homepage/Services/clear aligners.jpg";
 
 const services = [
   {
@@ -66,6 +67,13 @@ const services = [
       "A dental implant service is like a tiny metal root that a dentist puts into your jawbone where the tooth used to be. Then they attach a fake tooth on top that looks and works like the real thing. It’s like building a new tooth from the ground up!",
     image: serviceimg9,
   },
+  {
+      title: "Clear Aligners",
+      description:
+        "Clear aligners is transparent removable orthdodontic device used to close the gap or straighten teeth..they are popular for esthetic looks and comfort.",
+      image: clearaligners,
+    
+    },
 ];
 
 export default function Services() {
