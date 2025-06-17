@@ -55,14 +55,16 @@ export default function ContactPage() {
     <div className="font-[roboto]">
       {/* Hero Section */}
       <div className="relative bg-black/70 text-white text-center py-20 px-4 md:px-20">
+      
         <img
           src={bgclinic}
+
           alt="Clinic"
           className="absolute inset-0 w-full h-full object-cover -z-10"
         />
         <div className="relative z-10">
           <span className="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow">
-            Book Appointment
+            Book Appointment 
           </span>
           <h1 className="text-3xl md:text-4xl font-bold mt-4">Schedule Your Visit</h1>
           <p className="mt-2 text-gray-200 max-w-2xl mx-auto">

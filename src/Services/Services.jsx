@@ -115,16 +115,16 @@ export default function Services() {
                     alt={service.title}
                     className="w-full sm:w-[28rem] md:w-[36rem] h-[16rem] md:h-[20rem] object-cover rounded-xl shadow"
                   />
-                  <div className="w-full max-w-xl">
+                  <div className="w-full max-w-xl"> 
                     <h3 className="text-2xl font-[Noto_Sans] font-semibold mb-2">
                       {service.title}
-                    </h3>
+                    </h3> 
                     <p className="text-gray-700 text-base md:text-lg mb-4">
                       {service.description}
                     </p>
                     <a href="/contact">
                       <button className="bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-5 py-2 rounded-lg">
-                      Book Appointment
+                      Book Appointment 
                     </button>
                     </a>
                   </div>
