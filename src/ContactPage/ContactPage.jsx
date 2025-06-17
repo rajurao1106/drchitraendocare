@@ -28,7 +28,6 @@ export default function ContactPage() {
     e.preventDefault();
     setLoading(true);
     setMessage("");
-
     try {
       const res = await axios.post(
         "https://drchitraendocare-0zlt.onrender.com/api/appointment",
@@ -51,166 +50,200 @@ export default function ContactPage() {
       setLoading(false);
     }
   };
-  const services = [
-    "Gentle Dental Fillings",
-    "Root Canal Therapy",
-    "Tooth Extractions",
-    "Professional Teeth Whitening",
-    "Cosmetic Dentistry",
-    "Preventive Care",
-    "Pediatric Treatment",
-    "Orthodontic Braces",
-  ];
 
   return (
-    <div>
-      {/* Header Section */}
-      <div className="relative bg-[#000000c0] font-[roboto] flex items-center justify-center overflow-hidden">
+    <div className="font-[roboto]">
+      {/* Hero Section */}
+      <div className="relative bg-black/70 text-white text-center py-20 px-4 md:px-20">
         <img
           src={bgclinic}
-          alt="Clinic Background"
-          className="absolute w-full h-full object-cover -z-10"
+          alt="Clinic"
+          className="absolute inset-0 w-full h-full object-cover -z-10"
         />
-        <div className="max-w-[1300px] w-full px-6 py-20 md:px-20 text-center text-white 
-        flex flex-col items-center justify-center">
-          <span className="inline-block text-xs font-[Noto_Sans] text-blue-600 bg-blue-100 px-4 py-1
-           rounded-full font-semibold uppercase tracking-wide mb-3 shadow">
+        <div className="relative z-10">
+          <span className="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow">
             Book Appointment
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold font-[Noto_Sans]">
-            Schedule Your Visit
-          </h2>
-          <p className="text-gray-200 mt-2 max-w-2xl">
+          <h1 className="text-3xl md:text-4xl font-bold mt-4">Schedule Your Visit</h1>
+          <p className="mt-2 text-gray-200 max-w-2xl mx-auto">
             Fill out the form below to book an appointment with us.
           </p>
         </div>
       </div>
 
-      {/* Form & Contact Info */}
-      <section className="bg-blue-50 py-16 px-4 sm:px-8 md:px-12 lg:px-24 font-[roboto]">
-        <div className="grid gap-8 md:grid-cols-2 bg-white p-6 md:p-12 rounded-xl shadow-md">
-          {/* Form Section */}
-          <form
-            onSubmit={handleSubmit}
-            className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto p-4"
-          >
-            <input
-              name="name"
-              placeholder="Full name"
-              required
-              value={formData.name}
-              onChange={handleChange}
-              className="p-2 border rounded"
-            />
-            <input
-              name="phone"
-              placeholder="Enter your mobile"
-              required
-              value={formData.phone}
-              onChange={handleChange}
-              className="p-2 border rounded"
-            />
-            <input
-              type="date"
-              name="dob"
-              required
-              value={formData.dob}
-              onChange={handleChange}
-              className="p-2 border rounded"
-            />
-            <select
-              name="gender"
-              required
-              value={formData.gender}
-              onChange={handleChange}
-              className="p-2 border rounded"
-            >
-              <option value="">Gender</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
-            <input
-              name="city"
-              placeholder="Your city"
-              required
-              value={formData.city}
-              onChange={handleChange}
-              className="p-2 border rounded"
-            />
-            <select
-              name="service"
-              required
-              value={formData.service}
-              onChange={handleChange}
-              className="p-2 border rounded"
-            >
-              <option value="">-- Choose a Service --</option>
-              <option value="Dental Cleaning">Dental Cleaning</option>
-              <option value="Root Canal">Root Canal</option>
-              <option value="Braces">Braces</option>
-              {/* Add more as needed */}
-            </select>
-            <input
-              type="date"
-              name="appointmentDate"
-              required
-              value={formData.appointmentDate}
-              onChange={handleChange}
-              className="p-2 border rounded"
-            />
-            <input
-              type="time"
-              name="time"
-              required
-              value={formData.time}
-              onChange={handleChange}
-              className="p-2 border rounded"
-            />
+      {/* Form and Info Section */}
+      <section className="bg-blue-50 py-16 px-4 md:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white p-6 md:p-12 rounded-xl shadow-md">
+          {/* Appointment Form */}
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium mb-1">
+                  Full Name
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter full name"
+                  className="p-2 border rounded w-full"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium mb-1">
+                  Mobile Number
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter mobile number"
+                  className="p-2 border rounded w-full"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="dob" className="block text-sm font-medium mb-1">
+                  Date of Birth
+                </label>
+                <input
+                  id="dob"
+                  type="date"
+                  name="dob"
+                  value={formData.dob}
+                  onChange={handleChange}
+                  required
+                  className="p-2 border rounded w-full"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="gender" className="block text-sm font-medium mb-1">
+                  Gender
+                </label>
+                <select
+                  id="gender"
+                  name="gender"
+                  value={formData.gender}
+                  onChange={handleChange}
+                  required
+                  className="p-2 border rounded w-full"
+                >
+                  <option value="">Select Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="city" className="block text-sm font-medium mb-1">
+                  City
+                </label>
+                <input
+                  id="city"
+                  name="city"
+                  value={formData.city}
+                  onChange={handleChange}
+                  required
+                  placeholder="Enter your city"
+                  className="p-2 border rounded w-full"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="service" className="block text-sm font-medium mb-1">
+                  Service
+                </label>
+                <select
+                  id="service"
+                  name="service"
+                  value={formData.service}
+                  onChange={handleChange}
+                  required
+                  className="p-2 border rounded w-full"
+                >
+                  <option value="">Select Service</option>
+                  <option>Dental Cleaning</option>
+                  <option>Root Canal</option>
+                  <option>Braces</option>
+                  <option>Cosmetic Dentistry</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="appointmentDate" className="block text-sm font-medium mb-1">
+                  Appointment Date
+                </label>
+                <input
+                  id="appointmentDate"
+                  type="date"
+                  name="appointmentDate"
+                  value={formData.appointmentDate}
+                  onChange={handleChange}
+                  required
+                  className="p-2 border rounded w-full"
+                />
+              </div>
+
+              <div>
+                <label htmlFor="time" className="block text-sm font-medium mb-1">
+                  Time
+                </label>
+                <input
+                  id="time"
+                  type="time"
+                  name="time"
+                  value={formData.time}
+                  onChange={handleChange}
+                  required
+                  className="p-2 border rounded w-full"
+                />
+              </div>
+            </div>
 
             <button
               type="submit"
               disabled={loading}
-              className="md:col-span-2 bg-yellow-400 text-black py-2 rounded hover:bg-yellow-500"
+              className="w-full bg-yellow-400 hover:bg-yellow-500 transition text-black py-2 rounded font-semibold"
             >
-              {loading ? "Booking..." : "Book an Appointment"}
+              {loading ? "Booking..." : "Book Appointment"}
             </button>
 
-            {message && (
-              <p className="md:col-span-2 text-green-600 mt-2">{message}</p>
-            )}
+            {message && <p className="text-green-600 mt-2">{message}</p>}
           </form>
 
-          {/* Contact Info & Map */}
-          <div className="bg-blue-950 text-white rounded-xl p-6 flex flex-col justify-between">
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold font-[Noto_Sans] mb-2">
-                Contact Us
-              </h3>
+          {/* Contact Info */}
+          <div className="bg-blue-950 text-white rounded-xl p-6 space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1" />
                 <span>
-                  MIG-2, beside Central Bank Of India, Sector-3, Shankar Nagar,
-                  Raipur, Chhattisgarh
+                  MIG-2, beside Central Bank Of India, Sector-3, Shankar Nagar, Raipur, Chhattisgarh
                 </span>
               </div>
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 mt-3">
                 <Mail className="w-5 h-5 mt-1" />
-                <span>smilecareclinic@mail.com</span>
+                <span>gohil.chitra@gmail.com</span>
               </div>
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 mt-3">
                 <Phone className="w-5 h-5 mt-1" />
                 <span>+91 7389181481</span>
               </div>
             </div>
-
-            <div className="mt-6 rounded overflow-hidden w-full aspect-video">
+            <div className="aspect-video w-full mt-4">
               <iframe
-                title="Dr. Chitra's Endocare Location"
+                title="Clinic Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.558132404149!2d81.6641901!3d21.2534426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dd69bfaa335d%3A0x3f1ae16ce2a60c6c!2sDr.%20Chitra's%20Endocare%20%26%20Multispeciality%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1718361869487!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
+                className="rounded"
                 style={{ border: 0 }}
-                allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
