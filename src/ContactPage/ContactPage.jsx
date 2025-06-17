@@ -1,8 +1,56 @@
 "use client";
 import { Mail, Phone, MapPin } from "lucide-react";
 import bgclinic from "../assets/ContactUs/contactus.jpg";
+import axios from "axios";
+import { useState } from "react";
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    dob: "",
+    gender: "",
+    city: "",
+    service: "",
+    appointmentDate: "",
+    time: "",
+  });
+
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setMessage("");
+
+    try {
+      const res = await axios.post(
+        "https://drchitraendocare-0zlt.onrender.com/api/appointment",
+        formData
+      );
+      setMessage(res.data.message);
+      setFormData({
+        name: "",
+        phone: "",
+        dob: "",
+        gender: "",
+        city: "",
+        service: "",
+        appointmentDate: "",
+        time: "",
+      });
+    } catch (error) {
+      setMessage("Submission failed. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
   const services = [
     "Gentle Dental Fillings",
     "Root Canal Therapy",
@@ -23,8 +71,10 @@ export default function ContactPage() {
           alt="Clinic Background"
           className="absolute w-full h-full object-cover -z-10"
         />
-        <div className="max-w-[1300px] w-full px-6 py-20 md:px-20 text-center text-white flex flex-col items-center justify-center">
-          <span className="inline-block text-xs font-[Noto_Sans] text-blue-600 bg-blue-100 px-4 py-1 rounded-full font-semibold uppercase tracking-wide mb-3 shadow">
+        <div className="max-w-[1300px] w-full px-6 py-20 md:px-20 text-center text-white 
+        flex flex-col items-center justify-center">
+          <span className="inline-block text-xs font-[Noto_Sans] text-blue-600 bg-blue-100 px-4 py-1
+           rounded-full font-semibold uppercase tracking-wide mb-3 shadow">
             Book Appointment
           </span>
           <h2 className="text-3xl md:text-4xl font-bold font-[Noto_Sans]">
@@ -40,118 +90,94 @@ export default function ContactPage() {
       <section className="bg-blue-50 py-16 px-4 sm:px-8 md:px-12 lg:px-24 font-[roboto]">
         <div className="grid gap-8 md:grid-cols-2 bg-white p-6 md:p-12 rounded-xl shadow-md">
           {/* Form Section */}
-          <form className="space-y-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block mb-1 font-[Noto_Sans] font-medium">
-                  Name *
-                </label>
-                <input
-                  type="text"
-                  placeholder="Full name"
-                  className="w-full border border-gray-300 rounded px-4 py-2"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block mb-1 font-[Noto_Sans] font-medium">
-                  Phone *
-                </label>
-                <input
-                  type="tel"
-                  placeholder="Enter your mobile"
-                  className="w-full border border-gray-300 rounded px-4 py-2"
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block mb-1 font-[Noto_Sans] font-medium">
-                  Date of Birth *
-                </label>
-                <input
-                  type="date"
-                  className="w-full border border-gray-300 rounded px-4 py-2"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block mb-1 font-[Noto_Sans] font-medium">
-                  Gender *
-                </label>
-                <select
-                  className="w-full border border-gray-300 rounded px-4 py-2"
-                  required
-                >
-                  <option value="">Gender</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block mb-1 font-[Noto_Sans] font-medium">
-                  City *
-                </label>
-                <input
-                  type="text"
-                  placeholder="Your city"
-                  className="w-full border border-gray-300 rounded px-4 py-2"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block mb-1 font-[Noto_Sans] font-medium">
-                  Select a Service *
-                </label>
-                <select
-                  className="w-full border border-gray-300 rounded px-4 py-2"
-                  required
-                >
-                  <option value="">-- Choose a Service --</option>
-                  {services.map((service, index) => (
-                    <option key={index} value={service}>
-                      {service}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label className="block mb-1 font-[Noto_Sans] font-medium">
-                  Appointment Date *
-                </label>
-                <input
-                  type="date"
-                  className="w-full border border-gray-300 rounded px-4 py-2"
-                  required
-                />
-              </div>
-              <div>
-                <label className="block mb-1 font-[Noto_Sans] font-medium">
-                  Time *
-                </label>
-                <input
-                  type="time"
-                  className="w-full border border-gray-300 rounded px-4 py-2"
-                  required
-                />
-              </div>
-            </div>
+          <form
+            onSubmit={handleSubmit}
+            className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto p-4"
+          >
+            <input
+              name="name"
+              placeholder="Full name"
+              required
+              value={formData.name}
+              onChange={handleChange}
+              className="p-2 border rounded"
+            />
+            <input
+              name="phone"
+              placeholder="Enter your mobile"
+              required
+              value={formData.phone}
+              onChange={handleChange}
+              className="p-2 border rounded"
+            />
+            <input
+              type="date"
+              name="dob"
+              required
+              value={formData.dob}
+              onChange={handleChange}
+              className="p-2 border rounded"
+            />
+            <select
+              name="gender"
+              required
+              value={formData.gender}
+              onChange={handleChange}
+              className="p-2 border rounded"
+            >
+              <option value="">Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <input
+              name="city"
+              placeholder="Your city"
+              required
+              value={formData.city}
+              onChange={handleChange}
+              className="p-2 border rounded"
+            />
+            <select
+              name="service"
+              required
+              value={formData.service}
+              onChange={handleChange}
+              className="p-2 border rounded"
+            >
+              <option value="">-- Choose a Service --</option>
+              <option value="Dental Cleaning">Dental Cleaning</option>
+              <option value="Root Canal">Root Canal</option>
+              <option value="Braces">Braces</option>
+              {/* Add more as needed */}
+            </select>
+            <input
+              type="date"
+              name="appointmentDate"
+              required
+              value={formData.appointmentDate}
+              onChange={handleChange}
+              className="p-2 border rounded"
+            />
+            <input
+              type="time"
+              name="time"
+              required
+              value={formData.time}
+              onChange={handleChange}
+              className="p-2 border rounded"
+            />
 
             <button
               type="submit"
-              className="px-6 py-2 rounded font-bold text-black bg-yellow-300 hover:bg-yellow-400 transition mt-4"
+              disabled={loading}
+              className="md:col-span-2 bg-yellow-400 text-black py-2 rounded hover:bg-yellow-500"
             >
-              Book an Appointment
+              {loading ? "Booking..." : "Book an Appointment"}
             </button>
+
+            {message && (
+              <p className="md:col-span-2 text-green-600 mt-2">{message}</p>
+            )}
           </form>
 
           {/* Contact Info & Map */}
@@ -169,7 +195,7 @@ export default function ContactPage() {
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 mt-1" />
-                <span>gohil.chitra@gmail.com</span>
+                <span>smilecareclinic@mail.com</span>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 mt-1" />
