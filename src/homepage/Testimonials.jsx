@@ -27,7 +27,7 @@ const testimonials = [
     name: "Kesri Rituraj",
     title: "Patient",
     quote: "Great ambience and humble doctor — a rare combination.",
-    image: patient5,
+    image: patient2,
   },
   {
     name: " Pramod Kr Dalmia",
