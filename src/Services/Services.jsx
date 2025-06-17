@@ -78,9 +78,9 @@ const services = [
 
 export default function Services() {
   return (
-    <section>
+    <section className="font-[roboto]">
       {/* Hero Section */}
-      <div className="relative font-[roboto] bg-[#000000c0] overflow-hidden flex justify-center items-center">
+      <div className="relative  bg-[#000000c0] overflow-hidden flex justify-center items-center">
         <img
           src={bgclinic}
           alt="Clinic Background"

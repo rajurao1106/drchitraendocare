@@ -14,7 +14,7 @@ export default function AboutDoctor() {
 
         {/* Doctor Content */}
         <div className="w-full max-w-2xl max-lg:text-center">
-          <h2 className="text-3xl font-bold font-[Noto_Sans] text-blue-600 mb-4">
+          <h2 className="text-3xl  font-bold font-[Noto_Sans] text-blue-600 mb-4">
             Dr. Chitra Gohil
           </h2>
           {/* <p className="mb-4 text-base font-bold text-gray-700">
