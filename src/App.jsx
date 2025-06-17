@@ -9,6 +9,7 @@ import AboutUs from './AboutUs/AboutUs';
 import Services from './Services/Services';
 import ScrollTop from './components/ScrollTop';
 import Whatsapp from './components/Whatsapp';
+import Backend from './Backend/Backend';
 
 
 
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
          <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
+         <Route path="/backend" element={<Backend />} />
          
       </Routes>
       <FAQ/>

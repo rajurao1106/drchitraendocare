@@ -19,11 +19,15 @@ export default function OurAim() {
           <h2 className="text-3xl md:text-4xl font-[Noto_Sans] font-extrabold text-blue-600 mb-4">
             Our Mission
           </h2>
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-            At Dr. Chitra Endocare, we are committed to listening carefully to your concerns and needs.
-            We strive to provide clear explanations, transparent treatment plans, and high-quality care with compassion.
-            Our goal is to support you at every step of your journey toward a healthy, confident smile.
-          </p>
+          <ul className="text-gray-700 text-base md:text-lg leading-relaxed list-disc pl-5 space-y-2">
+            <li>To listen carefully to your concerns and needs.</li>
+            <li>
+              To provide clear explanations and transparent treatment plans.
+            </li>
+            <li>To deliver high-quality treatment with care.</li>
+            <li>To support you throughout your treatment journey.</li>
+            <li>To help in achieving a healthy, confident smile.</li>
+          </ul>
         </div>
       </div>
     </section>

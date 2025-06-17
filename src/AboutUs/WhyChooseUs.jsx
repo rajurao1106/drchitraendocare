@@ -48,19 +48,39 @@ export default function WhyChooseUs() {
       title: "Advanced Material",
       desc: (
         <>
-          <p>
-            Endocare Dental Clinic utilizes advanced dental materials: <br />{" "}
-            Bioactive Material (MTA / Bidentine) Ceramic & porcelain for
-            esthetic crowns and bridges Tooth replacement materials like EverX
-            Flow, Composites Ozone therapy (for sensitivity){" "}
+          <p className=" text-base l">
+            Endocare Dental Clinic utilizes advanced dental materials:
           </p>
+          <ul className="list-disc text-base  space-y-2 ">
+            <li>Bioactive materials like MTA and Biodentine.</li>
+            <li>Ceramic and porcelain for esthetic crowns and bridges.</li>
+            <li>
+              Tooth replacement materials such as EverX Flow and composites.
+            </li>
+            <li>Ozone therapy for treating sensitivity.</li>
+          </ul>
         </>
       ),
     },
     {
       icon: <CheckCircle className="w-5 h-5 text-white" />,
       title: "Advanced Technology",
-      desc: "Advanced diagnostic tools e.g., Intra Oral Camera Advanced root canal devices e.g., Fi-P & Fi-G obturating device Portable X-ray for patient convenience Dental Scanner. By incorporating these advanced materials & technology, Endocare provides high-quality, effective dental care.",
+      desc: (
+        <>
+          <p className=" text-base ">
+            By incorporating advanced materials and technology, Endocare
+            provides high-quality, effective dental care. Key tools include:
+          </p>
+          <ul className="list-disc  text-base space-y-2">
+            <li>Advanced diagnostic tools such as Intraoral Camera.</li>
+            <li>
+              Advanced root canal devices like Fi-P and Fi-G obturating devices.
+            </li>
+            <li>Portable X-ray machine for patient convenience.</li>
+            <li>Digital dental scanner for precise imaging and planning.</li>
+          </ul>
+        </>
+      ),
     },
   ];
   const images = [img1, img2, img3, img4, img5, img6];

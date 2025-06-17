@@ -169,7 +169,7 @@ export default function ContactPage() {
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-5 h-5 mt-1" />
-                <span>smilecareclinic@mail.com</span>
+                <span>gohil.chitra@gmail.com</span>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 mt-1" />

@@ -15,7 +15,7 @@ const HappyClientSection = () => {
             Become The Next <br />
             Our <span className="text-blue-600">Happy Client</span>
           </h2>
-          <p className="mt-4 text-gray-600 text-base">
+          <p className="mt-4 text-gray-800 text-base">
             Have questions or ready to book?  <br />
 We re just a call away—let’s talk and solve your health related  problem.
 
