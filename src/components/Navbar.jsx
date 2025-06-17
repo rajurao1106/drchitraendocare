@@ -14,7 +14,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="flex justify-center items-center shadow font-[roboto] text-white sticky top-0 left-0 z-10 bg-[#0D1B2A]">
+    <nav className="flex justify-center items-center shadow font-[roboto] text-white sticky top-0 left-0 z-50 bg-[#0D1B2A]">
       <div className="w-full  max-w-[1200px] ">
         {/* Top Bar */}
         <div className=" text-gray-600 max-lg:hidden text-sm px-4 pt-2 flex justify-between items-center ">

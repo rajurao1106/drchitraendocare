@@ -88,7 +88,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   placeholder="Enter full name"
-                  className="p-2 border rounded w-full"
+                  className="p-2 border rounded w-full border-gray-500"
                 />
               </div>
 
@@ -103,7 +103,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   placeholder="Enter mobile number"
-                  className="p-2 border rounded w-full"
+                  className="p-2 border rounded w-full border-gray-500"
                 />
               </div>
 
@@ -118,7 +118,7 @@ export default function ContactPage() {
                   value={formData.dob}
                   onChange={handleChange}
                   required
-                  className="p-2 border rounded w-full"
+                  className="p-2 border rounded w-full border-gray-500"
                 />
               </div>
 
@@ -132,11 +132,12 @@ export default function ContactPage() {
                   value={formData.gender}
                   onChange={handleChange}
                   required
-                  className="p-2 border rounded w-full"
+                  className="p-2 border rounded w-full border-gray-500"
                 >
                   <option value="">Select Gender</option>
                   <option>Male</option>
                   <option>Female</option>
+                  <option>Other</option>
                 </select>
               </div>
 
@@ -151,7 +152,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   placeholder="Enter your city"
-                  className="p-2 border rounded w-full"
+                  className="p-2 border rounded w-full border-gray-500"
                 />
               </div>
 
@@ -165,7 +166,7 @@ export default function ContactPage() {
                   value={formData.service}
                   onChange={handleChange}
                   required
-                  className="p-2 border rounded w-full"
+                  className="p-2 border rounded w-full border-gray-500"
                 >
                   <option value="">Select Service</option>
                   <option>Dental Cleaning</option>
@@ -186,7 +187,7 @@ export default function ContactPage() {
                   value={formData.appointmentDate}
                   onChange={handleChange}
                   required
-                  className="p-2 border rounded w-full"
+                  className="p-2 border rounded w-full border-gray-500"
                 />
               </div>
 
@@ -201,7 +202,7 @@ export default function ContactPage() {
                   value={formData.time}
                   onChange={handleChange}
                   required
-                  className="p-2 border rounded w-full"
+                  className="p-2 border rounded w-full border-gray-500"
                 />
               </div>
             </div>
