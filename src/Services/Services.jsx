@@ -116,7 +116,7 @@ export default function Services() {
                     className="w-full sm:w-[28rem] md:w-[36rem] h-[16rem] md:h-[20rem] object-cover rounded-xl shadow"
                   />
                   <div className="w-full max-w-xl">
-                    <h3 className="text-2xl font-semibold mb-2">
+                    <h3 className="text-2xl font-[Noto_Sans] font-semibold mb-2">
                       {service.title}
                     </h3>
                     <p className="text-gray-700 text-base md:text-lg mb-4">
