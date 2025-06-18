@@ -99,6 +99,10 @@ export default function Footer() {
             </div>
             <div className="flex items-start gap-2 text-sm text-gray-300">
               <FaPhoneAlt className="mt-1" />
+              <span>gohil.chitra@gmail.com</span>
+            </div>
+            <div className="flex items-start gap-2 text-sm text-gray-300">
+              <FaPhoneAlt className="mt-1" />
               <span>+91 7389181481</span>
             </div>
             <div className="flex flex-col text-xl text-white mt-4">
