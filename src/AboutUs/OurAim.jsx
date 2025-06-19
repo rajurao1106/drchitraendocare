@@ -1,5 +1,5 @@
 import React from "react";
-import chitragohil from "../assets/AboutUs/chitragohil.png";
+import chitragohil from "../assets/AboutUs/ourmission.jpg";
 
 export default function OurAim() {
   return (

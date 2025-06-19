@@ -98,7 +98,7 @@ export default function WhyChooseUs() {
             every smile healthier, brighter, and more confident.
           </p>
         </div>
-        <div className="max-w-[1200px] w-full flex gap-10 max-lg:w-[90%]">
+        <div className="max-w-[1200px] w-full flex justify-center items-start gap-10 max-lg:w-[90%]">
           {/* Image Grid */}
           <div className="flex flex-wrap w-[35rem] gap-10 max-lg:hidden">
             {images.map((img, index) => {

@@ -4,7 +4,7 @@ import doctor from "../assets/AboutUs/aboutdoctor.png";
 export default function AboutDoctor() {
   return (
     <section className="flex bg-[#F7F7F7] justify-center items-center flex-col py-10 px-4">
-      <div className="max-w-[1100px] w-full flex flex-col lg:flex-row items-center gap-10">
+      <div className="max-w-[1000px] w-full flex flex-col lg:flex-row items-center gap-10">
         {/* Doctor Image */}
         <img
           src={doctor}
@@ -13,7 +13,7 @@ export default function AboutDoctor() {
         />
 
         {/* Doctor Content */}
-        <div className="w-full max-w-2xl max-lg:text-center">
+        <div className="w-full max-lg:text-center">
           <h2 className="text-3xl  font-bold font-[Noto_Sans] text-blue-600 mb-4">
             Dr. Chitra Gohil
           </h2>

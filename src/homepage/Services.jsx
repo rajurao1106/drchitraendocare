@@ -19,6 +19,7 @@ import dentalimplant from "/src/assets/Homepage/Services/dental-implant1.png";
 import dental_implant from "/src/assets/Homepage/Services/dental-implant.png";
 import clearaligners from "/src/assets/Homepage/Services/clear aligners.jpg";
 import clear_aligners from "/src/assets/Homepage/Services/dental-trainer_8732965.png";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -108,15 +109,22 @@ export default function Services() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {services.map((service, index) => (
-          <div key={index} className="group perspective">
+          <motion.div
+            key={index}
+            className="group perspective"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            viewport={{ once: true }}
+          >
             <div
               className="relative w-full h-[25rem] transition-transform duration-500 transform-style-preserve-3d
-             group-hover:rotate-y-180"
+         group-hover:rotate-y-180"
             >
               {/* Front */}
               <div
                 className="absolute inset-0 backface-hidden rounded-xl overflow-hidden shadow-md flex 
-                flex-col justify-end bg-cover bg-center"
+          flex-col justify-end bg-cover bg-center"
                 style={{ backgroundImage: `url(${service.image})` }}
               >
                 <div className="bg-white bg-opacity-80 p-4">
@@ -132,7 +140,7 @@ export default function Services() {
               {/* Back */}
               <div
                 className="absolute inset-0 backface-hidden rotate-y-180 bg-white p-5
-               rounded-xl shadow-lg flex flex-col justify-center items-start text-left"
+           rounded-xl shadow-lg flex flex-col justify-center items-start text-left"
               >
                 <div className="flex items-center gap-3 mb-3">
                   <img
@@ -148,14 +156,14 @@ export default function Services() {
                   {service.description}
                 </p>
                 <a
-                  href="#"
+                  href="/services"
                   className="text-blue-600 font-medium inline-flex items-center gap-1 hover:underline"
                 >
                   Learn More <FaArrowRight className="text-sm" />
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

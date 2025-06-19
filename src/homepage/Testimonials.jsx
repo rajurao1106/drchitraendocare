@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 import patient1 from "../assets/Homepage/Testimonials/patient1.png";
 import patient2 from "../assets/Homepage/Testimonials/patient2.png";
 import patient3 from "../assets/Homepage/Testimonials/patient3.png";
@@ -49,16 +50,10 @@ const Testimonials = () => {
     autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 1024, // Tablets
-        settings: {
-          slidesToShow: 2,
-        },
+        breakpoint: 1024, settings: { slidesToShow: 2 },
       },
       {
-        breakpoint: 768, // Mobiles
-        settings: {
-          slidesToShow: 1,
-        },
+        breakpoint: 768, settings: { slidesToShow: 1 },
       },
     ],
   };
@@ -75,7 +70,14 @@ const Testimonials = () => {
 
         <Slider {...settings}>
           {testimonials.map((item, index) => (
-            <div key={index} className="px-3 md:px-4">
+            <motion.div
+              key={index}
+              className="px-3 md:px-4"
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
               <div className="bg-[#F8FAFC] p-6 rounded-xl shadow hover:shadow-md transition duration-300 max-w-xl mx-auto">
                 <div className="flex items-center gap-4 mb-4">
                   <img
@@ -88,14 +90,16 @@ const Testimonials = () => {
                     <p className="text-sm text-gray-500">{item.title}</p>
                   </div>
                 </div>
-                <p className="text-gray-700 text-sm leading-relaxed">"{item.quote}"</p>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  "{item.quote}"
+                </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </Slider>
 
         <a
-          href="https://www.google.com/search?q=chitra+dental+clinic&oq=chit&gs_lcrp=EgZjaHJvbWUqDggBEEUYJxg7GIAEGIoFMgYIABBFGDwyDggBEEUYJxg7GIAEGIoFMgYIAhBFGDkyCggDEC4YsQMYgAQyCggEEC4YsQMYgAQyEAgFEC4YrwEYxwEYsQMYgAQyBggGEEUYPTIGCAcQRRg90gEINzQ2OGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x3a28dd69bfaa335d:0x3f1ae16ce2a60c6c,1,,,,"
+          href="https://www.google.com/search?q=chitra+dental+clinic#lrd=0x3a28dd69bfaa335d:0x3f1ae16ce2a60c6c,1"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-8"
@@ -104,7 +108,7 @@ const Testimonials = () => {
             className="bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] 
               font-semibold px-6 py-3 rounded-lg w-full sm:w-auto"
           >
-             Read Our Latest Reviews
+            Read Our Latest Reviews
           </button>
         </a>
       </div>

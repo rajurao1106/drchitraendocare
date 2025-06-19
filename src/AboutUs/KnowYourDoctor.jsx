@@ -1,5 +1,5 @@
 import React from "react";
-import doctor from "../assets/AboutUs/aboutdoctor.png";
+import doctor from "../assets/AboutUs/chitragohil.png";
 
 export default function KnowYourDoctor() {
   return (
@@ -9,7 +9,7 @@ export default function KnowYourDoctor() {
         <img
           src={doctor}
           alt="Dr. Chitra Gohil"
-          className="w-64 sm:w-80 border-4 border-gray-50 rounded-3xl shadow-lg"
+          className="w-[24rem] border-4 border-gray-50 rounded-3xl shadow-lg"
         />
 
         {/* Doctor Content */}

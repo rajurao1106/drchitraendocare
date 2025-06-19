@@ -6,6 +6,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import logo from "../assets/AboutUs/logo.png";
+import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
@@ -97,8 +98,8 @@ export default function Footer() {
               <FaMapMarkerAlt className="mt-1" />
               <span>Shankar Nagar, Raipur, Chhattisgarh</span>
             </div>
-            <div className="flex items-start gap-2 text-sm text-gray-300">
-              <FaPhoneAlt className="mt-1" />
+            <div className="flex items-start gap-2 text-sm text-gray-300 mb-2">
+              <MdEmail className="mt-1" />
               <span>gohil.chitra@gmail.com</span>
             </div>
             <div className="flex items-start gap-2 text-sm text-gray-300">
@@ -110,8 +111,8 @@ export default function Footer() {
                 Follow Us
               </h4>
               <div className="flex gap-4">
-                <FaFacebookF className="hover:text-blue-500 cursor-pointer" />
-                <FaInstagram className="hover:text-red-500 cursor-pointer" />
+                <a href="https://www.facebook.com/drchitrasendocaremultispecialitydentalclinic"><FaFacebookF className="hover:text-blue-500 cursor-pointer" /></a>
+                <a href="https://www.instagram.com/drchitraendocaredentalclinic/"><FaInstagram className="hover:text-red-500 cursor-pointer" /></a>
               </div>
             </div>
           </div>
