@@ -217,10 +217,16 @@ export default function ContactPage() {
                   className="p-2 border rounded w-full border-gray-500"
                 >
                   <option value="">Select Service</option>
-                  <option>Dental Cleaning</option>
-                  <option>Root Canal</option>
-                  <option>Braces</option>
-                  <option>Cosmetic Dentistry</option>
+                  <option>Gentle Dental Fillings</option>
+                  <option>Root Canal Therapy</option>
+                  <option>Tooth Extractions</option>
+                  <option>Professional Teeth Whitening</option>
+                  <option>Cosmetic Dentistry</option>
+                  <option>Preventive Care</option>
+                  <option>Pediatric Treatment</option>
+                  <option>Orthodontic Braces</option>
+                  <option>Dental Implant</option>
+                  <option>Clear Aligners</option>
                 </select>
               </div>
 
