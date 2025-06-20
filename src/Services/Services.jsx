@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion"; // Import Framer Motion
 import bgclinic from "../assets/Services/bgclinic.jpg";
 import serviceimg1 from "../assets/Services/serviceimg1.jpg";
 import serviceimg2 from "../assets/Services/serviceimg2.jpg";
@@ -64,36 +65,65 @@ const services = [
   {
     title: "Dental Implant",
     description:
-      "A dental implant service is like a tiny metal root that a dentist puts into your jawbone where the tooth used to be. Then they attach a fake tooth on top that looks and works like the real thing. It’s like building a new tooth from the ground up!",
+      "A dental implant service is like a tiny metal root that a dentist puts into your jawbone where the tooth used to be. Then they attach a fake tooth on top that looks and works like the real thing. It’s like building a new tooth from the ground up!",
     image: serviceimg9,
   },
   {
-      title: "Clear Aligners",
-      description:
-        "Clear aligners is transparent removable orthdodontic device used to close the gap or straighten teeth..they are popular for esthetic looks and comfort.",
-      image: clearaligners,
-    
-    },
+    title: "Clear Aligners",
+    description:
+      "Clear aligners is transparent removable orthodontic device used to close the gap or straighten teeth..they are popular for esthetic looks and comfort.",
+    image: clearaligners,
+  },
 ];
 
 export default function Services() {
+  // Animation variants for service cards
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.1, duration: 0.5 },
+    }),
+  };
+
+  // Animation variants for hero section
+  const heroVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
     <section className="font-[roboto]">
       {/* Hero Section */}
-      <div className="relative  bg-[#000000c0] overflow-hidden flex justify-center items-center">
+      <div className="relative bg-[#000000c0] overflow-hidden flex justify-center items-center">
         <img
           src={bgclinic}
           alt="Clinic Background"
           className="absolute w-full h-full object-cover -z-10"
         />
-        <div className="text-white py-20 px-6 md:px-20 text-center w-full max-w-[1300px]">
-          <h1 className="text-3xl md:text-4xl font-[Noto_Sans] font-bold mb-2">
+        <motion.div
+          className="text-white py-20 px-6 md:px-20 text-center w-full max-w-[1300px]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={heroVariants}
+        >
+          <motion.h1
+            className="text-3xl md:text-4xl text-yellow-400 font-[Noto_Sans] font-bold mb-2"
+            variants={heroVariants}
+            transition={{ delay: 0.2 }}
+          >
             Our Dental Services
-          </h1>
-          <p className="text-lg text-white/90">
+          </motion.h1>
+          <motion.p
+            className="text-lg text-white/90"
+            variants={heroVariants}
+            transition={{ delay: 0.4 }}
+          >
             Compassionate care, advanced treatments, confident smiles.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
       </div>
 
       {/* Services Section */}
@@ -104,8 +134,13 @@ export default function Services() {
               const isReverse = index % 2 === 1;
 
               return (
-                <div
+                <motion.div
                   key={index}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={cardVariants}
+                  custom={index}
                   className={`flex flex-col ${
                     isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
                   } items-center gap-6 p-6 rounded-2xl bg-white shadow-[0_0_10px_lightgray]`}
@@ -115,27 +150,26 @@ export default function Services() {
                     alt={service.title}
                     className="w-full sm:w-[28rem] md:w-[36rem] h-[16rem] md:h-[20rem] object-cover rounded-xl shadow"
                   />
-                  <div className="w-full max-w-xl"> 
+                  <div className="w-full max-w-xl">
                     <h3 className="text-2xl font-[Noto_Sans] font-semibold mb-2">
                       {service.title}
-                    </h3> 
+                    </h3>
                     <p className="text-gray-700 text-base md:text-lg mb-4">
                       {service.description}
                     </p>
                     <a href="/contact">
                       <button className="bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-5 py-2 rounded-lg">
-                      Book Appointment 
-                    </button>
+                        Book Appointment
+                      </button>
                     </a>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
         </section>
-       
       </div>
-       <HappyClientSection/>  
+      <HappyClientSection />
     </section>
   );
 }

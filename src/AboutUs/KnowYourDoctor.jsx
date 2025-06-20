@@ -1,19 +1,37 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import doctor from "../assets/AboutUs/chitragohil.png";
 
 export default function KnowYourDoctor() {
   return (
-    <section className="flex justify-center  items-center flex-col py-10">
-      <div className="max-w-[1100px]  justify-center w-full flex flex-col lg:flex-row-reverse items-center gap-10">
+    <section className="flex justify-center items-center flex-col py-10">
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="max-w-[1100px] justify-center w-full flex flex-col lg:flex-row-reverse items-center gap-10"
+      >
         {/* Doctor Image */}
-        <img
+        <motion.img
           src={doctor}
           alt="Dr. Chitra Gohil"
           className="w-[24rem] border-4 border-gray-50 rounded-3xl shadow-lg"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
         />
 
         {/* Doctor Content */}
-        <div className="w-full max-lg:w-[95%] max-lg:text-center">
+        <motion.div
+          className="w-full max-lg:w-[95%] max-lg:text-center"
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl font-[Noto_Sans] font-bold text-blue-600 mb-4">
             Know Your Doctor
           </h2>
@@ -45,13 +63,8 @@ export default function KnowYourDoctor() {
               <strong>10,000 restorations</strong>.
             </p>
           </div>
-
-          {/* <button className="bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-6 py-3 rounded-lg 
-          shadow hover:bg-yellow-500  transition-all duration-300">
-            Book Appointment
-          </button> */}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

@@ -72,9 +72,9 @@ export default function Navbar() {
               <a href="/">
                 <img src={logo} alt="Logo" className="w-14 h-14" />
               </a>
-              <div className="max-lg:hidden">
+              <a href="/" className="max-lg:hidden">
                 Dr. Chitra <span className="text-yellow-400">Endocare</span>
-              </div>
+              </a>
             </h1>
           </div>
 

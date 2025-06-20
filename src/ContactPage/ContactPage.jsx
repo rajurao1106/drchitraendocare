@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import bgclinic from "../assets/ContactUs/contactus.jpg";
 import axios from "axios";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -51,36 +52,69 @@ export default function ContactPage() {
     }
   };
 
+  // Animation variants for hero section
+  const heroVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
+  // Animation variants for service cards
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.1, duration: 0.5 },
+    }),
+  };
+
   return (
     <div className="font-[roboto]">
-      {/* Hero Section */}
-      <div className="relative bg-black/70 text-white text-center py-20 px-4 md:px-20">
-      
+      <motion.div className="relative bg-black/70 text-white text-center py-20 px-4 md:px-20">
         <img
           src={bgclinic}
-
           alt="Clinic"
           className="absolute inset-0 w-full h-full object-cover -z-10"
         />
-        <div className="relative z-10">
-          <span className="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-xs font-semibold uppercase tracking-wide shadow">
-            Book Appointment 
-          </span>
-          <h1 className="text-3xl md:text-4xl font-bold mt-4">Schedule Your Visit</h1>
-          <p className="mt-2 text-gray-200 max-w-2xl mx-auto">
+        <motion.div
+          className="text-white px-6 md:px-20 text-center w-full max-w-[1300px]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={heroVariants}
+        >
+          <motion.h1
+            className="text-3xl md:text-4xl text-yellow-400 font-[Noto_Sans] font-bold mb-2"
+            variants={heroVariants}
+            transition={{ delay: 0.2 }}
+          >
+            Schedule Your Visit
+          </motion.h1>
+          <motion.p
+            className="text-lg text-white/90"
+            variants={heroVariants}
+            transition={{ delay: 0.4 }}
+          >
             Fill out the form below to book an appointment with us.
-          </p>
-        </div>
-      </div>
+          </motion.p>
+        </motion.div>
+      </motion.div>
 
-      {/* Form and Info Section */}
       <section className="bg-blue-50 py-16 px-4 md:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white p-6 md:p-12 rounded-xl shadow-md">
-          {/* Appointment Form */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white p-6 md:p-12 rounded-xl shadow-md"
+        >
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-1">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-1"
+                >
                   Full Name
                 </label>
                 <input
@@ -95,7 +129,10 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-1">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium mb-1"
+                >
                   Mobile Number
                 </label>
                 <input
@@ -125,7 +162,10 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="gender" className="block text-sm font-medium mb-1">
+                <label
+                  htmlFor="gender"
+                  className="block text-sm font-medium mb-1"
+                >
                   Gender
                 </label>
                 <select
@@ -144,7 +184,10 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="city" className="block text-sm font-medium mb-1">
+                <label
+                  htmlFor="city"
+                  className="block text-sm font-medium mb-1"
+                >
                   City
                 </label>
                 <input
@@ -159,7 +202,10 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="service" className="block text-sm font-medium mb-1">
+                <label
+                  htmlFor="service"
+                  className="block text-sm font-medium mb-1"
+                >
                   Service
                 </label>
                 <select
@@ -179,7 +225,10 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="appointmentDate" className="block text-sm font-medium mb-1">
+                <label
+                  htmlFor="appointmentDate"
+                  className="block text-sm font-medium mb-1"
+                >
                   Appointment Date
                 </label>
                 <input
@@ -194,7 +243,10 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="time" className="block text-sm font-medium mb-1">
+                <label
+                  htmlFor="time"
+                  className="block text-sm font-medium mb-1"
+                >
                   Time
                 </label>
                 <input
@@ -220,14 +272,20 @@ export default function ContactPage() {
             {message && <p className="text-green-600 mt-2">{message}</p>}
           </form>
 
-          {/* Contact Info */}
-          <div className="bg-blue-950 text-white rounded-xl p-6 space-y-6">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="bg-blue-950 text-white rounded-xl p-6 space-y-6"
+          >
             <div>
               <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1" />
                 <span>
-                  MIG-2, beside Central Bank Of India, Sector-3, Shankar Nagar, Raipur, Chhattisgarh
+                  MIG-2, beside Central Bank Of India, Sector-3, Shankar Nagar,
+                  Raipur, Chhattisgarh
                 </span>
               </div>
               <div className="flex items-start gap-3 mt-3">
@@ -251,8 +309,8 @@ export default function ContactPage() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </section>
     </div>
   );

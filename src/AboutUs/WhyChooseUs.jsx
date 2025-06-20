@@ -8,6 +8,7 @@ import {
   Activity,
   ScanLine,
 } from "lucide-react";
+import { motion } from "framer-motion"; // Import Framer Motion
 import img1 from "../assets/Homepage/Gallery/gallery1.jpg";
 import img2 from "../assets/Homepage/Gallery/gallery2.jpg";
 import img3 from "../assets/Homepage/Gallery/gallery3.jpg";
@@ -27,7 +28,6 @@ export default function WhyChooseUs() {
       title: "Patient-Centered Care",
       desc: "We prioritize the patient's needs, comfort, and satisfaction.",
     },
-
     {
       icon: <CheckCircle className="w-5 h-5 text-white" />,
       title: "Expertise",
@@ -48,10 +48,10 @@ export default function WhyChooseUs() {
       title: "Advanced Material",
       desc: (
         <>
-          <p className=" text-base l">
+          <p className="text-base">
             Endocare Dental Clinic utilizes advanced dental materials:
           </p>
-          <ul className="list-disc text-base  space-y-2 ">
+          <ul className="list-disc text-base space-y-2">
             <li>Bioactive materials like MTA and Biodentine.</li>
             <li>Ceramic and porcelain for esthetic crowns and bridges.</li>
             <li>
@@ -67,11 +67,11 @@ export default function WhyChooseUs() {
       title: "Advanced Technology",
       desc: (
         <>
-          <p className=" text-base ">
+          <p className="text-base">
             By incorporating advanced materials and technology, Endocare
             provides high-quality, effective dental care. Key tools include:
           </p>
-          <ul className="list-disc  text-base space-y-2">
+          <ul className="list-disc text-base space-y-2">
             <li>Advanced diagnostic tools such as Intraoral Camera.</li>
             <li>
               Advanced root canal devices like Fi-P and Fi-G obturating devices.
@@ -83,20 +83,54 @@ export default function WhyChooseUs() {
       ),
     },
   ];
+
   const images = [img1, img2, img3, img4, img5, img6];
+
+  // Animation variants for features
+  const featureVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.2, duration: 0.5 },
+    }),
+  };
+
+  // Animation variants for images
+  const imageVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: (i) => ({
+      opacity: 1,
+      scale: 1,
+      transition: { delay: i * 0.1, duration: 0.5 },
+    }),
+  };
+
   return (
     <div>
-      <section className=" bg-white mt-4   flex justify-center items-center flex-col">
+      <section className="bg-white mt-4 flex justify-center items-center flex-col">
         <div className="w-full max-w-[1200px] max-lg:flex max-lg:items-center max-lg:justify-center max-lg:flex-col">
-          <h2 className="text-3xl w-full max-lg:text-center font-[Noto_Sans] text-left max-w-[1200px] md:text-4xl font-extrabold text-blue-600 mb-6">
+          <motion.h2
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-3xl w-full max-lg:text-center font-[Noto_Sans] text-left max-w-[1200px] md:text-4xl font-extrabold text-blue-600 mb-6"
+          >
             Why Choose Us
-          </h2>
-          <p className="text-base max-lg:w-[95%] w-full text-left max-w-[600px] max-lg:text-center mb-8">
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-base max-lg:w-[95%] w-full text-left max-w-[600px] max-lg:text-center mb-8"
+          >
             Dr. Chitra Endocare Dental Clinic delivers exceptional care with a
             patient-first approach. Our skilled team ensures each visit is
             precise, comfortable, and focused on lasting oral health—making
             every smile healthier, brighter, and more confident.
-          </p>
+          </motion.p>
         </div>
         <div className="max-w-[1200px] w-full flex justify-center items-start gap-10 max-lg:w-[90%]">
           {/* Image Grid */}
@@ -124,14 +158,19 @@ export default function WhyChooseUs() {
                   roundedClass = "rounded-br-[5rem] rounded-tl-[5rem]";
                   break;
                 default:
-                  roundedClass = ""; // fallback
+                  roundedClass = "";
               }
 
               return (
-                <img
+                <motion.img
                   key={index}
                   src={img}
                   alt={`Why Choose Us ${index + 1}`}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={imageVariants}
+                  custom={index}
                   className={`object-cover w-[16rem] h-[16rem] shadow-md ${roundedClass}`}
                 />
               );
@@ -140,23 +179,25 @@ export default function WhyChooseUs() {
 
           {/* Feature List */}
           <div className="flex-1">
-            {/* <h2 className="text-3xl font-bold text-[#007b7f] mb-6">
-              Why Choose Us
-            </h2> */}
             <div className="space-y-4">
               {features.map((item, i) => (
-                <div
+                <motion.div
                   key={i}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={featureVariants}
+                  custom={i}
                   className="flex items-start gap-4 bg-blue-100 p-4 rounded-lg shadow-sm"
                 >
                   <div className="bg-blue-500 p-2 rounded-full">
                     {item.icon}
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold ">{item.title}</h3>
-                    <p className="text-base ">{item.desc}</p>
+                    <h3 className="text-lg font-semibold">{item.title}</h3>
+                    <p className="text-base">{item.desc}</p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
