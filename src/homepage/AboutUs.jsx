@@ -93,7 +93,7 @@ export default function AboutUs() {
             transition={{ delay: 1, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <button className="hidden md:block bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-8 py-3 rounded-lg">
+            <button className=" bg-yellow-300 hover:bg-yellow-400 text-black font-[Noto_Sans] font-semibold px-8 py-3 rounded-lg">
               Read More
             </button>
           </motion.a>

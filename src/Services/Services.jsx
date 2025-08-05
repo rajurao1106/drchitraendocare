@@ -1,15 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion"; // Import Framer Motion
-import bgclinic from "../assets/Services/bgclinic.jpg";
-import serviceimg1 from "../assets/Services/serviceimg1.jpg";
-import serviceimg2 from "../assets/Services/serviceimg2.jpg";
-import serviceimg3 from "../assets/Services/serviceimg3.jpg";
-import serviceimg4 from "../assets/Services/serviceimg4.jpg";
-import serviceimg5 from "../assets/Services/serviceimg5.jpg";
-import serviceimg6 from "../assets/Services/serviceimg6.jpg";
-import serviceimg7 from "../assets/Services/serviceimg7.jpg";
-import serviceimg8 from "../assets/Services/serviceimg8.jpg";
-import serviceimg9 from "../assets/Services/serviceimg9.jpg";
+import bgclinic from "../assets/Services/bgclinic-min.jpg";
+import serviceimg1 from "../assets/Services/serviceimg1-min.jpg";
+import serviceimg2 from "../assets/Services/serviceimg2-min.jpg";
+import serviceimg3 from "../assets/Services/serviceimg3-min.jpg";
+import serviceimg4 from "../assets/Services/serviceimg4-min.jpg";
+import serviceimg5 from "../assets/Services/serviceimg5-min.jpg";
+import serviceimg6 from "../assets/Services/serviceimg6-min.jpg";
+import serviceimg7 from "../assets/Services/serviceimg7-min.jpg";
+import serviceimg8 from "../assets/Services/serviceimg8-min.jpg";
+import serviceimg9 from "../assets/Services/serviceimg9-min.jpg";
 import HappyClientSection from "../homepage/ContactUs";
 import clearaligners from "/src/assets/Homepage/Services/clear aligners.jpg";
 

@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
     {
       icon: <CheckCircle className="w-5 h-5 text-white" />,
       title: "Sunday Availability",
-      desc: "We are open from 10–2 on Sundays to accommodate your schedule & provide convenient access.",
+      desc: "We are open from 10 AM – 2 PM on Sundays to accommodate your schedule & provide convenient access.",
     },
     {
       icon: <CheckCircle className="w-5 h-5 text-white" />,
